@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap");
+
+/* Required for full background image */
+:root {
+  --bg-img: url(https://res.cloudinary.com/stegault/image/upload/v1559727685/85004.jpg);
+  --bg-white: #ffffff;
+  --bg-grey: rgb(228, 228, 228);
+
+  --border-black: #000000;
+  --border-white: #e7e7e7;
+  --theme-1: #1c8554;
+  --theme-2: #2ea06b;
+  --black: #000000;
+  --instagram: #d6249f;
+  --linkedin: #217bc1;
+  --twitter: #35ccff;
+  --white: #ffffff;
+  --sunset-red: #fd5e53;
+  --sunset-orange: #ff8c4c;
+  --sunset-yellow: #fed574;
+  --ps-red: #ff1900;
+  --ps-blue: #0045ab;
+  --ps-lightblue: #007f97;
+  --ps-yellow: #ff9a00;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+html,
+body,
+header {
+  height: auto;
+}
+
+#instaAccount {
+  transition: all 0.2s ease-in-out;
+}
+#instaAccount:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.avatar img:hover {
+  cursor: pointer;
+}
+
+.bg-w {
+  background-color: var(--bg-white);
+}
+
+.bg-g {
+  background-color: var(--bg-grey);
+}
+
+.btn-theme-1 {
+  background-color: var(--theme-1) !important;
+  color: #fff;
+}
+
+.card-body .btn-unique {
+  background-color: var(--theme-2) !important;
+  color: #fff;
+}
+
+.fa:hover {
+  transition: all linear 0.3s;
+}
+.fa-facebook-f:hover {
+  color: #03539e;
+}
+.fa-twitter:hover {
+  color: var(--twitter);
+}
+.fa-linkedin-in:hover {
+  color: var(--linkedin);
+}
+.fa-google-plus-square:hover {
+  color: #dd4b39;
+}
+.fa-pinterest-square:hover {
+  color: #cb2027;
+}
+.fa-instagram:hover {
+  color: var(--instagram);
+}
+.fa-youtube-play:hover {
+  color: #e52d27;
+}
+
+.fa-playstation:hover {
+  color: var(--ps-blue);
+}
+
+.gradient {
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(253, 94, 83, 0.6),
+    rgba(255, 140, 76, 0.6),
+    rgba(254, 213, 113, 0.69)
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(253, 94, 83, 0.6),
+    rgba(255, 140, 76, 0.6),
+    rgba(254, 213, 113, 0.69)
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(253, 94, 83, 0.6),
+    rgba(255, 140, 76, 0.6),
+    rgba(254, 213, 113, 0.69)
+  );
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+.navbar-brand {
+  font-size: 1rem !important;
+}
+
+/* .navbar-brand img {
+  width: 30px;
+  height: auto;
+} */
+
+.rgba-gradient {
+  background: rgba(35, 7, 77, 0.6);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(204, 83, 51, 0.6),
+    rgba(35, 7, 77, 0.6)
+  );
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(204, 83, 51, 0.6),
+    rgba(35, 7, 77, 0.6)
+  );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.top-nav-collapse,
+.page-footer {
+  background-color: var(--theme-1) !important;
+}
+
+.view {
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+@media (max-width: 740px) {
+  html,
+  body {
+    height: 100vh;
+  }
+  header {
+    height: 0;
+  }
+
+  /* .navbar-brand img {
+      width: 16px;
+      height: auto;
+    } */
+
+  #intro-section {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: var(--theme-1) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none;
+  }
+}
