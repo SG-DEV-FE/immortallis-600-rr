@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -6,11 +6,12 @@ import {
   MDBNavbarToggler,
   MDBCollapse,
   MDBNavItem,
-  MDBNavLink,
   MDBIcon,
   MDBContainer,
-} from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
+} from 'mdbreact';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { BrowserRouter } from 'react-router-dom';
+import * as Constants from '../../constants';
 
 class Nav extends Component {
   constructor(props) {
@@ -18,24 +19,19 @@ class Nav extends Component {
     this.state = {
       collapse: false,
     };
-    this.onClick = this.onClick.bind(this);
+    this.onClick = this.onCollapse.bind(this);
   }
 
-  onClick() {
+  onCollapse() {
     this.setState({
       collapse: !this.state.collapse,
     });
   }
 
   render() {
-    const SGLinkedIn = "https://www.linkedin.com/in/sg-dev";
-    const SGTwitter = "https://twitter.com/Groghall";
-    const SGInstagram = "https://www.instagram.com/fallen_hunter_castiel/";
-    const SGPSN = "https://my.playstation.com/profile/groghall";
-
     return (
       <div id="intro">
-        <Router>
+        <BrowserRouter>
           <MDBNavbar transparent dark expand="lg" scrolling fixed="top">
             <MDBContainer>
               <MDBNavbarBrand href="/">
@@ -45,26 +41,38 @@ class Nav extends Component {
                   alt="Brandicon"
                 />
               </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={this.onClick} />
+              <MDBNavbarToggler onClick={this.onCollapse} />
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav left smooth-scroll>
                   <MDBNavItem active>
-                    <MDBNavLink to="/">Home</MDBNavLink>
+                    <AnchorLink className="nav-link" href="/">
+                      Home
+                    </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="about">about</MDBNavLink>
+                    <AnchorLink className="nav-link" href="#about">
+                      about
+                    </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="career">career</MDBNavLink>
+                    <AnchorLink className="nav-link" href="#career">
+                      career
+                    </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="testimonial">testimonial</MDBNavLink>
+                    <AnchorLink className="nav-link" href="#testimonial">
+                      testimonial
+                    </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="gallery">gallery</MDBNavLink>
+                    <AnchorLink className="nav-link" href="#gallery">
+                      gallery
+                    </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="contact">contact</MDBNavLink>
+                    <AnchorLink className="nav-link" href="#contact">
+                      contact
+                    </AnchorLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
@@ -92,7 +100,7 @@ class Nav extends Component {
               </MDBCollapse>
             </MDBContainer>
           </MDBNavbar>
-        </Router>
+        </BrowserRouter>
       </div>
     );
   }
