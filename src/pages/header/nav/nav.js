@@ -11,7 +11,12 @@ import {
 } from 'mdbreact';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { BrowserRouter } from 'react-router-dom';
-import * as Constants from '../../constants';
+import {
+  SGPSN,
+  SGInstagram,
+  SGLinkedIn,
+  SGTwitter,
+} from '../../../constants/index';
 
 class Nav extends Component {
   constructor(props) {
@@ -30,22 +35,24 @@ class Nav extends Component {
 
   render() {
     return (
-      <div id="intro">
+      <section id="home">
         <BrowserRouter>
           <MDBNavbar transparent dark expand="lg" scrolling fixed="top">
             <MDBContainer>
-              <MDBNavbarBrand href="/">
-                <img
-                  className="rounded-circle z-depth-0"
-                  src="https://res.cloudinary.com/stegault/image/upload/c_scale,h_30,w_30/v1561378466/brandicon_xzpby6.png"
-                  alt="Brandicon"
-                />
+              <MDBNavbarBrand>
+                <AnchorLink href="#home">
+                  <img
+                    className="rounded-circle z-depth-0"
+                    src="https://res.cloudinary.com/stegault/image/upload/c_scale,h_30,w_30/v1561378466/brandicon_xzpby6.png"
+                    alt="Brandicon"
+                  />
+                </AnchorLink>
               </MDBNavbarBrand>
               <MDBNavbarToggler onClick={this.onCollapse} />
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav left smooth-scroll>
                   <MDBNavItem active>
-                    <AnchorLink className="nav-link" href="/">
+                    <AnchorLink className="nav-link" href="#home">
                       Home
                     </AnchorLink>
                   </MDBNavItem>
@@ -101,7 +108,7 @@ class Nav extends Component {
             </MDBContainer>
           </MDBNavbar>
         </BrowserRouter>
-      </div>
+      </section>
     );
   }
 }

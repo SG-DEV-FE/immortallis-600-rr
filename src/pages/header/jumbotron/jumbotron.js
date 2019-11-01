@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   MDBContainer,
   MDBRow,
@@ -6,7 +6,10 @@ import {
   MDBView,
   MDBMask,
   MDBAnimation,
-} from "mdbreact";
+  MDBIcon,
+  MDBBtn,
+} from 'mdbreact';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Jumbotron = () => {
   return (
@@ -23,6 +26,16 @@ const Jumbotron = () => {
                 <h4 class="subtext-header mt-2 mb-4">
                   Software Developer / Graphic Design
                 </h4>
+
+                <div className="mt-4 mx-auto text-center">
+                  <AnchorLink href="#about">
+                    <MDBIcon
+                      icon="chevron-circle-down"
+                      className="white-text"
+                      size="2x"
+                    />
+                  </AnchorLink>
+                </div>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
