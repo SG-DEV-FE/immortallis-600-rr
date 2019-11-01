@@ -28,7 +28,7 @@ const Jumbotron = () => {
                 </h4>
 
                 <div className="mt-4 mx-auto text-center">
-                  <AnchorLink href="#about">
+                  <AnchorLink href="#about" offset="40">
                     <MDBIcon
                       icon="chevron-circle-down"
                       className="white-text"

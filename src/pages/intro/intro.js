@@ -42,6 +42,7 @@ const Intro = () => {
         <MDBRow className="mb-3">
           <MDBCol lg="5" className="hidden-sm-down text-center text-lg-left">
             <img
+              className="img-fluid"
               src={DA}
               alt="Dark Angels Space Marine Veteran copyright Games-Workshop plc"
             />
@@ -63,10 +64,10 @@ const Intro = () => {
                 <p>
                   Seriously its my main hobby apart from Gaming{' '}
                   <MDBIcon fab icon="playstation" /> and{' '}
-                  <MDBIcon fab icon="desktop" /> which eats a lot of the time.
-                  spare time that is and spending time with my family (3
-                  boys(18,13,8 at time of creation, the site not them) and a
-                  lovely wife)
+                  <MDBIcon icon="desktop" /> which eats a lot of the time. spare
+                  time that is what little off it I get. Also spending time with
+                  my family (3 boys (18, 13, 8 at time of creation, the site not
+                  them) and a lovely wife).
                 </p>
               </MDBCol>
             </MDBRow>
