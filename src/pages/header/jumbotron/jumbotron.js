@@ -7,7 +7,6 @@ import {
   MDBMask,
   MDBAnimation,
   MDBIcon,
-  MDBBtn,
 } from 'mdbreact';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -28,7 +27,7 @@ const Jumbotron = () => {
                 </h4>
 
                 <div className="mt-4 mx-auto text-center">
-                  <AnchorLink href="#about" offset="40">
+                  <AnchorLink href="#personality" offset="40">
                     <MDBIcon
                       icon="chevron-circle-down"
                       className="white-text"

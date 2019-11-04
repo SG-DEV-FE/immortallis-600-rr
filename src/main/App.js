@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../pages/header/header';
-import Intro from '../pages/intro/intro';
+import About from '../pages/about/About';
 
 import './App.css';
 
@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <Intro />
+      <main>
+        <About />
+      </main>
       {/* 
     <Testimonial />
     <Career />

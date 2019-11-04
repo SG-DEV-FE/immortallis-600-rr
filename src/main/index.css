@@ -5,6 +5,7 @@
   --bg-img: url(https://res.cloudinary.com/stegault/image/upload/v1559727685/85004.jpg);
   --bg-white: #ffffff;
   --bg-grey: rgb(228, 228, 228);
+  --bg-transparent: transparent;
 
   --border-black: #000000;
   --border-white: #e7e7e7;
@@ -24,6 +25,10 @@
   --ps-yellow: #ff9a00;
   --funky-gradient: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
 }
+
+/* header {
+  height: 100vh;
+}        */
 
 html {
   font-size: 16px;
@@ -61,6 +66,14 @@ header {
   background-color: var(--bg-grey);
 }
 
+.btn--no-style,
+.nav-link .btn--no-style {
+  box-shadow: none !important;
+  background-color: var(--bg-transparent) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .btn-theme-1 {
   background-color: var(--theme-1) !important;
   color: #fff;
@@ -69,6 +82,11 @@ header {
 .card-body .btn-unique {
   background-color: var(--theme-2) !important;
   color: #fff;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.55em;
+  vertical-align: 0.1em;
 }
 
 .fa:hover {
@@ -101,7 +119,12 @@ header {
 }
 
 .fa-chevron-circle-down:hover {
-  color: var(--twitter) !important;
+  /* color: var(--twitter) !important; */
+  background: var(--funky-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--funky-gradient);
+  border-radius: 50%;
 }
 
 .gradient {
@@ -157,7 +180,8 @@ header {
 
 .top-nav-collapse,
 .page-footer {
-  background-color: var(--theme-1) !important;
+  /* background-color: var(--theme-1) !important; */
+  background-image: var(--funky-gradient);
 }
 
 .view {
@@ -173,23 +197,31 @@ header {
   body {
     height: 100vh;
   }
-  header {
-    height: 0;
+
+  .navbar-collapse .social__icons--row {
+    flex-direction: row;
   }
+  /* header {
+    height: 0;
+  } */
 
   /* .navbar-brand img {
       width: 16px;
       height: auto;
     } */
 
-  #intro-section {
+  /* #intro-section {
     height: 100vh;
-  }
+  } */
 }
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
     background: var(--theme-1) !important;
+  }
+
+  .navbar-collapse .social__icons--row {
+    flex-direction: row;
   }
 }
 

@@ -8,6 +8,9 @@ import {
   MDBNavItem,
   MDBIcon,
   MDBContainer,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
 } from 'mdbreact';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { BrowserRouter } from 'react-router-dom';
@@ -19,19 +22,13 @@ import {
 } from '../../../constants/index';
 
 class Nav extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      collapse: false,
-    };
-    this.onClick = this.onCollapse.bind(this);
-  }
+  state = {
+    isOpen: false,
+  };
 
-  onCollapse() {
-    this.setState({
-      collapse: !this.state.collapse,
-    });
-  }
+  toggleCollapse = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
 
   render() {
     return (
@@ -48,18 +45,31 @@ class Nav extends Component {
                   />
                 </AnchorLink>
               </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={this.onCollapse} />
-              <MDBCollapse isOpen={this.state.collapse} navbar>
+              <MDBNavbarToggler onClick={this.toggleCollapse} />
+              <MDBCollapse isOpen={this.state.isOpen} navbar>
                 <MDBNavbarNav left smooth-scroll>
                   <MDBNavItem active>
                     <AnchorLink className="nav-link" href="#home">
-                      Home
+                      home
                     </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <AnchorLink className="nav-link" href="#about">
-                      about
-                    </AnchorLink>
+                    <MDBDropdown>
+                      <MDBDropdownToggle nav caret>
+                        <div className="d-inline">about</div>
+                      </MDBDropdownToggle>
+                      <MDBDropdownMenu>
+                        <AnchorLink
+                          offset="40"
+                          className="dropdown-item"
+                          href="#personality">
+                          personality
+                        </AnchorLink>
+                        <AnchorLink className="dropdown-item" href="#education">
+                          education
+                        </AnchorLink>
+                      </MDBDropdownMenu>
+                    </MDBDropdown>
                   </MDBNavItem>
                   <MDBNavItem>
                     <AnchorLink className="nav-link" href="#career">
@@ -82,7 +92,7 @@ class Nav extends Component {
                     </AnchorLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
-                <MDBNavbarNav right>
+                <MDBNavbarNav right className="social__icons--row">
                   <MDBNavItem>
                     <a className="nav-link" href={SGPSN}>
                       <MDBIcon fab icon="playstation" />
