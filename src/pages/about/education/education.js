@@ -28,7 +28,7 @@ const Education = () => {
               <MDBCol size="12" md="12" xl="12">
                 {education.map((education, i) => {
                   return (
-                    <MDBMedia key={i} list className="mt-3">
+                    <MDBMedia key={i} list className="mt-3 pl-0">
                       <MDBMedia tag="li">
                         <MDBMedia left middle href="#">
                           {education.institutionLogo !== null ? (
@@ -66,6 +66,7 @@ const Education = () => {
           </MDBCol>
           <MDBCol lg="5">
             <MDBCol>
+              <h4 className="my-3 w-responsive">Certifications</h4>
               <a href={MTASF}>
                 <img className="mx-auto d-block pop" src={MTABadge} />
               </a>
