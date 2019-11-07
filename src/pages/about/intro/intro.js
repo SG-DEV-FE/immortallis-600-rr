@@ -36,6 +36,20 @@ const Intro = () => {
               Okay, now what... um... lets. er... oh I know. scroll down a bit
               more.
             </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </MDBCol>
         </MDBRow>
 

@@ -1,6 +1,14 @@
 {
   "Education": [
     {
+      "institutionLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,w_100,f_auto,q_auto:eco/v1573139370/company-logo/firebrand-logo.png",
+      "institutionURL": "",
+      "institutionName": "Firebrand",
+      "courseStudied": "Micosoft Technology Associate Software Fundamentals",
+      "gradeAchieved": "Pass",
+      "yearCompleted": "2018"
+    },
+    {
       "institutionLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,w_100,f_auto,q_auto:eco/v1573047733/company-logo/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.png",
       "institutionURL": "",
       "institutionName": "Liverpool John Moores University",
@@ -25,7 +33,7 @@
       "yearCompleted": "2000"
     },
     {
-      "institutionLogo": "",
+      "institutionLogo": null,
       "institutionURL": "",
       "institutionName": "Park High School Birkenhead",
       "courseStudied": "GCSE's",
@@ -135,9 +143,9 @@
     },
     {
       "employerName": "CS Financial Solutions (now Broadstone Financial Solutions)",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/v1573132957/f_auto,q_auto:eco/company-logo/broadstone-logo.png",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573132957/company-logo/broadstone-logo.png",
       "companyURL": "https://www.broadstone.co.uk/csfs/",
-      "snapShot": "",
+      "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573136052/company-site/broadtstone-site.png",
       "roles": [
         {
           "title": "Systems Support Developer",

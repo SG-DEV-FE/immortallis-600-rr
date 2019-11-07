@@ -1,5 +1,6 @@
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBMedia } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBMedia, MDBIcon } from 'mdbreact';
+import { MTASF, MTABadge } from '../../../constants/index';
 import data from '../../../../src/data';
 
 const Education = () => {
@@ -30,11 +31,17 @@ const Education = () => {
                     <MDBMedia key={i} list className="mt-3">
                       <MDBMedia tag="li">
                         <MDBMedia left middle href="#">
-                          <MDBMedia
-                            object
-                            src={education.institutionLogo}
-                            alt={education.institutionName}
-                          />
+                          {education.institutionLogo !== null ? (
+                            <MDBMedia object src={education.institutionLogo} />
+                          ) : (
+                            <MDBMedia>
+                              <MDBIcon
+                                icon="school"
+                                size="4x"
+                                className="funky-font z-depth-1 px-2 py-3"
+                              />
+                            </MDBMedia>
+                          )}
                         </MDBMedia>
                         <MDBMedia body>
                           <MDBMedia heading>
@@ -57,7 +64,13 @@ const Education = () => {
               </MDBCol>
             </MDBRow>
           </MDBCol>
-          <MDBCol lg="5"></MDBCol>
+          <MDBCol lg="5">
+            <MDBCol>
+              <a href={MTASF}>
+                <img className="mx-auto d-block pop" src={MTABadge} />
+              </a>
+            </MDBCol>
+          </MDBCol>
         </MDBRow>
       </MDBContainer>
     </section>

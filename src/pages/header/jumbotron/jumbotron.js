@@ -30,7 +30,7 @@ const Jumbotron = () => {
                   <AnchorLink href="#personality" offset="40">
                     <MDBIcon
                       icon="chevron-circle-down"
-                      className="white-text"
+                      className="white-text bounce"
                       size="2x"
                     />
                   </AnchorLink>
