@@ -1,0 +1,183 @@
+{
+  "Education": [
+    {
+      "institutionLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,w_100,f_auto,q_auto:eco/v1573047733/company-logo/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.png",
+      "institutionURL": "",
+      "institutionName": "Liverpool John Moores University",
+      "courseStudied": "BSc Computer Technology",
+      "gradeAchieved": "Advanced Diploma of Higher Education",
+      "yearCompleted": "2013"
+    },
+    {
+      "institutionLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,w_100,f_auto,q_auto:eco/v1573047733/company-logo/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.png",
+      "institutionURL": "",
+      "institutionName": "Liverpool John Moores University",
+      "courseStudied": "Foundation Degree Engineering & Technology",
+      "gradeAchieved": "Pass (pass/fail grading)",
+      "yearCompleted": "2010"
+    },
+    {
+      "institutionLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,w_100,f_auto,q_auto:eco/v1573123345/company-logo/index_kqrbin.png",
+      "institutionURL": "",
+      "institutionName": "Wirral Metropolitan College",
+      "courseStudied": "BTEC GNVQ Intermediate Engineering & Technology",
+      "gradeAchieved": "Pass",
+      "yearCompleted": "2000"
+    },
+    {
+      "institutionLogo": "",
+      "institutionURL": "",
+      "institutionName": "Park High School Birkenhead",
+      "courseStudied": "GCSE's",
+      "gradeAchieved": "1 x B, 5 x C, 2 x D, 1 x dual award DD",
+      "yearCompleted": "1998"
+    }
+  ],
+  "Employment": [
+    {
+      "employerName": "Trelleborg Marine and Infrastructure",
+      "companyLogo": "",
+      "companyURL": "",
+      "roles": [
+        {
+          "title": "",
+          "description": "",
+          "startDate": "",
+          "endDate": "",
+          "location": ""
+        }
+      ]
+    },
+    {
+      "employerName": "D2i Systems Ltd",
+      "companyLogo": "",
+      "companyURL": "",
+      "roles": [
+        {
+          "title": "",
+          "description": "",
+          "startDate": "",
+          "endDate": "",
+          "location": ""
+        }
+      ]
+    },
+    {
+      "employerName": "Destination2.co.uk",
+      "companyLogo": "",
+      "companyURL": "",
+      "roles": [
+        {
+          "title": "",
+          "description": "",
+          "startDate": "",
+          "endDate": "",
+          "location": ""
+        }
+      ]
+    },
+    {
+      "employerName": "Holidaygems.co.uk",
+      "companyLogo": "",
+      "companyURL": "",
+      "roles": [
+        {
+          "title": "",
+          "description": "",
+          "startDate": "",
+          "endDate": "",
+          "location": ""
+        }
+      ]
+    },
+    {
+      "employerName": "Sofology",
+      "companyLogo": "",
+      "companyURL": "",
+      "roles": [
+        {
+          "title": "",
+          "description": "",
+          "startDate": "",
+          "endDate": "",
+          "location": ""
+        }
+      ]
+    },
+    {
+      "employerName": "Fleetsolve",
+      "companyLogo": "",
+      "companyURL": "",
+      "roles": [
+        {
+          "title": "",
+          "description": "",
+          "startDate": "",
+          "endDate": "",
+          "location": ""
+        }
+      ]
+    },
+    {
+      "employerName": "Nviron",
+      "companyLogo": "",
+      "companyURL": "",
+      "snapShot": "",
+      "roles": [
+        {
+          "title": "",
+          "description": "",
+          "startDate": "",
+          "endDate": "",
+          "location": ""
+        }
+      ]
+    },
+    {
+      "employerName": "CS Financial Solutions (now Broadstone Financial Solutions)",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/v1573132957/f_auto,q_auto:eco/company-logo/broadstone-logo.png",
+      "companyURL": "https://www.broadstone.co.uk/csfs/",
+      "snapShot": "",
+      "roles": [
+        {
+          "title": "Systems Support Developer",
+          "description": "1st line client support. Build of demonstration website (offline) mirror of live middleware (HTML, CSS, Bootstrap, JavaScript) available to view on GitHub (title - AEWS_Click_Through_Demo). Build of quick start website for clients to navigate middleware (HTML, CSS, Bootstrap, JavaScript) available to view on GitHub (title - csfs_quick_start_AE). Build of custom vba macros for data analysis and manipulation of payroll data from clients. Build of bespoke benefits sites for clients using Staffcare cms (HTML, CSS, xml, JavaScript). Build of vba macro for analysis of pension data for Pension providers(Aegon, Aviva, Scottish Widows). Training video creation and editing (adobe PhotoShop, adobe Premiere and free screen capture software). Providing clients with data analysis of payroll data for auto enrolment via their payroll data. In house IT support for Microsoft Office, Windows 7, Servers and PC’s. Training clients in use of middleware, on site or via TeamViewer, rom non IT knowledge to medium enterprise. Document creation (adobe PDF, Microsoft Word, adobe PhotoShop).",
+          "startDate": "2014-01-06",
+          "endDate": "2015-06-05",
+          "location": "Liverpool, UK"
+        }
+      ]
+    },
+    {
+      "employerName": "Sony Computer Entertainment Europe",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573126607/company-logo/ps-eu_qezzzs.jpg",
+      "companyURL": "https://www.playstationjobs.co.uk/working-at-SCEE.html",
+      "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573131793/company-site/ps-eu-site.png",
+      "roles": [
+        {
+          "title": "Functionality Tester / Localization Testing",
+          "description": "Functional testing of video games from alpha to release of software using various testing methodologies (regression, level, code, test cases, test creation, blackbox, whitebox) as well as Online testing of servers and games. Credited on Tearaway (Bafta Winning Game). Not credited but worked on Killzone SF PS4, Beyond Two Souls PS4, Minecraft PS4/PS3/Vita, Starhawk PS3, Sorcery PSMove PS3, Walking with Dinosaurs WonderBook PS3, Book of Spells WonderBook PS3, Hustle Kings PS3/Vita, DriveClub PS4. Localization testing of Knack PS4 and its companion app ensuring that it was grammatically correct.",
+          "startDate": "2013-04-08",
+          "endDate": "2013-12-12",
+          "location": "Liverpool, UK"
+        }
+      ]
+    },
+    {
+      "employerName": "Sony Computer Entertainment Europe",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573126607/company-logo/ps-eu_qezzzs.jpg",
+      "companyURL": "https://www.playstationjobs.co.uk/working-at-SCEE.html",
+      "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573131793/company-site/ps-eu-site.png",
+      "roles": [
+        {
+          "title": "Functionality Tester",
+          "department": "First Party Quality Assurance",
+          "description": "Functional testing of video games from alpha to release of software using various testing methodologies (regression, level, code, test cases, test creation, blackbox, whitebox) as well as Online testing of servers and games. Not credited but worked on Killzone HD, Little Big Planet Vita, Hustle Kings, Travel Bug Vita.",
+          "startDate": "2012-06-11",
+          "endDate": "2012-09-17",
+          "location": "Liverpool, UK"
+        }
+      ]
+    }
+  ]
+}

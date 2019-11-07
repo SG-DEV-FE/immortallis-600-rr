@@ -2,7 +2,7 @@
 
 /* Required for full background image */
 :root {
-  --bg-img: url(https://res.cloudinary.com/stegault/image/upload/v1559727685/85004.jpg);
+  --bg-img: url(https://res.cloudinary.com/stegault/image/upload/q_auto:eco/v1559727685/85004.jpg);
   --bg-white: #ffffff;
   --bg-grey: rgb(228, 228, 228);
   --bg-transparent: transparent;

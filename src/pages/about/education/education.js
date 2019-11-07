@@ -1,7 +1,10 @@
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBMedia } from 'mdbreact';
+import data from '../../../../src/data';
 
 const Education = () => {
+  const education = data.Education;
+
   return (
     <section id="education" className="py-5">
       <MDBContainer>
@@ -21,9 +24,40 @@ const Education = () => {
           </MDBCol>
           <MDBCol lg="7">
             <MDBRow>
-              <MDBCol size="12" md="12" xl="10"></MDBCol>
+              <MDBCol size="12" md="12" xl="12">
+                {education.map((education, i) => {
+                  return (
+                    <MDBMedia key={i} list className="mt-3">
+                      <MDBMedia tag="li">
+                        <MDBMedia left middle href="#">
+                          <MDBMedia
+                            object
+                            src={education.institutionLogo}
+                            alt={education.institutionName}
+                          />
+                        </MDBMedia>
+                        <MDBMedia body>
+                          <MDBMedia heading>
+                            {education.institutionName}
+                          </MDBMedia>
+                          <p className="mb-1">
+                            Course of study - {education.courseStudied}
+                          </p>
+                          <p className="mb-1">
+                            Grade Achieved - {education.gradeAchieved}
+                          </p>
+                          <p className="mb-1">
+                            Year of completion - {education.yearCompleted}
+                          </p>
+                        </MDBMedia>
+                      </MDBMedia>
+                    </MDBMedia>
+                  );
+                })}
+              </MDBCol>
             </MDBRow>
           </MDBCol>
+          <MDBCol lg="5"></MDBCol>
         </MDBRow>
       </MDBContainer>
     </section>
