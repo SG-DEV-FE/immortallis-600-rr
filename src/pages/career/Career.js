@@ -10,7 +10,6 @@ import {
   MDBCardBody,
   MDBCardImage,
   MDBCardTitle,
-  MDBCardText,
   MDBCol,
   MDBRow,
   MDBView,
@@ -32,39 +31,52 @@ const Career = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <MDBCarousel
-        activeItem={1}
-        length={10}
-        showControls={true}
-        showIndicators={true}
-        className="z-depth-1 w-100">
-        <MDBCarouselInner>
-          {career.map((career, i) => {
-            return (
-              <MDBCarouselItem key={i} itemId={career.id}>
-                <MDBView>
-                  <img
-                    src={career.snapShot}
-                    className="d-block w-100"
-                    alt={career.employerName}
-                  />
-                  <MDBMask overlay="black-light" />
-                </MDBView>
-                <MDBCarouselCaption>
-                  <div
-                    className="card"
-                    style={{ width: '12rem', height: '200px' }}>
+      <MDBContainer>
+        <MDBCarousel
+          activeItem={1}
+          length={10}
+          showControls={true}
+          showIndicators={true}
+          className="z-depth-1 w-100"
+          interval="5000">
+          <MDBCarouselInner>
+            {career.map((career, i) => {
+              return (
+                <MDBCarouselItem key={i} itemId={career.id}>
+                  <MDBView>
                     <img
-                      src={career.companyLogo}
-                      style={{ width: '100%', height: 'auto' }}
+                      src={career.snapShot}
+                      className="d-block w-100"
+                      alt={career.employerName}
                     />
-                  </div>
-                </MDBCarouselCaption>
-              </MDBCarouselItem>
-            );
-          })}
-        </MDBCarouselInner>
-      </MDBCarousel>
+                    <MDBMask overlay="black-light" />
+                  </MDBView>
+                  <MDBCarouselCaption>
+                    <MDBCard
+                      className="mx-auto"
+                      style={{ height: '200px', width: 'auto' }}>
+                      <MDBCardImage
+                        src={career.companyLogo}
+                        style={{ width: 'auto', height: '50px' }}
+                        className="mx-auto my-2"
+                      />
+                      <MDBCardBody>
+                        {career.roles.map(roleDetail => {
+                          return (
+                            <MDBCardTitle>{roleDetail.title}</MDBCardTitle>
+                          );
+                        })}
+
+                        <MDBBtn></MDBBtn>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </MDBCarouselCaption>
+                </MDBCarouselItem>
+              );
+            })}
+          </MDBCarouselInner>
+        </MDBCarousel>
+      </MDBContainer>
     </section>
   );
 };

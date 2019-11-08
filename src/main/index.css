@@ -7,6 +7,7 @@
   --bg-grey: #e4e4e4;
   --bg-transparent: transparent;
 
+  --c-font: #212529;
   --border-black: #000000;
   --border-white: #e7e7e7;
   --theme-1: #1c8554;
@@ -119,6 +120,10 @@ header {
 .card-body .btn-unique {
   background-color: var(--theme-2) !important;
   color: #fff;
+}
+
+.carousel-caption {
+  color: var(--c-font) !important;
 }
 
 .dropdown-toggle::after {
@@ -236,7 +241,7 @@ header {
   background-image: var(--funky-gradient);
 }
 
-.view {
+.view--bg {
   background-image: var(--bg-img);
   background-size: cover;
   background-repeat: no-repeat;

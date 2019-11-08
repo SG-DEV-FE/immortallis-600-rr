@@ -13,7 +13,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Jumbotron = () => {
   return (
     <MDBAnimation type="fadeIn" delay=".3s">
-      <MDBView>
+      <MDBView className="view--bg">
         <MDBMask className="d-flex justify-content-center align-items-center rgba-gradient">
           <MDBContainer className="px-md-3 px-sm-0">
             <MDBRow>
