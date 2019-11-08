@@ -67,7 +67,9 @@ const Career = () => {
                           );
                         })}
 
-                        <MDBBtn></MDBBtn>
+                        <MDBBtn>
+                          <MDBIcon icon="clone" /> Open Me!
+                        </MDBBtn>
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCarouselCaption>
