@@ -43,6 +43,7 @@
   ],
   "Employment": [
     {
+      "id": 1,
       "employerName": "Trelleborg Marine and Infrastructure",
       "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573213701/company-logo/trelleborg-logo.png",
       "companyURL": "https://www.trelleborg.com/en/marine-and-infrastructure",
@@ -58,6 +59,7 @@
       ]
     },
     {
+      "id": 2,
       "employerName": "D2i Systems Ltd",
       "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573213188/company-logo/d2i-alt-logopng.jpg",
       "companyURL": "https://www.d2isystems.com",
@@ -73,6 +75,7 @@
       ]
     },
     {
+      "id": 3,
       "employerName": "Destination2.co.uk",
       "companyLogo": "",
       "companyURL": "https://www.destination2.co.uk",
@@ -88,6 +91,7 @@
       ]
     },
     {
+      "id": 4,
       "employerName": "Holidaygems.co.uk",
       "companyLogo": "",
       "companyURL": "https://www.holidaygems.co.uk",
@@ -103,10 +107,11 @@
       ]
     },
     {
+      "id": 5,
       "employerName": "Sofology",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/f_auto,q_auto:eco/upload/v1573212312/company-logo/sofology-logo.png",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco//v1573212312/company-logo/sofology-logo.png",
       "companyURL": "https://www.sofology.com",
-      "snapShot": "https://res.cloudinary.com/stegault/image/f_auto,q_auto:eco/upload/v1573212293/company-site/sofology-site.png",
+      "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573212293/company-site/sofology-site.png",
       "roles": [
         {
           "title": "Junior Front End Developer",
@@ -118,6 +123,7 @@
       ]
     },
     {
+      "id": 6,
       "employerName": "Fleetsolve Ltd via Search Consultancy",
       "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573208278/company-logo/fleetsolve-logo.png",
       "companyURL": "https://www.fleetsolve.com/",
@@ -133,6 +139,7 @@
       ]
     },
     {
+      "id": 7,
       "employerName": "Nviron",
       "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573204830/company-logo/nviron-logo.png",
       "companyURL": "https://www.nviron.co.uk/",
@@ -148,6 +155,7 @@
       ]
     },
     {
+      "id": 8,
       "employerName": "CS Financial Solutions (now Broadstone Financial Solutions)",
       "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573132957/company-logo/broadstone-logo.png",
       "companyURL": "https://www.broadstone.co.uk/csfs/",
@@ -163,6 +171,7 @@
       ]
     },
     {
+      "id": 9,
       "employerName": "Sony Computer Entertainment Europe",
       "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573126607/company-logo/ps-eu_qezzzs.jpg",
       "companyURL": "https://www.playstationjobs.co.uk/working-at-SCEE.html",
@@ -178,6 +187,7 @@
       ]
     },
     {
+      "id": 10,
       "employerName": "Sony Computer Entertainment Europe",
       "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573126607/company-logo/ps-eu_qezzzs.jpg",
       "companyURL": "https://www.playstationjobs.co.uk/working-at-SCEE.html",

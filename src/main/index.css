@@ -4,7 +4,7 @@
 :root {
   --bg-img: url(https://res.cloudinary.com/stegault/image/upload/q_auto:eco/v1559727685/85004.jpg);
   --bg-white: #ffffff;
-  --bg-grey: rgb(228, 228, 228);
+  --bg-grey: #e4e4e4;
   --bg-transparent: transparent;
 
   --border-black: #000000;
@@ -99,6 +99,21 @@ header {
 .btn-theme-1 {
   background-color: var(--theme-1) !important;
   color: #fff;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  font-weight: 400;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-body .btn-unique {

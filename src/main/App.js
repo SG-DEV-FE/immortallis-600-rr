@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../pages/header/header';
 import About from '../pages/about/About';
+import Career from '../pages/career/Career';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <About />
+        <Career />
       </main>
       {/* 
     <Testimonial />

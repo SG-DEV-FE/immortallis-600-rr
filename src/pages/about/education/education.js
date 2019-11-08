@@ -7,7 +7,7 @@ const Education = () => {
   const education = data.Education;
 
   return (
-    <section id="education" className="py-5">
+    <section id="education" className="py-5 bg-g">
       <MDBContainer>
         <MDBRow className="mb-3">
           <MDBCol sm="12">
@@ -32,9 +32,14 @@ const Education = () => {
                       <MDBMedia tag="li">
                         <MDBMedia left middle href="#">
                           {education.institutionLogo !== null ? (
-                            <MDBMedia object src={education.institutionLogo} />
+                            <MDBMedia
+                              object
+                              src={education.institutionLogo}
+                              alt={education.institutionName}
+                              className="bg-w"
+                            />
                           ) : (
-                            <MDBMedia>
+                            <MDBMedia className="bg-w">
                               <MDBIcon
                                 icon="school"
                                 size="4x"
@@ -68,7 +73,7 @@ const Education = () => {
             <MDBCol>
               <h4 className="my-3 w-responsive">Certifications</h4>
               <a href={MTASF}>
-                <img className="mx-auto d-block pop" src={MTABadge} />
+                <img className="mx-auto d-block pop" alt="Microsoft Technology Associate Software Fundamentals Badge - 2018" src={MTABadge} />
               </a>
             </MDBCol>
           </MDBCol>
