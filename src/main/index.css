@@ -122,6 +122,16 @@ header {
   color: #fff;
 }
 
+.card--carousel {
+  height: 200px;
+  width: auto;
+}
+
+.card--carousel__img {
+  width: auto;
+  height: 50px;
+}
+
 .carousel-caption {
   color: var(--c-font) !important;
 }
