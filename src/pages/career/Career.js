@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import {
   MDBContainer,
-  MDBCarousel,
   MDBBtn,
-  MDBCarouselCaption,
-  MDBCarouselInner,
-  MDBCarouselItem,
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
   MDBCardTitle,
   MDBCol,
-  MDBModal,
-  MDBModalBody,
   MDBRow,
   MDBView,
   MDBMask,
@@ -20,6 +13,7 @@ import {
   MDBCollapse,
 } from 'mdbreact';
 import moment from 'moment';
+import Slider from 'react-slick';
 import data from '../../../src/data';
 
 class Career extends Component {
@@ -33,6 +27,16 @@ class Career extends Component {
 
   render() {
     const career = data.Employment;
+    const settings = {
+      autoplay: true,
+      centerMode: true,
+      lazyLoad: 'ondemand',
+      infinite: true,
+      speed: 3000,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      variableWidth: true,
+    };
     return (
       <section id="career" className="py-5">
         <MDBContainer>
@@ -96,8 +100,11 @@ class Career extends Component {
                                       )}
                                     </p>
                                   </MDBCollapse>
-                                  <MDBBtn>
-                                    <MDBIcon icon="clone" /> Open Me!
+                                  <MDBBtn
+                                    href={career.companyURL}
+                                    target="_blank">
+                                    <MDBIcon icon="clone" /> View{' '}
+                                    {career.employerName}
                                   </MDBBtn>
                                 </>
                               );
@@ -150,8 +157,11 @@ class Career extends Component {
                                     )}
                                   </p>
                                 </MDBCollapse>
-                                <MDBBtn>
-                                  <MDBIcon icon="clone" /> Open Me!
+                                <MDBBtn
+                                  href={career.companyURL}
+                                  target="_blank">
+                                  <MDBIcon icon="clone" /> View{' '}
+                                  {career.employerName}
                                 </MDBBtn>
                               </>
                             );
@@ -164,33 +174,33 @@ class Career extends Component {
               );
             })}
           </MDBRow>
+          <MDBRow className="slider--height my-4">
+            <MDBCol md="12" className="hidden-sm-down">
+              <Slider {...settings}>
+                {career.map((career, i) => {
+                  return (
+                    <>
+                      {career.id !== 10 ? (
+                        <>
+                          <div key={i} itemId={career.id} className="px-2">
+                            <img
+                              src={career.companyLogo}
+                              alt={career.employerName}
+                            />
+                            <MDBMask overlay="black-light" />
+                          </div>
+                        </>
+                      ) : (
+                        <></>
+                      )}
+                    </>
+                  );
+                })}
+              </Slider>
+            </MDBCol>
+          </MDBRow>
         </MDBContainer>
       </section>
-      /* 
-      <MDBCarousel
-        activeItem={1}
-        length={10}
-        showControls={false}
-        showIndicators={false}
-        className="z-depth-1 w-100"
-        interval="5000">
-        <MDBCarouselInner>
-          {career.map((career, i) => {
-            return (
-              <MDBCarouselItem className="col-md-3" key={i} itemId={career.id}>
-                <MDBView>
-                  <img
-                    src={career.snapShot}
-                    className="d-block w-100"
-                    alt={career.employerName}
-                  />
-                  <MDBMask overlay="black-light" />
-                </MDBView>
-              </MDBCarouselItem>
-            );
-          })}
-        </MDBCarouselInner>
-      </MDBCarousel> */
     );
   }
 }

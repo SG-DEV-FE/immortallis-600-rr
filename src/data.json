@@ -45,7 +45,7 @@
     {
       "id": 1,
       "employerName": "Trelleborg Marine and Infrastructure",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573213701/company-logo/trelleborg-logo.png",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco,e_make_transparent:25/v1573213701/company-logo/trelleborg-logo.png",
       "companyURL": "https://www.trelleborg.com/en/marine-and-infrastructure",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573213740/company-site/trelleborg-site.png",
       "roles": [
@@ -61,7 +61,7 @@
     {
       "id": 2,
       "employerName": "D2i Systems Ltd",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573213188/company-logo/d2i-alt-logopng.jpg",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco,e_make_transparent:25/v1573213188/company-logo/d2i-alt-logopng.jpg",
       "companyURL": "https://www.d2isystems.com",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1560094277/company-site/d2i-site_dp4vmg.png",
       "roles": [
@@ -77,7 +77,7 @@
     {
       "id": 3,
       "employerName": "Destination2.co.uk",
-      "companyLogo": "",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573551136/company-logo/D2-Logo.svg",
       "companyURL": "https://www.destination2.co.uk",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1560094278/company-site/d2-site_dyzutn.png",
       "roles": [
@@ -93,7 +93,7 @@
     {
       "id": 4,
       "employerName": "Holidaygems.co.uk",
-      "companyLogo": "",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco,e_replace_color:FFDB00:50:ffffff/v1573549665/company-logo/HolidayGems.svg",
       "companyURL": "https://www.holidaygems.co.uk",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1560094277/company-site/gems-site_oelbgr.png",
       "roles": [
@@ -109,7 +109,7 @@
     {
       "id": 5,
       "employerName": "Sofology",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573212312/company-logo/sofology-logo.png",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco,e_make_transparent:25/v1573212312/company-logo/sofology-logo.png",
       "companyURL": "https://www.sofology.com",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573212293/company-site/sofology-site.png",
       "roles": [
@@ -124,8 +124,8 @@
     },
     {
       "id": 6,
-      "employerName": "Fleetsolve Ltd via Search Consultancy",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573208278/company-logo/fleetsolve-logo.png",
+      "employerName": "Fleetsolve Ltd",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573208278/company-logo/fleetsolve-logo.png",
       "companyURL": "https://www.fleetsolve.com/",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573208357/company-site/fleetsolve-site.png",
       "roles": [
@@ -141,7 +141,7 @@
     {
       "id": 7,
       "employerName": "Nviron",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573204830/company-logo/nviron-logo.png",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573204830/company-logo/nviron-logo.png",
       "companyURL": "https://www.nviron.co.uk/",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573204863/company-site/nviron-site.png",
       "roles": [
@@ -156,14 +156,14 @@
     },
     {
       "id": 8,
-      "employerName": "CS Financial Solutions (now Broadstone Financial Solutions)",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573132957/company-logo/broadstone-logo.png",
+      "employerName": "Broadstone Financial Solutions",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573132957/company-logo/broadstone-logo.png",
       "companyURL": "https://www.broadstone.co.uk/csfs/",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573136052/company-site/broadtstone-site.png",
       "roles": [
         {
           "title": "Systems Support Developer",
-          "description": "1st line client support. Build of demonstration website (offline) mirror of live middleware (HTML, CSS, Bootstrap, JavaScript) available to view on GitHub (title - AEWS_Click_Through_Demo). Build of quick start website for clients to navigate middleware (HTML, CSS, Bootstrap, JavaScript) available to view on GitHub (title - csfs_quick_start_AE). Build of custom vba macros for data analysis and manipulation of payroll data from clients. Build of bespoke benefits sites for clients using Staffcare cms (HTML, CSS, xml, JavaScript). Build of vba macro for analysis of pension data for Pension providers(Aegon, Aviva, Scottish Widows). Training video creation and editing (adobe PhotoShop, adobe Premiere and free screen capture software). Providing clients with data analysis of payroll data for auto enrolment via their payroll data. In house IT support for Microsoft Office, Windows 7, Servers and PC’s. Training clients in use of middleware, on site or via TeamViewer, rom non IT knowledge to medium enterprise. Document creation (adobe PDF, Microsoft Word, adobe PhotoShop).",
+          "description": "Formerly known as CF Financial Solutions. 1st line client support. Build of demonstration website (offline) mirror of live middleware (HTML, CSS, Bootstrap, JavaScript) available to view on GitHub (title - AEWS_Click_Through_Demo). Build of quick start website for clients to navigate middleware (HTML, CSS, Bootstrap, JavaScript) available to view on GitHub (title - csfs_quick_start_AE). Build of custom vba macros for data analysis and manipulation of payroll data from clients. Build of bespoke benefits sites for clients using Staffcare cms (HTML, CSS, xml, JavaScript). Build of vba macro for analysis of pension data for Pension providers(Aegon, Aviva, Scottish Widows). Training video creation and editing (adobe PhotoShop, adobe Premiere and free screen capture software). Providing clients with data analysis of payroll data for auto enrolment via their payroll data. In house IT support for Microsoft Office, Windows 7, Servers and PC’s. Training clients in use of middleware, on site or via TeamViewer, rom non IT knowledge to medium enterprise. Document creation (adobe PDF, Microsoft Word, adobe PhotoShop).",
           "startDate": "2014-01-06",
           "endDate": "2015-06-05",
           "location": "Liverpool, UK"
@@ -172,8 +172,8 @@
     },
     {
       "id": 9,
-      "employerName": "Sony Computer Entertainment Europe",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573126607/company-logo/ps-eu_qezzzs.jpg",
+      "employerName": "Sony Computer Entertainment",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573554940/company-logo/ps_2.png",
       "companyURL": "https://www.playstationjobs.co.uk/working-at-SCEE.html",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573131793/company-site/ps-eu-site.png",
       "roles": [
@@ -188,8 +188,8 @@
     },
     {
       "id": 10,
-      "employerName": "Sony Computer Entertainment Europe",
-      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573126607/company-logo/ps-eu_qezzzs.jpg",
+      "employerName": "Sony Computer Entertainment",
+      "companyLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573554940/company-logo/ps_2.png",
       "companyURL": "https://www.playstationjobs.co.uk/working-at-SCEE.html",
       "snapShot": "https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573131793/company-site/ps-eu-site.png",
       "roles": [

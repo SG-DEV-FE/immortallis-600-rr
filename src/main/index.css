@@ -4,7 +4,8 @@
 :root {
   --bg-img: url(https://res.cloudinary.com/stegault/image/upload/q_auto:eco/v1559727685/85004.jpg);
   --bg-white: #ffffff;
-  --bg-grey: #e4e4e4;
+  --bg-grey: #efefef;
+  --bg-grey-darken: #b9b9b9;
   --bg-transparent: transparent;
 
   --c-font: #212529;
@@ -59,12 +60,20 @@ header {
   cursor: pointer;
 }
 
-.bg-w {
-  background-color: var(--bg-white);
+.bg--funky {
+  background-image: var(--funky-gradient);
+}
+
+.bg-g--darken {
+  background-color: var(--bg-grey-darken);
 }
 
 .bg-g {
   background-color: var(--bg-grey);
+}
+
+.bg-w {
+  background-color: var(--bg-white);
 }
 
 .bounce {
@@ -243,6 +252,10 @@ header {
     rgba(35, 7, 77, 0.6)
   );
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.slider--height {
+  max-height: 250px;
 }
 
 .top-nav-collapse,
