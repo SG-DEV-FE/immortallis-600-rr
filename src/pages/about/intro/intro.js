@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
-import { SGLinkedIn, Gravatar, DA } from '../../../constants/index';
+import { SGLinkedIn, SGCloudinary, DA } from '../../../constants/index';
 
 const Intro = () => {
   return (
@@ -11,7 +11,7 @@ const Intro = () => {
             <div className="avatar mx-auto text-center mb-2">
               <a href={SGLinkedIn} target="_blank" rel="noopener noreferrer">
                 <img
-                  src={Gravatar}
+                  src={SGCloudinary}
                   alt="Stephen Gault - Software Developer / Graphic Design"
                   class="rounded-circle img-fluid z-depth-3"
                 />
