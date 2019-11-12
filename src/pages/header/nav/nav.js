@@ -68,6 +68,9 @@ class Nav extends Component {
                         <AnchorLink className="dropdown-item" href="#education">
                           education
                         </AnchorLink>
+                        <AnchorLink className="dropdown-item" href="#hobbies">
+                          downtime
+                        </AnchorLink>
                       </MDBDropdownMenu>
                     </MDBDropdown>
                   </MDBNavItem>
