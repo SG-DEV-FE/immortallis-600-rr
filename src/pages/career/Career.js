@@ -38,11 +38,11 @@ class Career extends Component {
       variableWidth: true,
     };
     return (
-      <section id="career" className="py-5">
+      <section id='career' className='py-5 bg-g'>
         <MDBContainer>
-          <MDBRow className="mb-3">
-            <MDBCol sm="12">
-              <h5 className="font-weight-bold my-3 w-responsive">
+          <MDBRow className='mb-3'>
+            <MDBCol sm='12'>
+              <h5 className='font-weight-bold my-3 w-responsive'>
                 Career history - crazy I know
               </h5>
             </MDBCol>
@@ -50,37 +50,37 @@ class Career extends Component {
         </MDBContainer>
 
         <MDBContainer>
-          <MDBRow className="text-center" center>
+          <MDBRow className='text-center' center>
             {career.map((career, i) => {
               return (
                 <>
                   {career.id !== 1 ? (
                     <>
-                      <MDBCol key={i} lg="4" md="12" className="mb-4">
-                        <MDBView className="overlay rounded z-depth-1">
+                      <MDBCol key={i} lg='4' md='12' className='mb-4'>
+                        <MDBView className='overlay rounded z-depth-1'>
                           <img
                             src={career.snapShot}
-                            className="d-block w-100"
+                            className='d-block w-100'
                             alt={career.employerName}
                           />
-                          <MDBMask overlay="black-light" />
+                          <MDBMask overlay='black-light' />
                         </MDBView>
-                        <MDBCard className="pb-0">
-                          <MDBCardTitle className="mt-3 mb-0">
+                        <MDBCard className='pb-0'>
+                          <MDBCardTitle className='mt-3 mb-0'>
                             {career.employerName}
                           </MDBCardTitle>
                           <MDBCardBody>
                             {career.roles.map(roleDetail => {
                               return (
                                 <>
-                                  <p className="mb-0">{roleDetail.title}</p>
+                                  <p className='mb-0'>{roleDetail.title}</p>
                                   <MDBBtn
                                     onClick={this.toggleCollapse(career.id)}>
                                     Role Information{' '}
-                                    <MDBIcon icon="caret-down" />
+                                    <MDBIcon icon='caret-down' />
                                   </MDBBtn>
                                   <MDBCollapse
-                                    className="collapse"
+                                    className='collapse'
                                     id={career.id}
                                     isOpen={this.state.collapseID}>
                                     <p>{roleDetail.description}</p>
@@ -102,8 +102,8 @@ class Career extends Component {
                                   </MDBCollapse>
                                   <MDBBtn
                                     href={career.companyURL}
-                                    target="_blank">
-                                    <MDBIcon icon="clone" /> View{' '}
+                                    target='_blank'>
+                                    <MDBIcon icon='clone' /> View{' '}
                                     {career.employerName}
                                   </MDBBtn>
                                 </>
@@ -114,30 +114,30 @@ class Career extends Component {
                       </MDBCol>
                     </>
                   ) : (
-                    <MDBCol key={i} lg="9" md="12" className="mb-4">
-                      <MDBView className="overlay rounded z-depth-1">
+                    <MDBCol key={i} lg='9' md='12' className='mb-4'>
+                      <MDBView className='overlay rounded z-depth-1'>
                         <img
                           src={career.snapShot}
-                          className="d-block w-100"
+                          className='d-block w-100'
                           alt={career.employerName}
                         />
-                        <MDBMask overlay="black-light" />
+                        <MDBMask overlay='black-light' />
                       </MDBView>
-                      <MDBCard className="pb-0">
-                        <MDBCardTitle className="mt-3 mb-0">
+                      <MDBCard className='pb-0'>
+                        <MDBCardTitle className='mt-3 mb-0'>
                           {career.employerName}
                         </MDBCardTitle>
                         <MDBCardBody>
                           {career.roles.map(roleDetail => {
                             return (
                               <>
-                                <p className="mb-0">{roleDetail.title}</p>
+                                <p className='mb-0'>{roleDetail.title}</p>
                                 <MDBBtn
                                   onClick={this.toggleCollapse(career.id)}>
-                                  Role Information <MDBIcon icon="caret-down" />
+                                  Role Information <MDBIcon icon='caret-down' />
                                 </MDBBtn>
                                 <MDBCollapse
-                                  className="collapse"
+                                  className='collapse'
                                   id={career.id}
                                   isOpen={this.state.collapseID}>
                                   <p>{roleDetail.description}</p>
@@ -159,8 +159,8 @@ class Career extends Component {
                                 </MDBCollapse>
                                 <MDBBtn
                                   href={career.companyURL}
-                                  target="_blank">
-                                  <MDBIcon icon="clone" /> View{' '}
+                                  target='_blank'>
+                                  <MDBIcon icon='clone' /> View{' '}
                                   {career.employerName}
                                 </MDBBtn>
                               </>
@@ -174,20 +174,20 @@ class Career extends Component {
               );
             })}
           </MDBRow>
-          <MDBRow className="slider--height my-4">
-            <MDBCol md="12" className="hidden-sm-down">
+          <MDBRow className='slider--height my-4'>
+            <MDBCol md='12' className='hidden-sm-down'>
               <Slider {...settings}>
                 {career.map((career, i) => {
                   return (
                     <>
                       {career.id !== 10 ? (
                         <>
-                          <div key={i} itemId={career.id} className="px-2">
+                          <div key={i} itemId={career.id} className='px-2'>
                             <img
                               src={career.companyLogo}
                               alt={career.employerName}
                             />
-                            <MDBMask overlay="black-light" />
+                            <MDBMask overlay='black-light' />
                           </div>
                         </>
                       ) : (

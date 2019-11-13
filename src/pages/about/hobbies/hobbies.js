@@ -1,14 +1,15 @@
 import React from 'react';
-import { MDBContainer, MDBCol, MDBRow, MDBBtn, MDBIcon } from 'mdbreact';
+import { MDBContainer, MDBCol, MDBRow } from 'mdbreact';
+import Gaming from './gaming/gaming';
 
 const Hobbies = () => {
   return (
     <>
-      <section id="hobbies">
+      <section id='hobbies' className='py-5'>
         <MDBContainer>
-          <MDBRow className="mb-3">
-            <MDBCol sm="12">
-              <h5 className="font-weight-bold my-3 w-responsive">
+          <MDBRow className='mb-3'>
+            <MDBCol sm='12'>
+              <h5 className='font-weight-bold my-3 w-responsive'>
                 Downtime / Hobbies - or how I cling to my sanity
               </h5>
               <p>
@@ -18,16 +19,11 @@ const Hobbies = () => {
                 for the best approach to this. I think I will start with biggest
                 addiction and feed down from there.
               </p>
+              <p>Fair warning though this is a big list...</p>
             </MDBCol>
           </MDBRow>
-          <MDBRow>
-            <a href="https://psnprofiles.com/groghall">
-              <img
-                src="https://card.psnprofiles.com/2/groghall.png"
-                border="0"
-              />
-            </a>
-          </MDBRow>
+
+          <Gaming />
         </MDBContainer>
       </section>
     </>

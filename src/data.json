@@ -213,5 +213,68 @@
       "companyURL": "https://www.d2isystems.com",
       "imageAlt": "Matthew Wilson - Sales and Marketing Director"
     }
+  ],
+  "Gaming": [
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/psn-acc_kcvged.png",
+      "gamingSource": "PlayStation",
+      "gamingTAG": "groghall",
+      "usualGames": [
+        "Borderlands 3",
+        "Monster Hunter World",
+        "Assassin Creed Odyssey",
+        "Call of Duty 2019",
+        "Destiny 2"
+      ]
+    },
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/psn-acc_kcvged.png",
+      "gamingSource": "XBox (pc)",
+      "gamingTAG": "SteGault69",
+      "usualGames": ["The Outer Worlds", "Forza Horizon 4", "Metro Exodus"]
+    },
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/steam-acc_alecf3.jpg",
+      "gamingSource": "Steam",
+      "gamingTAG": "SteGault69",
+      "usualGames": [
+        "Civilization VI",
+        "Warhammer 40K - Martyr",
+        "PC Building Simulator",
+        "Super Dragon Ball Heroes World Mission",
+        "Divinity: Original Sin II",
+        "Destiny 2"
+      ]
+    },
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573647286/wow-avatar_ebhe1b.jpg",
+      "gamingSource": "Blizzard",
+      "gamingTAG": "Groghall#2730",
+      "usualGames": [
+        "Diablo III",
+        "World of Warcraft",
+        "Hearthstone",
+        "Heroes of the Storm",
+        "StarCraft 2"
+      ]
+    }
+  ],
+  "PC": [
+    {
+      "case": "NZXT H500i White",
+      "motherboard": "ASUS ROG Strix X470-F",
+      "processor": "AMD Ryzen 7 2700X",
+      "ram": "Corsair Vengenance RGB Pro 16gb 3200MHz White",
+      "graphics": "AsUS ROG Strix 2060RTX OC 6GB",
+      "psu": "Corsair RM750x white",
+      "cooling": "Corsair Hydro 100i Platinum White",
+      "fans": "Corsair LL120 RGB x 2 White",
+      "storagePrimary": "Samsung EVO 860 1TB",
+      "storageSecondary": "Seagate FireCuda 1TB",
+      "storageTertiary": "Toshiba 1TB",
+      "keyboard": "Razer Chroma BlackWidow",
+      "mouse": "Razer DeathAdder Tournament Edition",
+      "monitor": "ASUS VP28UQG 4K 28inch"
+    }
   ]
 }
