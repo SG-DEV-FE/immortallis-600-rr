@@ -7,11 +7,11 @@ const Education = () => {
   const education = data.Education;
 
   return (
-    <section id="education" className="py-5 bg-g">
+    <section id='education' className='py-5 bg-g'>
       <MDBContainer>
-        <MDBRow className="mb-3">
-          <MDBCol sm="12">
-            <h5 className="font-weight-bold my-3 w-responsive">
+        <MDBRow className='mb-3'>
+          <MDBCol sm={12}>
+            <h5 className='font-weight-bold my-3 w-responsive'>
               Education - yes I have had some
             </h5>
             <p>
@@ -23,27 +23,27 @@ const Education = () => {
               learn more about React(hooks, Redux, and other magical things)
             </p>
           </MDBCol>
-          <MDBCol lg="7">
+          <MDBCol lg={7}>
             <MDBRow>
-              <MDBCol size="12" md="12" xl="12">
+              <MDBCol size={12} md={12} xl={12}>
                 {education.map((education, i) => {
                   return (
-                    <MDBMedia key={i} list className="mt-3 pl-0">
-                      <MDBMedia tag="li">
-                        <MDBMedia left middle href="#">
+                    <MDBMedia key={i} list className='mt-3 pl-0'>
+                      <MDBMedia tag='li'>
+                        <MDBMedia left middle href='#'>
                           {education.institutionLogo !== null ? (
                             <MDBMedia
                               object
                               src={education.institutionLogo}
                               alt={education.institutionName}
-                              className="bg-w"
+                              className='bg-w'
                             />
                           ) : (
-                            <MDBMedia className="bg-w">
+                            <MDBMedia className='bg-w'>
                               <MDBIcon
-                                icon="school"
-                                size="4x"
-                                className="funky-font z-depth-1 px-2 py-3"
+                                icon='school'
+                                size='4x'
+                                className='funky-font z-depth-1 px-2 py-3'
                               />
                             </MDBMedia>
                           )}
@@ -52,13 +52,13 @@ const Education = () => {
                           <MDBMedia heading>
                             {education.institutionName}
                           </MDBMedia>
-                          <p className="mb-1">
+                          <p className='mb-1'>
                             Course of study - {education.courseStudied}
                           </p>
-                          <p className="mb-1">
+                          <p className='mb-1'>
                             Grade Achieved - {education.gradeAchieved}
                           </p>
-                          <p className="mb-1">
+                          <p className='mb-1'>
                             Year of completion - {education.yearCompleted}
                           </p>
                         </MDBMedia>
@@ -69,11 +69,15 @@ const Education = () => {
               </MDBCol>
             </MDBRow>
           </MDBCol>
-          <MDBCol lg="5">
+          <MDBCol lg={5}>
             <MDBCol>
-              <h4 className="my-3 w-responsive">Certifications</h4>
+              <h4 className='my-3 w-responsive'>Certifications</h4>
               <a href={MTASF}>
-                <img className="mx-auto d-block pop" alt="Microsoft Technology Associate Software Fundamentals Badge - 2018" src={MTABadge} />
+                <img
+                  className='mx-auto d-block pop'
+                  alt='Microsoft Technology Associate Software Fundamentals Badge - 2018'
+                  src={MTABadge}
+                />
               </a>
             </MDBCol>
           </MDBCol>

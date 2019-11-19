@@ -25,7 +25,7 @@ const Gaming = () => {
         {gaming.map((gaming, i) => {
           return (
             <>
-              <MDBCol sm='12' md='6'>
+              <MDBCol sm={12} md={6}>
                 <MDBMedia key={i} className='mt-3 pl-0 pr-2'>
                   <MDBMedia
                     className='rounded-circle mr-4'

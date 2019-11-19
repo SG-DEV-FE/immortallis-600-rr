@@ -276,5 +276,40 @@
       "mouse": "Razer DeathAdder Tournament Edition",
       "monitor": "ASUS VP28UQG 4K 28inch"
     }
+  ],
+  "MINIS": [
+    {
+      "miniUniverse": "Warhammer 40K",
+      "miniLogo": "",
+      "miniPublisher": "Games Workshop",
+      "miniDescription": "The main culprit for the last 25 years or miniature collection addiction. I have a small collection of the first legion Dark angels space marines (by small I mean, 6 x tactical squads from 5 eras of space marines, including rogue trader. Deathwing knights x 1, Deathwing terminators x 2 squads, Scout squad x 1, Ravenwing black knights x 1 squad, Ravenwing x 2 squads, Venerable Dreadnought, Rhino x 2, Predator Annihilator x 1, Land Raider x 1, Assault Squad x 1, Land Speeder x 1, Ravenwing Black Talon x 1, Ravenwing assault bike x 1, command squad consisting of Azrael, Belial, Cypher, Ezekiel, 2 Captains, 1 Librarian, 1 Primaris Lieutenant, 1 Interrogator Chaplain, 1 Primaris Chaplain. Also a baneblade to build). All currently being repainted in true first legion colors because Deathwing look badass as Dreadwing really. I also collect chaos space marines, Tau (yes really as they look like mini gundams and anime/manga). I have some Tyranids and a Necron lord as well.",
+      "miniNotables": [
+        "Cypher - original metal model",
+        "Dark Vengenance squad",
+        "Primaris Squad",
+        "KitBash - Dark Angels Captain"
+      ]
+    },
+    {
+      "miniUniverse": "Warhammer & Age of Sigmar",
+      "miniLogo": "",
+      "miniPublisher": "Games Workshop",
+      "miniDescription": "",
+      "miniNotables": ["Seraphon Skint Starpriest", "Orc Warlord"]
+    },
+    {
+      "miniUniverse": "Gundam - Gunpla",
+      "miniLogo": "",
+      "miniPublisher": "Bandai",
+      "miniDescription": "",
+      "miniNotables": ["RG Gundam Unicorn", "HG Gundam Strike"]
+    },
+    {
+      "miniUniverse": "Discworld",
+      "miniLogo": "",
+      "miniPublisher": "",
+      "miniDescription": "",
+      "miniNotables": ["The Luggage"]
+    }
   ]
 }

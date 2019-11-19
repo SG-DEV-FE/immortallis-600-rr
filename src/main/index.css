@@ -111,6 +111,10 @@ header {
   color: #fff;
 }
 
+.c-t--font {
+  color: var(--c-font) !important;
+}
+
 .card {
   position: relative;
   display: flex;

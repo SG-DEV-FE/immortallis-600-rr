@@ -17,7 +17,7 @@ const Jumbotron = () => {
         <MDBMask className='d-flex justify-content-center align-items-center rgba-gradient'>
           <MDBContainer className='px-md-3 px-sm-0'>
             <MDBRow>
-              <MDBCol md='12' className='mb-4 white-text text-center'>
+              <MDBCol md={12} className='mb-4 white-text text-center'>
                 <h3 class='display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5'>
                   Stephen Gault
                 </h3>

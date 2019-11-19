@@ -41,7 +41,7 @@ class Career extends Component {
       <section id='career' className='py-5 bg-g'>
         <MDBContainer>
           <MDBRow className='mb-3'>
-            <MDBCol sm='12'>
+            <MDBCol sm={12}>
               <h5 className='font-weight-bold my-3 w-responsive'>
                 Career history - crazy I know
               </h5>
@@ -56,7 +56,7 @@ class Career extends Component {
                 <>
                   {career.id !== 1 ? (
                     <>
-                      <MDBCol key={i} lg='4' md='12' className='mb-4'>
+                      <MDBCol key={i} lg={4} md={12} className='mb-4'>
                         <MDBView className='overlay rounded z-depth-1'>
                           <img
                             src={career.snapShot}
@@ -114,7 +114,7 @@ class Career extends Component {
                       </MDBCol>
                     </>
                   ) : (
-                    <MDBCol key={i} lg='9' md='12' className='mb-4'>
+                    <MDBCol key={i} lg={9} md={12} className='mb-4'>
                       <MDBView className='overlay rounded z-depth-1'>
                         <img
                           src={career.snapShot}
@@ -175,7 +175,7 @@ class Career extends Component {
             })}
           </MDBRow>
           <MDBRow className='slider--height my-4'>
-            <MDBCol md='12' className='hidden-sm-down'>
+            <MDBCol md={12} className='hidden-sm-down'>
               <Slider {...settings}>
                 {career.map((career, i) => {
                   return (
