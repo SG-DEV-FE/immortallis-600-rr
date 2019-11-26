@@ -1,0 +1,51 @@
+{
+  "downtimeGaming": [
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/psn-acc_kcvged.png",
+      "gamingSource": "PlayStation",
+      "gamingTAG": "groghall",
+      "usualGames": [
+        { "name": "Borderlands 3" },
+        { "name": "Monster Hunter World" },
+        { "name": "Assassin Creed Odyssey" },
+        { "name": "Call of Duty 2019" },
+        { "name": "Destiny 2" }
+      ]
+    },
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/psn-acc_kcvged.png",
+      "gamingSource": "XBox (pc)",
+      "gamingTAG": "SteGault69",
+      "usualGames": [
+        { "name": "Metro Exodus" },
+        { "name": "Forza Horizon 4" },
+        { "name": "The Outer Worlds" }
+      ]
+    },
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/steam-acc_alecf3.jpg",
+      "gamingSource": "Steam",
+      "gamingTAG": "SteGault69",
+      "usualGames": [
+        { "name": "Civilization VI" },
+        { "name": "Warhammer 40K - Martyr" },
+        { "name": "Star Wars - Jedi Fallen order" },
+        { "name": "Super Dragon Ball Heroes World Mission" },
+        { "name": "Divinity: Original Sin II" },
+        { "name": "Destiny 2" }
+      ]
+    },
+    {
+      "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573647286/wow-avatar_ebhe1b.jpg",
+      "gamingSource": "Blizzard",
+      "gamingTAG": "Groghall#2730",
+      "usualGames": [
+        { "name": "Diablo III" },
+        { "name": "World of Warcraft" },
+        { "name": "Hearthstone" },
+        { "name": "Heroes of the Storm" },
+        { "name": "StarCraft 2" }
+      ]
+    }
+  ]
+}

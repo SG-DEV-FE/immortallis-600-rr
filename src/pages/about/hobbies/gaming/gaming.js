@@ -7,10 +7,11 @@ import {
   MDBMedia,
   MDBIcon,
 } from 'mdbreact';
-import data from '../../../../../src/data';
+import { downtimeGaming } from './game.json';
 
 const Gaming = () => {
-  const gaming = data.Gaming;
+  const gaming = downtimeGaming;
+
   return (
     <>
       <MDBRow id='gaming'>
@@ -39,13 +40,15 @@ const Gaming = () => {
                     </MDBMedia>
                     <p>Most commonly played games</p>
                     <MDBListGroup>
-                      {gaming.usualGames.map(games => {
-                        return (
-                          <MDBListGroupItem key={games}>
-                            {games}
-                          </MDBListGroupItem>
-                        );
-                      })}
+                      {gaming.usualGames
+                        .sort((a, b) => a.name.localeCompare(b.name))
+                        .map(games => {
+                          return (
+                            <MDBListGroupItem key={games}>
+                              {games.name}
+                            </MDBListGroupItem>
+                          );
+                        })}
                     </MDBListGroup>
                   </MDBMedia>
                 </MDBMedia>

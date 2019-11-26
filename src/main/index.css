@@ -4,6 +4,7 @@
 :root {
   --bg-img: url(https://res.cloudinary.com/stegault/image/upload/q_auto:eco/v1559727685/85004.jpg);
   --bg-white: #ffffff;
+  --bg-black: #000000;
   --bg-grey: #efefef;
   --bg-grey-darken: #b9b9b9;
   --bg-transparent: transparent;
@@ -58,6 +59,10 @@ header {
 
 .avatar img:hover {
   cursor: pointer;
+}
+
+.bg-b {
+  background-color: var(--bg-black);
 }
 
 .bg--funky {
