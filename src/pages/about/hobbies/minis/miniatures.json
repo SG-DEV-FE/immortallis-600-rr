@@ -1,0 +1,45 @@
+{
+  "MINIS": [
+    {
+      "miniUniverse": "Warhammer 40K",
+      "miniLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1574347210/company-logo/warhammer.jpg",
+      "logoCopyright": "Copyright© Games Workshop plc",
+      "miniPublisher": "Games Workshop",
+      "miniDescription": "The main culprit for the last 25 years or miniature collection addiction. I have a small collection of the first legion Dark angels space marines (by small I mean, 6 x tactical squads from 5 eras of space marines, including rogue trader. Deathwing knights x 1, Deathwing terminators x 2 squads, Scout squad x 1, Ravenwing black knights x 1 squad, Ravenwing x 2 squads, Venerable Dreadnought, Rhino x 2, Predator Annihilator x 1, Land Raider x 1, Assault Squad x 1, Land Speeder x 1, Ravenwing Black Talon x 1, Ravenwing assault bike x 1, command squad consisting of Azrael, Belial, Cypher, Ezekiel, 2 Captains, 1 Librarian, 1 Primaris Lieutenant, 1 Interrogator Chaplain, 1 Primaris Chaplain. Also a baneblade to build). All currently being repainted in true first legion colors because Deathwing look badass as Dreadwing really. I also collect chaos space marines, Tau (yes really as they look like mini gundams and anime/manga). I have some Tyranids and a Necron lord as well.",
+      "miniNotables": [
+        { "name": "Cypher - original metal model" },
+        { "name": "Dark Vengenance squad" },
+        { "name": "Primaris Squad" },
+        { "name": "KitBash - Dark Angels Captain" }
+      ]
+    },
+    {
+      "miniUniverse": "Warhammer & Age of Sigmar",
+      "miniLogo": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1574347210/company-logo/warhammer.jpg",
+      "logoCopyright": "Copyright© Games Workshop plc",
+      "miniPublisher": "Games Workshop",
+      "miniDescription": "So this is where it all began, curse you plastic chaos warriors for looking cool in the 90s. Suffice to say that I collect chaos warriors for the original Warhammer and a huge convert to the Seraphon(Lizardmen) for Age of Sigmar. I'm more prolific on 40K than this but it will become more pronounced as more models are released",
+      "miniNotables": [
+        { "name": "Seraphon Skink Starpriest" },
+        { "name": "Orc Warlord on war boar" }
+      ]
+    },
+    {
+      "miniUniverse": "Gundam - Gunpla",
+      "miniLogo": "",
+      "miniPublisher": "Bandai",
+      "miniDescription": "Still extremely new to the gunpla scene. But its really fun building mechs without the need for glue. in fact its very refreshing to build such intricate models that have full articulation. still in the 1/100 scale at the moment but that may change. still wrapping head round the grading for detail. starting lowest to highest HG - 1 / 144 to 1/100, MG - 1 / 100, PG - 1 / 60, RG - 1/144. Each of these goes up in detail and cost RG gives a PG level of detail but at a HG size and fraction of the cost.",
+      "miniNotables": [
+        { "name": "HG Gundam Strike" },
+        { "name": "RG Gundam Unicorn" }
+      ]
+    },
+    {
+      "miniUniverse": "Discworld",
+      "miniLogo": "",
+      "miniPublisher": null,
+      "miniDescription": "The discworld holds a very special place in my heart and always will so its no surprise I have some minis. I only have two minis in this category at the moment and only one of them painted. The Luggage was a fun model to paint and is one of my all time favorite minis. I still have Death from Soul Music to paint.",
+      "miniNotables": [{ "name": "The Luggage" }]
+    }
+  ]
+}

@@ -18,3 +18,8 @@ export const MTABadge =
   'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1573140125/certifications/mta-software-development-fundamentals-certified-2018.png';
 export const SGCloudinary =
   'https://res.cloudinary.com/stegault/image/upload/c_scale,h_200,f_auto,q_auto:eco/v1573569843/ste_crop_w5sjtm.jpg';
+export const GWplc =
+  'https://res.cloudinary.com/stegault/image/upload/v1574347526/company-logo/GW.png';
+
+// Legal Constant
+export const copyrightGW = 'Copyright© Games Workshop PLC';

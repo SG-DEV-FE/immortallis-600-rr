@@ -1,0 +1,20 @@
+{
+  "PC": [
+    {
+      "case": "NZXT H500i White",
+      "motherboard": "ASUS ROG Strix X470-F",
+      "processor": "AMD Ryzen 7 2700X",
+      "ram": "Corsair Vengenance RGB Pro 16gb 3200MHz White",
+      "graphics": "AsUS ROG Strix 2060RTX OC 6GB",
+      "psu": "Corsair RM750x white",
+      "cooling": "Corsair Hydro 100i Platinum White",
+      "fans": "Corsair LL120 RGB x 2 White",
+      "storagePrimary": "Samsung EVO 860 1TB",
+      "storageSecondary": "Seagate FireCuda 1TB",
+      "storageTertiary": "Toshiba 1TB",
+      "keyboard": "Razer Chroma BlackWidow",
+      "mouse": "Razer DeathAdder Tournament Edition",
+      "monitor": "ASUS VP28UQG 4K 28inch"
+    }
+  ]
+}

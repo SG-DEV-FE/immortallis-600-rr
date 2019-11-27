@@ -14,7 +14,7 @@ import {
 } from 'mdbreact';
 import moment from 'moment';
 import Slider from 'react-slick';
-import data from '../../../src/data';
+import { Employment } from './employment.json';
 
 class Career extends Component {
   state = { collapseID: '' };
@@ -26,7 +26,7 @@ class Career extends Component {
   };
 
   render() {
-    const career = data.Employment;
+    const career = Employment;
     const settings = {
       autoplay: true,
       centerMode: true,

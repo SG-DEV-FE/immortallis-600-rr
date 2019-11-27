@@ -1,6 +1,7 @@
 import React from 'react';
-import { MDBContainer, MDBCol, MDBRow, MDBBtn } from 'mdbreact';
+import { MDBContainer, MDBCol, MDBRow } from 'mdbreact';
 import Gaming from './gaming/gaming';
+import Miniatures from './minis/miniatures';
 
 const Hobbies = () => {
   return (
@@ -14,10 +15,10 @@ const Hobbies = () => {
               </h5>
               <p>
                 So below is a selection of how I chill the out, this is by far
-                not extensive but I think it'll do for the purposes of conveying
-                how much of a Nerd/Geek I am. I agonized for what seemed an eon
-                for the best approach to this. I think I will start with biggest
-                addiction and feed down from there.
+                not extensive but I think it&apos;ll do for the purposes of
+                conveying how much of a Nerd/Geek I am. I agonized for what
+                seemed an eon for the best approach to this. I think I will
+                start with biggest addiction and feed down from there.
               </p>
               <p>
                 Fair warning though this is a big list, so feel free to skip
@@ -27,6 +28,7 @@ const Hobbies = () => {
           </MDBRow>
 
           <Gaming />
+          <Miniatures />
         </MDBContainer>
       </section>
     </>

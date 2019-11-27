@@ -14,15 +14,14 @@ const Gaming = () => {
 
   return (
     <>
-      <MDBRow id='gaming'>
+      <MDBRow id='gaming' className='mt-5'>
         <MDBCol>
-          <p>Right the first one is a biggie.</p>
           <blockquote className='blockquote bq-primary'>
             <MDBIcon icon='gamepad' className='funky-font mr-2' /> Gaming
           </blockquote>
         </MDBCol>
       </MDBRow>
-      <MDBRow>
+      <MDBRow className='mb-5'>
         {gaming.map((gaming, i) => {
           return (
             <>

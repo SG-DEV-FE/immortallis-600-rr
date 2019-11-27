@@ -3,6 +3,7 @@ import Header from '../pages/header/header';
 import About from '../pages/about/About';
 import Career from '../pages/career/Career';
 import Testimonial from '../pages/career/Testimonial';
+import Hobbies from '../pages/about/hobbies/hobbies';
 
 function App() {
   return (
@@ -12,10 +13,9 @@ function App() {
         <About />
         <Career />
         <Testimonial />
+        <Hobbies />
       </main>
       {/* 
-    <Testimonial />
-    <Career />
     <Insta />
     <Footer /> */}
     </>

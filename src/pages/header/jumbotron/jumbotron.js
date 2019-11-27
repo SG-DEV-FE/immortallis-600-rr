@@ -18,11 +18,11 @@ const Jumbotron = () => {
           <MDBContainer className='px-md-3 px-sm-0'>
             <MDBRow>
               <MDBCol md={12} className='mb-4 white-text text-center'>
-                <h3 class='display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5'>
+                <h3 className='display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5'>
                   Stephen Gault
                 </h3>
-                <hr class='hr-light my-4 w-75' />
-                <h4 class='subtext-header mt-2 mb-4'>
+                <hr className='hr-light my-4 w-75' />
+                <h4 className='subtext-header mt-2 mb-4'>
                   Software Developer / Graphic Design
                 </h4>
 
