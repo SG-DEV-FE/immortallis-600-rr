@@ -1,6 +1,7 @@
 {
   "downtimeGaming": [
     {
+      "id": "g1",
       "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/psn-acc_kcvged.png",
       "gamingSource": "PlayStation",
       "gamingTAG": "groghall",
@@ -13,6 +14,7 @@
       ]
     },
     {
+      "id": "g1",
       "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/psn-acc_kcvged.png",
       "gamingSource": "XBox (pc)",
       "gamingTAG": "SteGault69",
@@ -23,6 +25,7 @@
       ]
     },
     {
+      "id": "g1",
       "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573645486/steam-acc_alecf3.jpg",
       "gamingSource": "Steam",
       "gamingTAG": "SteGault69",
@@ -36,6 +39,7 @@
       ]
     },
     {
+      "id": "g1",
       "gamingAvatar": "https://res.cloudinary.com/stegault/image/upload/c_scale,h_70,w_auto,f_auto,q_auto:eco/v1573647286/wow-avatar_ebhe1b.jpg",
       "gamingSource": "Blizzard",
       "gamingTAG": "Groghall#2730",

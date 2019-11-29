@@ -14,7 +14,7 @@ import {
 } from 'mdbreact';
 import moment from 'moment';
 import Slider from 'react-slick';
-import { Employment } from './employment.json';
+import { Employment } from '../../data/employment.json';
 
 class Career extends Component {
   state = { collapseID: '' };
@@ -70,10 +70,12 @@ class Career extends Component {
                             {career.employerName}
                           </MDBCardTitle>
                           <MDBCardBody>
-                            {career.roles.map(roleDetail => {
+                            {career.roles.map((roleDetail, k) => {
                               return (
                                 <>
-                                  <p className='mb-0'>{roleDetail.title}</p>
+                                  <p className='mb-0' key={k}>
+                                    {roleDetail.title}
+                                  </p>
                                   <MDBBtn
                                     onClick={this.toggleCollapse(career.id)}>
                                     Role Information{' '}
@@ -128,10 +130,12 @@ class Career extends Component {
                           {career.employerName}
                         </MDBCardTitle>
                         <MDBCardBody>
-                          {career.roles.map(roleDetail => {
+                          {career.roles.map((roleDetail, l) => {
                             return (
                               <>
-                                <p className='mb-0'>{roleDetail.title}</p>
+                                <p className='mb-0' key={l}>
+                                  {roleDetail.title}
+                                </p>
                                 <MDBBtn
                                   onClick={this.toggleCollapse(career.id)}>
                                   Role Information <MDBIcon icon='caret-down' />
@@ -177,12 +181,12 @@ class Career extends Component {
           <MDBRow className='slider--height my-4'>
             <MDBCol md={12} className='hidden-sm-down'>
               <Slider {...settings}>
-                {career.map((career, i) => {
+                {career.map((career, h) => {
                   return (
                     <>
                       {career.id !== 10 ? (
                         <>
-                          <div key={i} itemId={career.id} className='px-2'>
+                          <div key={h} itemID={career.id} className='px-2'>
                             <img
                               src={career.companyLogo}
                               alt={career.employerName}

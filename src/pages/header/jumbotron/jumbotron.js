@@ -29,7 +29,7 @@ const Jumbotron = () => {
                 <div className='mt-4 mx-auto text-center'>
                   <AnchorLink href='#personality' offset='40'>
                     <MDBIcon
-                      fas
+                      //fas
                       icon='chevron-circle-down'
                       className='white-text bounce'
                       size='2x'

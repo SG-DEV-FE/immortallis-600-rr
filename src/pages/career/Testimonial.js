@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
-import { Testimonials } from './Testimonial.json';
+import { testimonialData } from '../../constants/index';
+import axiosConfig from '../../axiosConfig';
 
 const Testimonial = () => {
-  const testimonial = Testimonials;
+  const [data, setTestimonial] = useState({ Testimonials: [] });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axiosConfig(testimonialData);
+      setTestimonial(res.data);
+    };
+    fetchData();
+  }, []);
+
   return (
     <section id='testimonial' className='py-5 bg-g'>
       <MDBContainer>
@@ -20,10 +30,12 @@ const Testimonial = () => {
         <MDBRow>
           <MDBCol className='text-center'>
             <div className='testimonial '>
-              {testimonial.map((testament, i) => {
+              {data.Testimonials.map(testament => {
                 return (
                   <>
-                    <div key={i} className='avatar text-center mx-auto mb-4'>
+                    <div
+                      key={testament.id}
+                      className='avatar text-center mx-auto mb-4'>
                       <a
                         href={testament.testimonialSource}
                         target='_blank'
@@ -55,13 +67,13 @@ const Testimonial = () => {
                         D2i Systems Ltd
                       </a>
                     </h6>
-                    {Array.apply(null, { length: 5 }).map((e, i) => (
-                      <MDBIcon icon='star' className='amber-text' key={i} />
-                    ))}
                   </>
                 );
               })}
             </div>
+            {Array.apply(null, { length: 5 }).map((e, index) => (
+              <MDBIcon icon='star' className='amber-text' key={index} />
+            ))}
           </MDBCol>
         </MDBRow>
       </MDBContainer>

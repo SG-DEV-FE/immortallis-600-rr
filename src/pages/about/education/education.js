@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBMedia, MDBIcon } from 'mdbreact';
-import { MTASF, MTABadge } from '../../../constants/index';
-import data from '../../../../src/data';
+import { MTASF, MTABadge, educationData } from '../../../constants/index';
+import axiosConfig from '../../../axiosConfig';
 
 const Education = () => {
-  const education = data.Education;
+  const [data, setEducation] = useState({ Education: [] });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axiosConfig(educationData);
+      setEducation(res.data);
+    };
+    fetchData();
+  }, []);
 
   return (
     <section id='education' className='py-5 bg-g'>
@@ -26,9 +34,9 @@ const Education = () => {
           <MDBCol lg={7}>
             <MDBRow>
               <MDBCol size={12} md={12} xl={12}>
-                {education.map((education, i) => {
+                {data.Education.map(education => {
                   return (
-                    <MDBMedia key={i} list className='mt-3 pl-0'>
+                    <MDBMedia key={education.id} list className='mt-3 pl-0'>
                       <MDBMedia tag='li'>
                         <MDBMedia left middle href='#'>
                           {education.institutionLogo !== null ? (

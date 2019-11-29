@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   MDBCol,
   MDBRow,
@@ -7,10 +7,19 @@ import {
   MDBMedia,
   MDBIcon,
 } from 'mdbreact';
-import { downtimeGaming } from './game.json';
+import axiosConfig from '../../../../axiosConfig';
+import { gamingData } from '../../../../constants/index';
 
 const Gaming = () => {
-  const gaming = downtimeGaming;
+  const [data, setGames] = useState({ downtimeGaming: [] });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axiosConfig(gamingData);
+      setGames(result.data);
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -22,29 +31,29 @@ const Gaming = () => {
         </MDBCol>
       </MDBRow>
       <MDBRow className='mb-5'>
-        {gaming.map((gaming, i) => {
+        {data.downtimeGaming.map(games => {
           return (
             <>
-              <MDBCol sm={12} md={6}>
-                <MDBMedia key={i} className='mt-3 pl-0 pr-2'>
+              <MDBCol key={games.id} sm={12} md={6}>
+                <MDBMedia className='mt-3 pl-0 pr-2'>
                   <MDBMedia
                     className='rounded-circle mr-4'
                     object
-                    src={gaming.gamingAvatar}
-                    alt={gaming.gamingTAG}
+                    src={games.gamingAvatar}
+                    alt={games.gamingTAG}
                   />
                   <MDBMedia body>
                     <MDBMedia heading>
-                      {gaming.gamingSource} - {gaming.gamingTAG}
+                      {games.gamingSource} - {games.gamingTAG}
                     </MDBMedia>
                     <p>Most commonly played games</p>
                     <MDBListGroup>
-                      {gaming.usualGames
+                      {games.usualGames
                         .sort((a, b) => a.name.localeCompare(b.name))
-                        .map(games => {
+                        .map(gamesList => {
                           return (
-                            <MDBListGroupItem key={games}>
-                              {games.name}
+                            <MDBListGroupItem key={gamesList.name}>
+                              {gamesList.name}
                             </MDBListGroupItem>
                           );
                         })}

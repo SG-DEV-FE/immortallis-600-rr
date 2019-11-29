@@ -47,7 +47,7 @@ class Nav extends Component {
               </MDBNavbarBrand>
               <MDBNavbarToggler onClick={this.toggleCollapse} />
               <MDBCollapse isOpen={this.state.isOpen} navbar>
-                <MDBNavbarNav left smooth-scroll>
+                <MDBNavbarNav left>
                   <MDBNavItem active>
                     <AnchorLink className='nav-link' href='#home'>
                       home

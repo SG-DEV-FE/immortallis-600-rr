@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MDBCol, MDBRow, MDBIcon, MDBMedia } from 'mdbreact';
-import { MINIS } from './miniatures.json';
-import { GWplc, copyrightGW } from '../../../../constants/index.js';
+import {
+  GWplc,
+  copyrightGW,
+  miniaturesData,
+} from '../../../../constants/index.js';
+import axiosConfig from '../../../../axiosConfig';
 
 const Miniatures = () => {
-  const models = MINIS;
+  const [data, setData] = useState({ MINIS: [] });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axiosConfig(miniaturesData);
+      setData(result.data);
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -39,23 +51,21 @@ const Miniatures = () => {
             about to see. its only a snippet of my collection
           </p>
         </MDBCol>
-        {models.map((model, i) => {
+        {data.MINIS.map(model => {
           return (
-            <>
-              <MDBCol sm={12} md={6}>
-                <MDBMedia key={i} className='mt-3 pl-0 pr-2'>
-                  <MDBMedia
-                    className='rounded mr-4'
-                    object
-                    src={model.miniLogo}
-                    alt={model.logoCopyright ? model.logoCopyright : ''}
-                  />
-                  <MDBMedia body>
-                    <MDBMedia heading>{model.miniUniverse}</MDBMedia>
-                  </MDBMedia>
+            <MDBCol key={model.id} sm={12} md={6}>
+              <MDBMedia className='mt-3 pl-0 pr-2'>
+                <MDBMedia
+                  className='rounded mr-4'
+                  object
+                  src={model.miniLogo}
+                  alt={model.logoCopyright ? model.logoCopyright : ''}
+                />
+                <MDBMedia body>
+                  <MDBMedia heading>{model.miniUniverse}</MDBMedia>
                 </MDBMedia>
-              </MDBCol>
-            </>
+              </MDBMedia>
+            </MDBCol>
           );
         })}
       </MDBRow>
