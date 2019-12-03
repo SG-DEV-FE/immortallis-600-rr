@@ -138,7 +138,7 @@ header {
 
 .card-body .btn-unique {
   background-color: var(--theme-2) !important;
-  color: var() var(--c-white);
+  color: var(--c-white);
 }
 
 /* .card--carousel {
