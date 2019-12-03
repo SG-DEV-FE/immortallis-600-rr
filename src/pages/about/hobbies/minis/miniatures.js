@@ -37,14 +37,15 @@ const Miniatures = () => {
           <img src={GWplc} alt={copyrightGW} className='mx-auto d-block my-4' />
 
           <p>
-            yup thats right, plastic crack. its beyond normal comprehension how
-            much I have spent on miniatures. Not to mention how many i have
-            built and lost from moving and travelling. Doh.
+            yup thats right, plastic crack. It is beyond normal comprehension
+            how much I have spent on miniatures. Not to mention how many I have
+            built (and not painted... shhhhh we don&apos;t talk about that) and
+            lost from moving / travelling.
           </p>
           <p>
-            I mean its a mark of strength walking out of the warhammer shop with
-            exactly what I went in for or nothing at all (not technically
-            possible but we can dream).
+            I mean Its a mark of strength and willpower in this hobby being able
+            to walk out of the warhammer/model shop with exactly what I went in
+            for or nothing at all (not technically possible but we can dream).
           </p>
           <p>
             Now your wondering what mayhem can it really cause. Lots... as your

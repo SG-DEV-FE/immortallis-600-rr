@@ -35,7 +35,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: min(max(16px, 4vw), 22px);
 }
 
 html,
@@ -140,16 +140,6 @@ header {
   background-color: var(--theme-2) !important;
   color: var() var(--c-white);
 }
-
-/* .card--carousel {
-  height: 200px;
-  width: auto;
-}
-
-.card--carousel__img {
-  width: auto;
-  height: 50px;
-} */
 
 .carousel-caption {
   color: var(--c-font) !important;
@@ -277,10 +267,6 @@ header {
 
 .view--bg {
   background: no-repeat center var(--bg-img);
-  /* background-image: var(--bg-img);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; */
   height: 100vh;
 }
 

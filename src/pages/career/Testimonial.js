@@ -15,7 +15,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section id='testimonial' className='py-5 bg-g'>
+    <section id='testimonial' className='py-5 bg-w'>
       <MDBContainer>
         <MDBRow className='mb-3'>
           <MDBCol sm={12}>
