@@ -2,6 +2,7 @@ import React from 'react';
 import { MDBContainer, MDBCol, MDBRow } from 'mdbreact';
 import Gaming from './gaming/gaming';
 import Miniatures from './minis/miniatures';
+import PC from './pc/pc';
 
 const Hobbies = () => {
   return (
@@ -29,6 +30,7 @@ const Hobbies = () => {
 
           <Gaming />
           <Miniatures />
+          <PC />
         </MDBContainer>
       </section>
     </>

@@ -28,8 +28,8 @@ const PC = () => {
       <MDBRow className='mb-5'>
         <MDBCol size={12}>
           <p>
-            Now your wondering what mayhem can it really cause. Lots... as your
-            about to see. its only a snippet of my collection
+            Well this is my current PC set up, that is used for Development /
+            Gaming / Media Share.
           </p>
         </MDBCol>
         {data.PC.map(pc => {
@@ -39,7 +39,47 @@ const PC = () => {
                 <MDBMedia key={pc.case} className='mt-3 pl-0 pr-2'>
                   <MDBMedia className='rounded mr-4' object />
                   <MDBMedia body>
-                    <MDBMedia heading></MDBMedia>
+                    <MDBMedia heading className='mb-2'>
+                      The RIG
+                    </MDBMedia>
+                    <ul className='list-unstyled'>
+                      <li>Case:</li>
+                      <li>{pc.case}</li>
+                      <li>Motherboard:</li>
+                      <li> {pc.motherboard}</li>
+                      <li>Processor:</li>
+                      <li> {pc.processor}</li>
+                      <li>Ram:</li>
+                      <li> {pc.ram}</li>
+                      <li>Graphics Card:</li>
+                      <li> {pc.graphics}</li>
+                      <li>Power Supply:</li>
+                      <li>{pc.psu}</li>
+                      <li>Processor Cooling:</li>
+                      <li>{pc.cooling}</li>
+                      <li>System Cooling:</li>
+                      <li>{pc.fans}</li>
+                      <li>System Storage Primary:</li>
+                      <li>{pc.storagePrimary}</li>
+                      <li>System Storage Secondary:</li>
+                      <li>{pc.storageSecondary}</li>
+                      <li>System Storage Tertiary:</li>
+                      <li>{pc.storageTertiary}</li>
+                    </ul>
+                  </MDBMedia>
+
+                  <MDBMedia heading className='mb-2'>
+                    Peripherals
+                  </MDBMedia>
+                  <MDBMedia>
+                    <ul>
+                      <li>Keyboard:</li>
+                      <li>{pc.keyboard}</li>
+                      <li>Mouse:</li>
+                      <li>{pc.mouse}</li>
+                      <li>Monitor:</li>
+                      <li>{pc.monitor}</li>
+                    </ul>
                   </MDBMedia>
                 </MDBMedia>
               </MDBCol>
