@@ -33,12 +33,10 @@
   ) !important;
   --funky-gradient: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
   
-  /* Default for font-size  will scale accorddingly to visual width */
-  font-size: calc(1rem + 0.5vw)
 }
 
 html {
-/*   font-size: 16px; */
+   font-size: 16px;
 }
 
 html,
