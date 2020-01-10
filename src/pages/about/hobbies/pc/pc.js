@@ -38,7 +38,7 @@ const PC = () => {
               <MDBCol sm={12} md={6}>
                 <MDBMedia key={pc.case} className='mt-3 pl-0 pr-2'>
                   <MDBMedia className='rounded mr-4' object />
-                  <MDBCol size={12}>
+                  <MDBCol size={12} sm={12} md={6}>
                     <MDBMedia body>
                       <MDBMedia heading className='mb-2'>
                         The RIG
@@ -71,7 +71,7 @@ const PC = () => {
                       </MDBMedia>
                     </MDBMedia>
                   </MDBCol>
-                  <MDBCol size={12}>
+                  <MDBCol size={12} sm={12} md={6}>
                     <MDBMedia body>
                       <MDBMedia heading className='mb-2'>
                         Peripherals
