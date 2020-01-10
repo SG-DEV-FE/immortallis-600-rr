@@ -35,7 +35,7 @@ const PC = () => {
         {data.PC.map(pc => {
           return (
             <>
-              <MDBCol sm={12} md={6}>
+              <MDBCol sm={12} lg={6}>
                 <MDBMedia key={pc.case} className='mt-3 pl-0 pr-2'>
                   <MDBMedia className='rounded mr-4' object />
                   <MDBCol sm={12} md={6}>
@@ -71,7 +71,7 @@ const PC = () => {
                       </MDBMedia>
                     </MDBMedia>
                   </MDBCol>
-                  <MDBCol sm={12} md={6}>
+                  <MDBCol sm={12} lg={6}>
                     <MDBMedia body>
                       <MDBMedia heading className='mb-2'>
                         Peripherals
