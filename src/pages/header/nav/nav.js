@@ -103,7 +103,7 @@ class Nav extends Component {
                       testimonial
                     </AnchorLink>
                   </MDBNavItem>
-                  <MDBNavItem>
+                  {/* <MDBNavItem>
                     <AnchorLink className='nav-link' href='#gallery'>
                       gallery
                     </AnchorLink>
@@ -112,7 +112,7 @@ class Nav extends Component {
                     <AnchorLink className='nav-link' href='#contact'>
                       contact
                     </AnchorLink>
-                  </MDBNavItem>
+                  </MDBNavItem> */}
                 </MDBNavbarNav>
                 <MDBNavbarNav right className='social__icons--row'>
                   <MDBNavItem>
