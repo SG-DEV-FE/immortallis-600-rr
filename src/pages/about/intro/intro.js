@@ -57,11 +57,8 @@ const Intro = () => {
             />
           </MDBCol>
           <MDBCol lg={7}>
-            <MDBRow>
-              <MDBCol size={12} md={12} xl={10} className='px-3'>
-                {/* <h5 className='font-weight-bold mb-3 w-responsive'>
-                  Personality (or lack off)
-                </h5> */}
+            
+              <MDBCol size={12} md={12} xl={10} className='px-3'>                
                 <p>
                   Now those of you who are viewing this on a mobile phone before
                   using a tablet or pc.... nice phone. If your viewing this on a
@@ -96,7 +93,7 @@ const Intro = () => {
                 </p>
                 <p></p>
               </MDBCol>
-            </MDBRow>
+            
           </MDBCol>
         </MDBRow>
       </MDBContainer>

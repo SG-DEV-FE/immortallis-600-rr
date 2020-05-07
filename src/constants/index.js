@@ -2,7 +2,7 @@
 export const SGLinkedIn = 'https://www.linkedin.com/in/sg-dev';
 export const SGTwitter = 'https://twitter.com/Groghall';
 export const SGInstagram = 'https://www.instagram.com/fallen_hunter_castiel/';
-export const SGPSN = 'https://my.playstation.com/profile/groghall';
+export const SGPSN = 'https://psnprofiles.com/groghall';
 
 export const MTASF =
   'https://www.youracclaim.com/badges/5ce2a3a2-8580-4ce1-bec2-d7b3806e4d32/public_url';
@@ -21,12 +21,14 @@ export const SGCloudinary =
 export const GWplc =
   'https://res.cloudinary.com/stegault/image/upload/v1574347526/company-logo/GW.png';
 
+export const psnprofile = 'https://card.psnprofiles.com/1/groghall.png'
+
 // Legal Constant
 export const copyrightGW = 'Copyright© Games Workshop PLC';
 
 // Data Constant
 export const miniaturesData = '/5ddf97ba040d843991fa90b1/1';
-export const gamingData = '/5ddf98c63da40e6f29914c15';
+export const gamingData = '/5ddf98c63da40e6f29914c15/2';
 export const educationData = '/5ddfc8d3040d843991faa69d';
 export const pcData = '/5ddfcac9040d843991faa78c';
 export const testimonialData = '/5ddfceee040d843991faa96e';
