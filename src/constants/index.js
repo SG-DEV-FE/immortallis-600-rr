@@ -21,7 +21,7 @@ export const SGCloudinary =
 export const GWplc =
   'https://res.cloudinary.com/stegault/image/upload/v1574347526/company-logo/GW.png';
 
-export const psnprofile = 'https://card.psnprofiles.com/1/groghall.png'
+export const psnprofile = 'https://card.psnprofiles.com/1/groghall.png';
 
 // Legal Constant
 export const copyrightGW = 'Copyright© Games Workshop PLC';
