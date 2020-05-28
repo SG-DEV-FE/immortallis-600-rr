@@ -19,8 +19,8 @@ import { Employment } from '../../data/employment.json';
 class Career extends Component {
   state = { collapseID: '' };
 
-  toggleCollapse = collapseID => () => {
-    this.setState(prevState => ({
+  toggleCollapse = (collapseID) => () => {
+    this.setState((prevState) => ({
       collapseID: prevState.collapseID !== collapseID ? collapseID : '',
     }));
   };
@@ -184,7 +184,7 @@ class Career extends Component {
                 {career.map((career, h) => {
                   return (
                     <>
-                      {career.id !== 10 ? (
+                      {career.id !== 11 ? (
                         <>
                           <div key={h} itemID={career.id} className='px-2'>
                             <img
