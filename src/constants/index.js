@@ -19,7 +19,7 @@ export const MTABadge =
 export const SGCloudinary =
   'https://res.cloudinary.com/stegault/image/upload/c_scale,h_200,f_auto,q_auto:eco/v1573569843/ste_crop_w5sjtm.jpg';
 export const GWplc =
-  'https://res.cloudinary.com/stegault/image/upload/v1574347526/company-logo/GW.png';
+  'https://res.cloudinary.com/stegault/image/upload/c_scale,h_210,w_auto,f_auto,q_auto:eco/v1591014586/company-logo/gw-logo-default-stacked.svg';
 
 export const psnprofile = 'https://card.psnprofiles.com/1/groghall.png';
 

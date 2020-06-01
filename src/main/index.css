@@ -32,11 +32,10 @@
     var(--ps-red)
   ) !important;
   --funky-gradient: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
-  
 }
 
 html {
-   font-size: 16px;
+  font-size: 18px;
 }
 
 html,
