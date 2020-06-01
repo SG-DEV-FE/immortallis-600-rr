@@ -58,7 +58,7 @@ const Intro = () => {
           <MDBCol lg={12}>
             <blockquote className='blockquote bq-primary'>
               <MDBIcon icon='user' className='funky-font mr-2' /> Personality
-              (or lack off)
+              (or lack of)
             </blockquote>
           </MDBCol>
           <MDBCol lg={5} className='hidden-sm-down text-center text-lg-left'>
