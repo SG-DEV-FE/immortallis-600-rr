@@ -19,38 +19,39 @@ const Intro = () => {
             </div>
           </MDBCol>
           <MDBCol sm={12}>
-            <h3 className='lead text-center h3-responsive mx-auto mt-3'>
-              Welcome Ladies & Gents / Orruks & Duardin / Cats & Dogs, you get
-              the picture.
-            </h3>
-            <p className='text-center mx-auto mb-5 w-responsive'>
-              This is me (song&lsquos in your head now). I built this little old
-              site to showcase my skills and generally show off some of my
-              personality, that as you have no doubt already surmised is on the
-              dry wit side...
-              <br />
-              Also its a work in progress so its rough around the edges, like
-              all good personal projects are...ahem
-            </p>
-            <p className='text-center mx-auto mb-5 w-responsive'>
-              Call it an informal cv if you want.
-              <br />
-              Okay, now what... um... lets. er... oh I know. scroll down a bit
-              more.
-            </p>
+            <div className='h-100vh w-100'>
+              <h3 className='lead text-center h3-responsive mx-auto mt-3'>
+                Welcome Ladies & Gents / Orruks & Duardin / Cats & Dogs, you get
+                the picture.
+              </h3>
+              <p className='text-center mx-auto mb-5 w-responsive'>
+                This is me (song&lsquos in your head now). I built this little
+                old site to showcase my skills and generally show off some of my
+                personality, that as you have no doubt already surmised is on
+                the dry wit side...
+                <br />
+                Also its a work in progress so its rough around the edges, like
+                all good personal projects are...ahem
+              </p>
+              <p className='text-center mx-auto mb-5 w-responsive'>
+                Call it an informal cv if you want.
+                <br />
+                Okay, now what... um... lets. er... oh I know. scroll down a bit
+                more.
+              </p>
+            </div>
           </MDBCol>
 
           <MDBCol sm={12}>
-            <MDBView
-              hover
-              zoom
-              className='d-flex align-items-center justify-content-center h-100vh w-100'>
-              <img
-                src='https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1591012741/ntsh_frmtxf.png'
-                className='rounded mx-auto d-block z-depth-1-half'
-                alt='keep going'
-              />
-            </MDBView>
+            <div className='h-100vh w-100'>
+              <MDBView hover zoom>
+                <img
+                  src='https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1591012741/ntsh_frmtxf.png'
+                  className='rounded mx-auto d-block z-depth-1-half'
+                  alt='keep going'
+                />
+              </MDBView>
+            </div>
           </MDBCol>
         </MDBRow>
 
