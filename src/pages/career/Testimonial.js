@@ -15,7 +15,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section id='testimonial' className='py-5 bg-w'>
+    <section id='testimonial' className='py-5 bg-g  '>
       <MDBContainer>
         <MDBRow className='mb-3'>
           <MDBCol sm={12}>
@@ -30,7 +30,7 @@ const Testimonial = () => {
         <MDBRow>
           <MDBCol className='text-center'>
             <div className='testimonial '>
-              {data.Testimonials.map(testament => {
+              {data.Testimonials.map((testament) => {
                 return (
                   <>
                     <div

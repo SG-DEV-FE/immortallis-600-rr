@@ -38,7 +38,7 @@ class Career extends Component {
       variableWidth: true,
     };
     return (
-      <section id='career' className='py-5 bg-g'>
+      <section id='career' className='py-5'>
         <MDBContainer>
           <MDBRow className='mb-3'>
             <MDBCol sm={12}>

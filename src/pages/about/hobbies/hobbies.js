@@ -27,12 +27,11 @@ const Hobbies = () => {
               </p>
             </MDBCol>
           </MDBRow>
-
-          <Gaming />
-          <Miniatures />
-          <PC />
         </MDBContainer>
       </section>
+      <Gaming />
+      <Miniatures />
+      <PC />
     </>
   );
 };
