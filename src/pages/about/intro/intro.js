@@ -46,7 +46,7 @@ const Intro = () => {
               <MDBView hover zoom>
                 <img
                   src='https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1591012741/ntsh_frmtxf.png'
-                  className='rounded mx-auto d-block z-depth-1-half'
+                  className='rounded img-fluid mx-auto d-block z-depth-1-half'
                   alt='keep going'
                 />
               </MDBView>
