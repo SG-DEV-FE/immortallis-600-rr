@@ -39,7 +39,7 @@ const Miniatures = () => {
               <img
                 src={GWplc}
                 alt={copyrightGW}
-                className='mx-auto d-block my-4'
+                className='mx-auto img-fluid d-block my-4'
               />
 
               <p>
