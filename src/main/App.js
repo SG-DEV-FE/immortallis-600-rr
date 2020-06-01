@@ -4,6 +4,7 @@ import About from '../pages/about/About';
 import Career from '../pages/career/Career';
 import Testimonial from '../pages/career/Testimonial';
 import Hobbies from '../pages/about/hobbies/hobbies';
+import Footer from '../pages/footer/footer';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         <Hobbies />
       </main>
       {/* 
-    <Insta />
-    <Footer /> */}
+    <Insta />*/}
+      <Footer />
     </>
   );
 }
