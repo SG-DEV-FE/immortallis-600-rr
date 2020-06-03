@@ -7,13 +7,10 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import ReactGA from 'react-ga';
-import auth from './auth.ts'; // Sample authentication provider
 
 const trackingId = 'UA-141751502-1'; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
-ReactGA.set({
-  userId: auth.currentUserId(),
-});
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
