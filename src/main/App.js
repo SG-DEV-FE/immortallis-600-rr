@@ -5,6 +5,7 @@ import Career from '../pages/career/Career';
 import Testimonial from '../pages/career/Testimonial';
 import Hobbies from '../pages/about/hobbies/hobbies';
 import Footer from '../pages/footer/footer';
+import Gallery from '../pages/gallery/gallery';
 
 class App extends Component {
   componentDidMount() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Career />
           <Testimonial />
           <Hobbies />
+          <Gallery />
         </main>
         {/* 
     <Insta />*/}
