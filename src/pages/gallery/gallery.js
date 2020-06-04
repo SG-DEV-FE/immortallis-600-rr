@@ -25,7 +25,7 @@ const Gallery = () => {
               </p>
               <iframe
                 src='https://snapwidget.com/embed/834445'
-                className='snapwidget-widget w-100 border-0 overflow-hidden'
+                className='snapwidget-widget w-100 vh-100 border-0 overflow-hidden'
                 allowtransparency='true'
                 frameBorder='0'
                 scrolling='no'
