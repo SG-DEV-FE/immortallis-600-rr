@@ -16,6 +16,7 @@ const Gallery = () => {
 
           <MDBRow className='mb-5'>
             <MDBCol sm={12} md={6}>
+              <p>This is a work in progress and will gradually get better</p>
               <iframe
                 src='https://snapwidget.com/embed/834445'
                 className='snapwidget-widget'
