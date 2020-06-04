@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBCol, MDBRow, MDBIcon, MDBContainer } from 'mdbreact';
+import { SGInstagram } from '../../constants/index';
 
 const Gallery = () => {
   return (
@@ -15,14 +16,20 @@ const Gallery = () => {
           </MDBRow>
 
           <MDBRow className='mb-5'>
-            <MDBCol sm={12} md={6}>
-              <p>This is a work in progress and will gradually get better</p>
+            <MDBCol sm={12}>
+              <p>
+                I will present my instagram feed here and that it will contain
+                mainly photography and miniatures. With the occasional bit of
+                motorcycle feed <br /> I can be found under the name{' '}
+                <a href={SGInstagram}>fallen_hunter_castiel</a>
+              </p>
               <iframe
                 src='https://snapwidget.com/embed/834445'
-                className='snapwidget-widget'
+                className='snapwidget-widget w-100 border-0 overflow-hidden'
                 allowtransparency='true'
                 frameBorder='0'
-                scrolling='no'></iframe>
+                scrolling='no'
+                title='snapwidget instagram feed'></iframe>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
