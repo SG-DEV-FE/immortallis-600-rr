@@ -7,7 +7,7 @@ const Gallery = () => {
     <>
       <section className='bg-g' id='gallery'>
         <MDBContainer>
-          <MDBRow className='mt-5'>
+          <MDBRow className='py-5'>
             <MDBCol>
               <blockquote className='blockquote bq-primary'>
                 <MDBIcon icon='gamepad' className='funky-font mr-2' /> Gallery
@@ -15,7 +15,7 @@ const Gallery = () => {
             </MDBCol>
           </MDBRow>
 
-          <MDBRow className='mb-5'>
+          <MDBRow className='pb-5'>
             <MDBCol sm={12}>
               <p>
                 I will present my instagram feed here and that it will contain
