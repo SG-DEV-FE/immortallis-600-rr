@@ -5,7 +5,7 @@ import { SGInstagram } from '../../constants/index';
 const Gallery = () => {
   return (
     <>
-      <section className='bg-w' id='gallery'>
+      <section className='bg-g' id='gallery'>
         <MDBContainer>
           <MDBRow className='mt-5'>
             <MDBCol>
