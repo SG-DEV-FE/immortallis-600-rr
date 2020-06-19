@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBView } from 'mdbreact';
-import { SGLinkedIn, SGCloudinary, DA } from '../../../constants/index';
+import { SGLinkedIn, SGCloudinary, DA, imgUrl } from '../../../constants/index';
 
 const Intro = () => {
   return (
@@ -11,7 +11,7 @@ const Intro = () => {
             <div className='avatar mx-auto text-center mb-2'>
               <a href={SGLinkedIn} target='_blank' rel='noopener noreferrer'>
                 <img
-                  src={SGCloudinary}
+                  src={imgUrl + SGCloudinary}
                   alt='Stephen Gault - Software Developer / Graphic Design'
                   className='rounded-circle img-fluid z-depth-3'
                 />
@@ -64,7 +64,7 @@ const Intro = () => {
           <MDBCol lg={5} className='hidden-sm-down text-center text-lg-left'>
             <img
               className='img-fluid'
-              src={DA}
+              src={imgUrl + DA}
               alt='Dark Angels Space Marine Veteran copyright Games-Workshop plc'
             />
           </MDBCol>

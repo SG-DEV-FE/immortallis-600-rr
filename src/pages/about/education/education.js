@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBMedia, MDBIcon } from 'mdbreact';
-import { MTASF, MTABadge, educationData } from '../../../constants/index';
+import {
+  MTASF,
+  MTABadge,
+  educationData,
+  imgUrl,
+} from '../../../constants/index';
 import axiosConfig from '../../../axiosConfig';
 
 const Education = () => {
@@ -34,7 +39,7 @@ const Education = () => {
           <MDBCol lg={7}>
             <MDBRow>
               <MDBCol size={12} md={12} xl={12}>
-                {data.Education.map(education => {
+                {data.Education.map((education) => {
                   return (
                     <MDBMedia key={education.id} list className='mt-3 pl-0'>
                       <MDBMedia tag='li'>
@@ -84,7 +89,7 @@ const Education = () => {
                 <img
                   className='mx-auto d-block pop'
                   alt='Microsoft Technology Associate Software Fundamentals Badge - 2018'
-                  src={MTABadge}
+                  src={imgUrl + MTABadge}
                 />
               </a>
             </MDBCol>

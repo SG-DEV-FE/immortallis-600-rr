@@ -4,6 +4,7 @@ import {
   GWplc,
   copyrightGW,
   miniaturesData,
+  imgUrl,
 } from '../../../../constants/index.js';
 import axiosConfig from '../../../../axiosConfig';
 
@@ -37,7 +38,7 @@ const Miniatures = () => {
               <p className='mb-5 text-center'>mistakes were made</p>
 
               <img
-                src={GWplc}
+                src={imgUrl + GWplc}
                 alt={copyrightGW}
                 className='mx-auto img-fluid d-block my-4'
               />
