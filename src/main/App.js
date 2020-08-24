@@ -23,7 +23,7 @@ class App extends Component {
           <Career />
           <Testimonial />
           <Hobbies />
-          <Gallery />
+          <!--<Gallery />-->
         </main>
         {/* 
     <Insta />*/}
