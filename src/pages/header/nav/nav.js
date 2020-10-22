@@ -19,6 +19,7 @@ import {
   SGInstagram,
   SGLinkedIn,
   SGTwitter,
+  gitRepo,
 } from '../../../constants/index';
 
 class Nav extends Component {
@@ -103,18 +104,23 @@ class Nav extends Component {
                       testimonial
                     </AnchorLink>
                   </MDBNavItem>
-                  <MDBNavItem>
+                  {/*<MDBNavItem>
                     <AnchorLink className='nav-link' href='#gallery'>
                       gallery
                     </AnchorLink>
                   </MDBNavItem>
-                  {/* <MDBNavItem>
+                   <MDBNavItem>
                     <AnchorLink className='nav-link' href='#contact'>
                       contact
                     </AnchorLink>
                   </MDBNavItem> */}
                 </MDBNavbarNav>
                 <MDBNavbarNav right className='social__icons--row'>
+                  <MDBNavItem>
+                    <a className='nav-link' href={gitRepo}>
+                      <MDBIcon fab icon='github' />
+                    </a>
+                  </MDBNavItem>
                   <MDBNavItem>
                     <a className='nav-link' href={SGPSN}>
                       <MDBIcon fab icon='playstation' />

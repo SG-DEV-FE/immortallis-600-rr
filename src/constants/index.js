@@ -13,6 +13,7 @@ export const MTASF =
 export const imgUrl = 'https://res.cloudinary.com/stegault/image/upload/';
 
 export const DA = 'v1559727684/85003.jpg';
+export const githubImg = 'v1603372211/GitHub-Mark-Light-32px_fhobw8.png';
 export const LJMU =
   'c_scale,w_60,f_auto,q_auto:eco/v1573047733/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.png';
 export const MTABadge =
@@ -26,6 +27,9 @@ export const Gravatar =
   'https://www.gravatar.com/avatar/e6aecbcb76ece075dc321fcae02c29ca';
 
 export const psnprofile = 'https://card.psnprofiles.com/1/groghall.png';
+export const gitRepo = 'https://github.com/Groghall/immortallis-600-rr'
+
+export const tronrelect = 'v1598011477/tron-reflected_z6hltx.jpg';
 
 // Legal Constant
 export const copyrightGW = 'Copyright© Games Workshop PLC';

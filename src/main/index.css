@@ -175,6 +175,9 @@ header {
 .fa-google-plus-square:hover {
   color: #dd4b39;
 }
+.fa-github:hover {
+  color: var(--sunset-red);
+}
 .fa-pinterest-square:hover {
   color: #cb2027;
 }

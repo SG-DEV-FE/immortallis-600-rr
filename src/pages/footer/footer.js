@@ -7,6 +7,7 @@ import {
   SGInstagram,
   SGLinkedIn,
   SGTwitter,
+  gitRepo,
 } from '../../constants/index';
 
 class Footer extends Component {
@@ -18,6 +19,11 @@ class Footer extends Component {
           <MDBFooter className='page-footer font-small pt-4'>
             <MDBContainer>
               <ul className='list-unstyled d-flex d-flex-row justify-content-center'>
+              <li className='d-flex-item px-4'>
+                  <a href={gitRepo}>
+                    <MDBIcon fab icon='github' />
+                  </a>
+                </li>
                 <li className='d-flex-item px-4'>
                   <a href={SGPSN}>
                     <MDBIcon fab icon='playstation' />
