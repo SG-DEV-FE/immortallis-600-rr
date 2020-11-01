@@ -22,6 +22,12 @@ const ContactForm = () => {
                 </label>
                 <input type="email" id="email" className="form-control" />
                 <br />
+                <label htmlFor="subject">
+                  <MDBIcon icon="tag" className="mr-2" />
+                  Your subject
+                </label>
+                <input type="text" id="subject" className="form-control" />
+                <br />
                 <label htmlFor="message">
                   <MDBIcon icon="pencil-alt" className="mr-2"/>
                   Your message
