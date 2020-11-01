@@ -14,8 +14,7 @@ const ContactForm = () => {
                 <MDBInput label="Your name" name="name" icon="user" group type="text" validate error="wrong"
                   success="right" />
                 <MDBInput label="Your email" icon="envelope" group type="email" name="email"validate error="wrong"
-                  success="right" />
-                <MDBInput label="Subject" icon="tag" group type="text" name="subject" validate error="wrong" success="right" />
+                  success="right" />                
                 <MDBInput type="textarea" rows="2" label="Your message" name="message" icon="pencil-alt" />
                 <div data-netlify-recaptcha="true"></div>
               </div>
