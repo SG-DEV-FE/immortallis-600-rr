@@ -10,7 +10,7 @@ const Gallery = () => {
           <MDBRow className='py-5'>
             <MDBCol>
               <blockquote className='blockquote bq-primary'>
-                <MDBIcon icon='gamepad' className='funky-font mr-2' /> Gallery
+                <MDBIcon icon='palette' className='funky-font mr-2' /> Gallery
               </blockquote>
             </MDBCol>
           </MDBRow>
