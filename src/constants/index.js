@@ -13,6 +13,7 @@ export const MTASF =
 export const imgUrl = 'https://res.cloudinary.com/stegault/image/upload/';
 
 export const DA = 'v1559727684/85003.jpg';
+export const instaAdd = 'v1604251457/fallen_hunter_castiel_nametag_atak9e.png'
 export const githubImg = 'v1603372211/GitHub-Mark-Light-32px_fhobw8.png';
 export const LJMU =
   'c_scale,w_60,f_auto,q_auto:eco/v1573047733/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.png';

@@ -3,7 +3,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
 const ContactForm = () => {
     return (
-      <section id="contactMe" className="py-5 bg-g">
+      <section id="contactMe" className="py-5 bg-w">
       <MDBContainer>
         <MDBRow className="mb-3">
           <MDBCol sm="12">
@@ -16,7 +16,7 @@ const ContactForm = () => {
                   Your name
                 </blockquote>
                 </label>
-                 <input type="text" id="name" name="name" className="form-control" />
+                 <input type="text" id="name" name="name" className="form-control z-depth-1" />
                 <br />
                 <label htmlFor="email">
                 <blockquote className='blockquote bq-primary'>
@@ -24,7 +24,7 @@ const ContactForm = () => {
                   Your email
                   </blockquote>
                 </label>
-                <input type="email" id="email" name="email" className="form-control" />
+                <input type="email" id="email" name="email" className="form-control z-depth-1" />
                 <br />
                 <label htmlFor="subject">
                 <blockquote className='blockquote bq-primary'>
@@ -32,7 +32,7 @@ const ContactForm = () => {
                   Your subject
                   </blockquote>
                 </label>
-                <input type="text" id="subject" name="subject" className="form-control" />
+                <input type="text" id="subject" name="subject" className="form-control z-depth-1" />
                 <br />
                 <label htmlFor="message">
                 <blockquote className='blockquote bq-primary'>
@@ -40,7 +40,7 @@ const ContactForm = () => {
                   Your message
                   </blockquote>
                 </label>
-                <textarea type="text" id="message" name="message" className="form-control" rows="3" />
+                <textarea type="text" id="message" name="message" className="form-control z-depth-1" rows="3" />
                 <div className="text-center mt-4">
                   <MDBBtn color="secondary" outline type="submit">
                     Send

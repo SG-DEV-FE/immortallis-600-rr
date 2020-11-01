@@ -105,20 +105,15 @@ class Nav extends Component {
                     </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <AnchorLink className='nav-link' href='#contactMe'>
-                      contact
-                    </AnchorLink>
-                  </MDBNavItem>
-                  {/*<MDBNavItem>
                     <AnchorLink className='nav-link' href='#gallery'>
                       gallery
                     </AnchorLink>
                   </MDBNavItem>
-                   <MDBNavItem>
-                    <AnchorLink className='nav-link' href='#contact'>
+                  <MDBNavItem>
+                    <AnchorLink className='nav-link' href='#contactMe'>
                       contact
                     </AnchorLink>
-                  </MDBNavItem> */}
+                  </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right className='social__icons--row'>
                   <MDBNavItem>
