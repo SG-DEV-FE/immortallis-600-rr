@@ -104,6 +104,11 @@ class Nav extends Component {
                       testimonial
                     </AnchorLink>
                   </MDBNavItem>
+                  <MDBNavItem>
+                    <AnchorLink className='nav-link' href='#contactMe'>
+                      contact
+                    </AnchorLink>
+                  </MDBNavItem>
                   {/*<MDBNavItem>
                     <AnchorLink className='nav-link' href='#gallery'>
                       gallery
