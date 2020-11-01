@@ -49,7 +49,8 @@ const Education = () => {
                             <MDBMedia
                               object
                               src={education.institutionLogo}
-                              alt={education.institutionName}                              
+                              alt={education.institutionName}
+                              className='bg-w'
                             />
                           ) : (
                             <MDBMedia>
