@@ -42,9 +42,10 @@ class Career extends Component {
         <MDBContainer>
           <MDBRow className='mb-3'>
             <MDBCol sm={12}>
-              <h5 className='font-weight-bold my-3 w-responsive'>
-                Career history - crazy I know
-              </h5>
+            <blockquote className='blockquote bq-primary'>
+              <MDBIcon icon='briefcase' className='funky-font mr-2' />
+              Career history - crazy I know
+            </blockquote>
             </MDBCol>
           </MDBRow>
         </MDBContainer>

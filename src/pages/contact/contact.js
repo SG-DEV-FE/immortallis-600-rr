@@ -9,28 +9,36 @@ const ContactForm = () => {
           <MDBCol sm="12">
             <form name="contact" method="POST">
               <input type="hidden" name="form-name" value="contact" />
-              <p className="h4 text-center mb-4">Write to us</p>
+              <p className="h4 text-center mb-4">Contact me using the form below</p>
                 <label htmlFor="name" icon="user">
-                  <MDBIcon far icon="user" className="mr-2" />
+                <blockquote className='blockquote bq-primary'>
+                  <MDBIcon far icon="user" className="mr-2 funky-font" />
                   Your name
+                </blockquote>
                 </label>
                  <input type="text" id="name" name="name" className="form-control" />
                 <br />
                 <label htmlFor="email">
-                  <MDBIcon far icon="envelope" className="mr-2" />
+                <blockquote className='blockquote bq-primary'>
+                  <MDBIcon far icon="envelope" className="mr-2 funky-font" />
                   Your email
+                  </blockquote>
                 </label>
                 <input type="email" id="email" name="email" className="form-control" />
                 <br />
                 <label htmlFor="subject">
-                  <MDBIcon icon="tag" className="mr-2" />
+                <blockquote className='blockquote bq-primary'>
+                  <MDBIcon icon="tag" className="mr-2 funky-font" />
                   Your subject
+                  </blockquote>
                 </label>
                 <input type="text" id="subject" name="subject" className="form-control" />
                 <br />
                 <label htmlFor="message">
-                  <MDBIcon icon="pencil-alt" className="mr-2"/>
+                <blockquote className='blockquote bq-primary'>
+                  <MDBIcon icon="pencil-alt" className="mr-2 funky-font"/>
                   Your message
+                  </blockquote>
                 </label>
                 <textarea type="text" id="message" name="message" className="form-control" rows="3" />
                 <div className="text-center mt-4">

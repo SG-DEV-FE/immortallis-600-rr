@@ -19,9 +19,13 @@ const Testimonial = () => {
       <MDBContainer>
         <MDBRow className='mb-3'>
           <MDBCol sm={12}>
-            <h5 className='font-weight-bold my-3'>
+            <blockquote className='blockquote bq-primary'>
+              <MDBIcon icon='comments' className='funky-font mr-2' />
               Testimonial - hereby I bequeath myself to the flatteration of
               thine peers, to whit one Matthew Wilson
+            </blockquote>
+            <h5 className='font-weight-bold my-3'>
+              
             </h5>
           </MDBCol>
         </MDBRow>

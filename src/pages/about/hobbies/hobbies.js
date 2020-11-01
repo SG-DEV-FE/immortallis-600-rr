@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBCol, MDBRow } from 'mdbreact';
+import { MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdbreact';
 import Gaming from './gaming/gaming';
 import Miniatures from './minis/miniatures';
 import PC from './pc/pc';
@@ -11,9 +11,10 @@ const Hobbies = () => {
         <MDBContainer>
           <MDBRow className='mb-3'>
             <MDBCol sm={12}>
-              <h5 className='font-weight-bold my-3 w-responsive'>
+            <blockquote className='blockquote bq-primary'>
+                <MDBIcon icon='umbrella-beach' className='funky-font mr-2' />
                 Downtime / Hobbies - or how I cling to my sanity
-              </h5>
+              </blockquote>
               <p>
                 So below is a selection of how I chill the out, this is by far
                 not extensive but I think it&apos;ll do for the purposes of

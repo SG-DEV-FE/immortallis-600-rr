@@ -23,7 +23,7 @@ const Jumbotron = () => {
                 </h3>
                 <hr className='hr-light my-4 w-75' />
                 <h4 className='subtext-header mt-2 mb-4'>
-                  Software Developer / Graphic Design
+                  UI / UX Developer
                 </h4>
 
                 <div className='mt-4 mx-auto text-center'>

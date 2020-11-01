@@ -24,9 +24,10 @@ const Education = () => {
       <MDBContainer>
         <MDBRow className='mb-3'>
           <MDBCol sm={12}>
-            <h5 className='font-weight-bold my-3 w-responsive'>
-              Education - yes I have had some
-            </h5>
+            <blockquote className='blockquote bq-primary'>
+              <MDBIcon icon='graduation-cap' className='funky-font mr-2' />
+              Education
+            </blockquote>
             <p>
               Ok so here we have my formal education cert and results.
               Informally i am learning all the time via pluralsight and various
@@ -48,11 +49,10 @@ const Education = () => {
                             <MDBMedia
                               object
                               src={education.institutionLogo}
-                              alt={education.institutionName}
-                              className='bg-w'
+                              alt={education.institutionName}                              
                             />
                           ) : (
-                            <MDBMedia className='bg-w'>
+                            <MDBMedia>
                               <MDBIcon
                                 icon='school'
                                 size='4x'
