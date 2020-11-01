@@ -53,7 +53,7 @@ const Education = () => {
                               className='bg-w'
                             />
                           ) : (
-                            <MDBMedia>
+                            <MDBMedia className='bg-w'>
                               <MDBIcon
                                 icon='school'
                                 size='4x'
