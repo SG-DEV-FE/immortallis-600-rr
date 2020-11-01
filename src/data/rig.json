@@ -1,20 +1,19 @@
 {
   "PC": [
     {
-      "case": "NZXT H500i White",
-      "motherboard": "ASUS ROG Strix X470-F",
-      "processor": "AMD Ryzen 7 2700X",
-      "ram": "Corsair Vengenance RGB Pro 16gb 3200MHz White",
-      "graphics": "AsUS ROG Strix 2060RTX OC 6GB",
-      "psu": "Corsair RM750x white",
-      "cooling": "Corsair Hydro 100i Platinum White",
+      "case": "NZXT H510i ATX Mid Tower Case",
+      "motherboard": "Asus ROG STRIX X470-F Gaming ATX AM4 Motherboard",
+      "processor": "AMD Ryzen 7 2700X 3.7 GHz 8-Core Processor",
+      "ram": "Corsair Vengeance RGB Pro 16 GB (2 x 8 GB) DDR4-3200 CL16 Memory",
+      "graphics": "Asus GeForce RTX 2070 SUPER 8 GB STRIX GAMING OC Video Card",
+      "psu": "Corsair RMx White (2018) 750 W 80+ Gold Certified Fully Modular ATX Power Supply",
+      "cooling": "Corsair H100i RGB PLATINUM SE 63 CFM Liquid CPU Cooler",
       "fans": "Corsair LL120 RGB x 2 White",
-      "storagePrimary": "Samsung EVO 860 1TB",
-      "storageSecondary": "Seagate FireCuda 1TB",
-      "storageTertiary": "Toshiba 1TB",
-      "keyboard": "Razer Chroma BlackWidow",
+      "storagePrimary": "Samsung 860 Evo 1 TB 2.5 Solid State Drive",
+      "storageSecondary": "Seagate BarraCuda 1 TB 2.5 Hard Drive",      
+      "keyboard": "Razer Ornata Chroma RGB Wired Gaming Keyboard",
       "mouse": "Razer DeathAdder Tournament Edition",
-      "monitor": "ASUS VP28UQG 4K 28inch"
+      "monitor": "Asus VP28UQG 28 3840x2160 60 Hz Monitor"
     }
   ]
 }

@@ -70,7 +70,7 @@ const PC = () => {
                                 <li>{pc.storageSecondary}</li>
                                 <li>System Storage Tertiary:</li>
                                 <li>{pc.storageTertiary}</li>
-                              </ul>
+                              </ul> 
                             </MDBMedia>
                           </MDBMedia>
                         </MDBCol>

@@ -62,7 +62,7 @@ const Miniatures = () => {
             </MDBCol>
             {data.MINIS.map((model) => {
               return (
-                <MDBCol key={model.id} sm={12} md={6}>
+                <MDBCol key={model.id} sm={12} md={12}>
                   <MDBMedia className='mt-3 pl-0 pr-2'>
                     <MDBMedia
                       className='rounded mr-4'
@@ -72,6 +72,14 @@ const Miniatures = () => {
                     />
                     <MDBMedia body>
                       <MDBMedia heading>{model.miniUniverse}</MDBMedia>
+                      <p>{model.miniDescription}</p>
+                      {model.miniNotables.map((miniature, M)  => {
+                        return (
+                          <>
+                          <p className="mt-2" key={M}>{miniature.name}</p>
+                          </>
+                        )
+                      })}
                     </MDBMedia>
                   </MDBMedia>
                 </MDBCol>
