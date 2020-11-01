@@ -7,7 +7,7 @@ const Gallery = () => {
     <>
       <section className='bg-g' id='gallery'>
         <MDBContainer>
-          <MDBRow className='py-5'>
+          <MDBRow className='pt-2'>
             <MDBCol>
               <blockquote className='blockquote bq-primary'>
                 <MDBIcon icon='palette' className='funky-font mr-2' /> Gallery
@@ -28,7 +28,7 @@ const Gallery = () => {
               {/* SnapWidget */}
               <iframe
                 src='https://snapwidget.com/embed/886590'
-                className='snapwidget-widget w-100 vh-100 border-0 my-2 overflow-hidden'
+                className='snapwidget-widget w-100 vh-100 border-0 overflow-hidden'
                 allowtransparency='true'
                 frameBorder='0'
                 scrolling='no'
