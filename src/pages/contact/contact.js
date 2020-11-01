@@ -7,7 +7,8 @@ const ContactForm = () => {
       <MDBContainer>
         <MDBRow className="mb-3">
           <MDBCol sm="12">
-            <form name="contact" method="POST" data-netlify="true">              
+            <form name="contact" method="POST">
+              <input type="hidden" name="contact" value="contact" />
               <p className="h4 text-center mb-4">Write to us</p>
                 <label htmlFor="name" icon="user">
                   <MDBIcon far icon="user" className="mr-2" />
