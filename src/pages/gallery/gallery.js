@@ -7,7 +7,7 @@ const Gallery = () => {
     <>
       <section className='bg-g' id='gallery'>
         <MDBContainer>
-          <MDBRow className='pt-2'>
+          <MDBRow className='py-5'>
             <MDBCol>
               <blockquote className='blockquote bq-primary'>
                 <MDBIcon icon='palette' className='funky-font mr-2' /> Gallery
