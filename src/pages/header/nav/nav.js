@@ -66,7 +66,7 @@ class Nav extends Component {
                           href='#personality'>
                           personality
                         </AnchorLink>
-                        <AnchorLink className='dropdown-item' href='#education'>
+                        <AnchorLink className='dropdown-item' offset='40' href='#education'>
                           education
                         </AnchorLink>
                         <MDBDropdown dropright>
@@ -76,16 +76,19 @@ class Nav extends Component {
                           <MDBDropdownMenu>
                             <AnchorLink
                               className='dropdown-item'
+                              offset='40'
                               href='#hobbies'>
                               hobbies
                             </AnchorLink>
                             <AnchorLink
                               className='dropdown-item'
+                              offset='40'
                               href='#gaming'>
                               gaming
                             </AnchorLink>
                             <AnchorLink
                               className='dropdown-item'
+                              offset='40'
                               href='#miniatures'>
                               miniatures
                             </AnchorLink>
@@ -95,49 +98,49 @@ class Nav extends Component {
                     </MDBDropdown>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <AnchorLink className='nav-link' href='#career'>
+                    <AnchorLink className='nav-link' offset='40' href='#career'>
                       career
                     </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <AnchorLink className='nav-link' href='#testimonial'>
+                    <AnchorLink className='nav-link' offset='40' href='#testimonial'>
                       testimonial
                     </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <AnchorLink className='nav-link' href='#gallery'>
+                    <AnchorLink className='nav-link' offset='40' href='#gallery'>
                       gallery
                     </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <AnchorLink className='nav-link' href='#contactMe'>
+                    <AnchorLink className='nav-link' offset='40' href='#contactMe'>
                       contact
                     </AnchorLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right className='social__icons--row'>
                   <MDBNavItem>
-                    <a className='nav-link' href={gitRepo}>
+                    <a className='nav-link' href={gitRepo} target='_blank' rel="noopener noreferrer">
                       <MDBIcon fab icon='github' />
                     </a>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <a className='nav-link' href={SGPSN}>
+                    <a className='nav-link' href={SGPSN} target='_blank' rel="noopener noreferrer">
                       <MDBIcon fab icon='playstation' />
                     </a>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <a className='nav-link' href={SGLinkedIn}>
+                    <a className='nav-link' href={SGLinkedIn} target='_blank' rel="noopener noreferrer">
                       <MDBIcon fab icon='linkedin-in' />
                     </a>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <a className='nav-link' href={SGTwitter}>
+                    <a className='nav-link' href={SGTwitter} target='_blank' rel="noopener noreferrer">
                       <MDBIcon fab icon='twitter' />
                     </a>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <a className='nav-link' href={SGInstagram}>
+                    <a className='nav-link' href={SGInstagram} target='_blank' rel="noopener noreferrer">
                       <MDBIcon fab icon='instagram' />
                     </a>
                   </MDBNavItem>

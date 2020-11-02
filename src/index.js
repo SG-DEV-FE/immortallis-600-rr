@@ -8,7 +8,7 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import ReactGA from 'react-ga';
 
-const trackingId = 'UA-141751502-1'; // Replace with your Google Analytics tracking ID
+const trackingId = 'UA-141751502-1';
 ReactGA.initialize(trackingId);
 ReactGA.pageview(window.location.pathname + window.location.search);
 

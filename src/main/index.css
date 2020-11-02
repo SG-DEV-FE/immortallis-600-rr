@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
 
-/* Required for full background image */
 :root {
   --bg-img: url(https://res.cloudinary.com/stegault/image/upload/q_auto:eco/v1559727685/85004.jpg);
   --bg-white: #ffffff;
@@ -141,16 +140,6 @@ header {
   color: var(--c-white);
 }
 
-/* .card--carousel {
-  height: 200px;
-  width: auto;
-}
-
-.card--carousel__img {
-  width: auto;
-  height: 50px;
-} */
-
 .carousel-caption {
   color: var(--c-font) !important;
 }
@@ -274,7 +263,6 @@ header {
 
 .top-nav-collapse,
 .page-footer {
-  /* background-color: var(--theme-1) !important; */
   background-image: var(--funky-gradient);
 }
 
