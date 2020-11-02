@@ -36,7 +36,7 @@ export const tronrelect = 'v1598011477/tron-reflected_z6hltx.jpg';
 export const copyrightGW = 'Copyright© Games Workshop PLC';
 
 // Data Constant
-export const miniaturesData = '/5ddf97ba040d843991fa90b1/1';
+export const miniaturesData = '/5ddf97ba040d843991fa90b1/2';
 export const gamingData = '/5ddf98c63da40e6f29914c15/2';
 export const educationData = '/5ddfc8d3040d843991faa69d';
 export const pcData = '/5ddfcac9040d843991faa78c';
