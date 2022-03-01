@@ -84,12 +84,12 @@ const Intro = () => {
                 }
               </p>
               <p>
-                Motorcycling is a big part off my life also, I commute all year
+                Motorcycling is a big part off my life also, I used to commute all year
                 round on a Honda CBR 600 rr (repsol paint). All weather, yes
                 even snow (which even I admit can be pushing my luck, if it is
                 very heavy obviously gonna use public transport). I love the TT
                 in the Isle of Man and wish I could go there more often as it
-                feels very much a home from home.
+                feels very much a home from home. Hoping to eventually own a BMW S1000RR.
               </p>
               <p>
                 {
