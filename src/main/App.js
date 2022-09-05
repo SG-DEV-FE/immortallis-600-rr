@@ -22,13 +22,13 @@ class App extends Component {
         <main>
           <About />
           <Career />
-//           <Testimonial />
-//           <Hobbies />
           <Gallery />
           <Contact />
         </main>
         {/* 
     <Insta />
+    <Testimonial />
+           <Hobbies />
     */}
         <Footer />
       </>
