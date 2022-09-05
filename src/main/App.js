@@ -19,7 +19,6 @@ class App extends Component {
         <Header />
         <main>
           <About />
-          
           <Gallery />
           <Contact />
         </main>
