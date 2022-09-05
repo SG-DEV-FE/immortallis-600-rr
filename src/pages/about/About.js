@@ -7,7 +7,9 @@ export default class About extends Component {
     return (
       <>
         <Intro />
+       {/* 
         <Education />
+        */}
       </>
     );
   }
