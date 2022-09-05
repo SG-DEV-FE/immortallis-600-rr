@@ -14,7 +14,6 @@ import {
 } from 'mdbreact';
 import moment from 'moment';
 import Slider from 'react-slick';
-import { Employment } from '../../data/employment.json';
 
 class Career extends Component {
   state = { collapseID: '' };
