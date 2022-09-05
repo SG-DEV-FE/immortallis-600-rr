@@ -19,11 +19,12 @@ class App extends Component {
         <Header />
         <main>
           <About />
-          <Career />
+          
           <Gallery />
           <Contact />
         </main>
-        {/* 
+        {/*
+        <Career />
     <Insta />
     <Testimonial />
            <Hobbies />
