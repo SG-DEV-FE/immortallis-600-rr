@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
 
 :root {
-  --bg-img: url(https://res.cloudinary.com/stegault/image/upload/q_auto:eco,ar_16:9,c_scale,w_100/v1559727685/85004.webp);
+  --bg-img: url(https://res.cloudinary.com/stegault/image/upload/q_auto:eco/v1559727685/85004.webp);
   --bg-white: #ffffff;
   --bg-black: #000000;
   --bg-grey: #efefef;
