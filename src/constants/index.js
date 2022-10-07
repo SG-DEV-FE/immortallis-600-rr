@@ -10,7 +10,7 @@ export const MTASF =
 // Image constants
 
 //cloudinary
-export const imgUrl = 'https://res.cloudinary.com/stegault/image/upload/';
+export const imgUrl = 'https://res.cloudinary.com/stegault/image/upload/q_auto:eco/';
 
 export const DA = 'v1559727684/85003.webp';
 export const instaAdd = 'v1604251457/fallen_hunter_castiel_nametag_atak9e.webp'
