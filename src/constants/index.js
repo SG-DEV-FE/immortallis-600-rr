@@ -12,15 +12,15 @@ export const MTASF =
 //cloudinary
 export const imgUrl = 'https://res.cloudinary.com/stegault/image/upload/';
 
-export const DA = 'v1559727684/85003.jpg';
-export const instaAdd = 'v1604251457/fallen_hunter_castiel_nametag_atak9e.png'
-export const githubImg = 'v1603372211/GitHub-Mark-Light-32px_fhobw8.png';
+export const DA = 'v1559727684/85003.webp';
+export const instaAdd = 'v1604251457/fallen_hunter_castiel_nametag_atak9e.webp'
+export const githubImg = 'v1603372211/GitHub-Mark-Light-32px_fhobw8.webp';
 export const LJMU =
-  'c_scale,w_60,f_auto,q_auto:eco/v1573047733/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.png';
+  'c_scale,w_60,f_auto,q_auto:eco/v1573047733/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.webp';
 export const MTABadge =
-  'f_auto,q_auto:eco/v1573140125/certifications/mta-software-development-fundamentals-certified-2018.png';
+  'f_auto,q_auto:eco/v1573140125/certifications/mta-software-development-fundamentals-certified-2018.webp';
 export const SGCloudinary =
-  'c_scale,h_200,f_auto,q_auto:eco/v1573569843/ste_crop_w5sjtm.jpg';
+  'c_scale,h_200,f_auto,q_auto:eco/v1573569843/ste_crop_w5sjtm.webp';
 export const GWplc =
   'c_scale,h_210,w_auto,f_auto,q_auto:eco/v1591014586/company-logo/gw-logo-default-stacked.svg';
 
