@@ -66,9 +66,6 @@ class Nav extends Component {
                           href='#personality'>
                           personality
                         </AnchorLink>
-                        <!--<AnchorLink className='dropdown-item' offset='40' href='#education'>
-                          education
-                        </AnchorLink>-->
                         <MDBDropdown dropright>
                           <MDBDropdownToggle nav caret className='c-t--font'>
                             downtime
