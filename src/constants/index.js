@@ -2,7 +2,7 @@
 export const SGLinkedIn = 'https://www.linkedin.com/in/sg-dev';
 export const SGTwitter = 'https://twitter.com/Groghall';
 export const SGInstagram = 'https://www.instagram.com/fallen_hunter_castiel/';
-export const SGPSN = 'https://psnprofiles.com/groghall';
+export const SGPSN = 'https://psnprofiles.com/F-H-Castiel';
 
 export const MTASF =
   'https://www.youracclaim.com/badges/5ce2a3a2-8580-4ce1-bec2-d7b3806e4d32/public_url';
