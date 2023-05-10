@@ -96,12 +96,12 @@ const Intro = () => {
                   "I was going to mention my family of 3 boys and the wife but not fair to place them on here so we'll skip them for now."
                 }
               </p>
-               <h2>
+               <p>
                 {
                   "Now at the moment I am rebuilding and planning a new design for this site. so if you would like to getin touch or request my CV please feel free to use the form Below"
                 }
-              </h2>
-              <p></p>
+              </p>
+              
             </MDBCol>
           </MDBCol>
         </MDBRow>
