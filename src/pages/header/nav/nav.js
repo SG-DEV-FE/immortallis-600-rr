@@ -18,7 +18,6 @@ import {
   SGPSN,
   SGInstagram,
   SGLinkedIn,
-  SGTwitter,
   gitRepo,
 } from '../../../constants/index';
 
