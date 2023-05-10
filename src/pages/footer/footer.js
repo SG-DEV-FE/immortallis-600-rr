@@ -6,7 +6,6 @@ import {
   SGPSN,
   SGInstagram,
   SGLinkedIn,
-  SGTwitter,
   gitRepo,
 } from '../../constants/index';
 
@@ -32,11 +31,6 @@ class Footer extends Component {
                 <li className='d-flex-item px-4'>
                   <a href={SGLinkedIn}>
                     <MDBIcon fab icon='linkedin-in' />
-                  </a>
-                </li>
-                <li className='d-flex-item px-4'>
-                  <a href={SGTwitter}>
-                    <MDBIcon fab icon='twitter' />
                   </a>
                 </li>
                 <li className='d-flex-item px-4'>
