@@ -98,11 +98,6 @@ class Nav extends Component {
                     </a>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <a className='nav-link' href={SGTwitter} target='_blank' rel="noopener noreferrer">
-                      <MDBIcon fab icon='twitter' />
-                    </a>
-                  </MDBNavItem>
-                  <MDBNavItem>
                     <a className='nav-link' href={SGInstagram} target='_blank' rel="noopener noreferrer">
                       <MDBIcon fab icon='instagram' />
                     </a>
