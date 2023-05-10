@@ -66,43 +66,9 @@ class Nav extends Component {
                           href='#personality'>
                           personality
                         </AnchorLink>
-                        <MDBDropdown dropright>
-                          <MDBDropdownToggle nav caret className='c-t--font'>
-                            downtime
-                          </MDBDropdownToggle>
-                          <MDBDropdownMenu>
-                            <AnchorLink
-                              className='dropdown-item'
-                              offset='40'
-                              href='#hobbies'>
-                              hobbies
-                            </AnchorLink>
-                            <AnchorLink
-                              className='dropdown-item'
-                              offset='40'
-                              href='#gaming'>
-                              gaming
-                            </AnchorLink>
-                            <AnchorLink
-                              className='dropdown-item'
-                              offset='40'
-                              href='#miniatures'>
-                              miniatures
-                            </AnchorLink>
-                          </MDBDropdownMenu>
                         </MDBDropdown>
                       </MDBDropdownMenu>
                     </MDBDropdown>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <AnchorLink className='nav-link' offset='40' href='#career'>
-                      career
-                    </AnchorLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <AnchorLink className='nav-link' offset='40' href='#testimonial'>
-                      testimonial
-                    </AnchorLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <AnchorLink className='nav-link' offset='40' href='#gallery'>
