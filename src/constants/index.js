@@ -28,7 +28,7 @@ export const Gravatar =
   'https://www.gravatar.com/avatar/e6aecbcb76ece075dc321fcae02c29ca';
 
 export const psnprofile = 'https://card.psnprofiles.com/1/groghall.png';
-export const gitRepo = 'https://github.com/Groghall/immortallis-600-rr'
+export const gitRepo = 'https://github.com/sg-dev-fe/immortallis-600-rr'
 
 export const tronrelect = 'v1598011477/tron-reflected_z6hltx.jpg';
 
