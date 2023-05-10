@@ -65,7 +65,6 @@ class Nav extends Component {
                           href='#personality'>
                           personality
                         </AnchorLink>
-                        </MDBDropdown>
                       </MDBDropdownMenu>
                     </MDBDropdown>
                   </MDBNavItem>
