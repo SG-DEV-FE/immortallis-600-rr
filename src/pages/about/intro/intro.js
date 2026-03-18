@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBView } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import { SGLinkedIn, SGCloudinary, DA, imgUrl } from '../../../constants/index';
 
 const Intro = () => {
@@ -43,13 +43,13 @@ const Intro = () => {
 
           <MDBCol sm={12}>
             <div className='h-100vh w-100'>
-              <MDBView hover zoom>
+              <div className='hover-zoom'>
                 <img
                   src='https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1591012741/ntsh_frmtxf.png'
                   className='rounded img-fluid mx-auto d-block z-depth-1-half'
                   alt='keep going'
                 />
-              </MDBView>
+              </div>
             </div>
           </MDBCol>
         </MDBRow>
@@ -84,24 +84,24 @@ const Intro = () => {
                 }
               </p>
               <p>
-                Motorcycling is a big part off my life also, I used to commute all year
-                round on a Honda CBR 600 rr (repsol paint). All weather, yes
-                even snow (which even I admit can be pushing my luck, if it is
-                very heavy obviously gonna use public transport). I love the TT
-                in the Isle of Man and wish I could go there more often as it
-                feels very much a home from home. Hoping to eventually own a BMW S1000RR.
+                Motorcycling is a big part off my life also, I used to commute
+                all year round on a Honda CBR 600 rr (repsol paint). All
+                weather, yes even snow (which even I admit can be pushing my
+                luck, if it is very heavy obviously gonna use public transport).
+                I love the TT in the Isle of Man and wish I could go there more
+                often as it feels very much a home from home. Hoping to
+                eventually own a BMW S1000RR.
               </p>
               <p>
                 {
                   "I was going to mention my family of 3 boys and the wife but not fair to place them on here so we'll skip them for now."
                 }
               </p>
-               <p>
+              <p>
                 {
-                  "Now at the moment I am rebuilding and planning a new design for this site. so if you would like to getin touch or request my CV please feel free to use the form Below"
+                  'Now at the moment I am rebuilding and planning a new design for this site. so if you would like to getin touch or request my CV please feel free to use the form Below'
                 }
               </p>
-              
             </MDBCol>
           </MDBCol>
         </MDBRow>

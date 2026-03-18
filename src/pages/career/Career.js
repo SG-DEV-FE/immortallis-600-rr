@@ -7,11 +7,9 @@ import {
   MDBCardTitle,
   MDBCol,
   MDBRow,
-  MDBView,
-  MDBMask,
   MDBIcon,
   MDBCollapse,
-} from 'mdbreact';
+} from 'mdb-react-ui-kit';
 import moment from 'moment';
 import Slider from 'react-slick';
 
@@ -41,10 +39,10 @@ class Career extends Component {
         <MDBContainer>
           <MDBRow className='mb-3'>
             <MDBCol sm={12}>
-            <blockquote className='blockquote bq-primary'>
-              <MDBIcon icon='briefcase' className='funky-font mr-2' />
-              Career history - crazy I know
-            </blockquote>
+              <blockquote className='blockquote bq-primary'>
+                <MDBIcon icon='briefcase' className='funky-font mr-2' />
+                Career history - crazy I know
+              </blockquote>
             </MDBCol>
           </MDBRow>
         </MDBContainer>

@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import { MDBFooter, MDBContainer, MDBIcon } from 'mdbreact';
+import { MDBFooter, MDBContainer, MDBIcon } from 'mdb-react-ui-kit';
 
 import { BrowserRouter } from 'react-router-dom';
-import {
-  SGPSN,
-  SGInstagram,
-  SGLinkedIn,
-  gitRepo,
-} from '../../constants/index';
+import { SGPSN, SGInstagram, SGLinkedIn, gitRepo } from '../../constants/index';
 
 class Footer extends Component {
   state = {};
@@ -18,7 +13,7 @@ class Footer extends Component {
           <MDBFooter className='page-footer font-small pt-4'>
             <MDBContainer>
               <ul className='list-unstyled d-flex d-flex-row justify-content-center'>
-              <li className='d-flex-item px-4'>
+                <li className='d-flex-item px-4'>
                   <a href={gitRepo}>
                     <MDBIcon fab icon='github' />
                   </a>

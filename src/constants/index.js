@@ -9,10 +9,11 @@ export const MTASF =
 // Image constants
 
 //cloudinary
-export const imgUrl = 'https://res.cloudinary.com/stegault/image/upload/q_auto:eco/';
+export const imgUrl =
+  'https://res.cloudinary.com/stegault/image/upload/q_auto:eco/';
 
 export const DA = 'v1559727684/85003.webp';
-export const instaAdd = 'v1604251457/fallen_hunter_castiel_nametag_atak9e.webp'
+export const instaAdd = 'v1604251457/fallen_hunter_castiel_nametag_atak9e.webp';
 export const githubImg = 'v1603372211/GitHub-Mark-Light-32px_fhobw8.webp';
 export const LJMU =
   'c_scale,w_60,f_auto,q_auto:eco/v1573047733/John_Moores_University-logo-6BEE17C857-seeklogo.com_nysllk.webp';
@@ -27,7 +28,7 @@ export const Gravatar =
   'https://www.gravatar.com/avatar/e6aecbcb76ece075dc321fcae02c29ca';
 
 export const psnprofile = 'https://card.psnprofiles.com/1/groghall.png';
-export const gitRepo = 'https://github.com/sg-dev-fe/immortallis-600-rr'
+export const gitRepo = 'https://github.com/sg-dev-fe/immortallis-600-rr';
 
 export const tronrelect = 'v1598011477/tron-reflected_z6hltx.jpg';
 

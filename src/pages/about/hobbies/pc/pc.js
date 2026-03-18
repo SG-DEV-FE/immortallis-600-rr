@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MDBCol, MDBRow, MDBIcon, MDBMedia, MDBContainer } from 'mdbreact';
+import { MDBCol, MDBRow, MDBIcon, MDBContainer } from 'mdb-react-ui-kit';
 import { pcData } from '../../../../constants/index.js';
 import axiosConfig from '../../../../axiosConfig';
 
@@ -70,7 +70,7 @@ const PC = () => {
                                 <li>{pc.storageSecondary}</li>
                                 <li>System Storage Tertiary:</li>
                                 <li>{pc.storageTertiary}</li>
-                              </ul> 
+                              </ul>
                             </MDBMedia>
                           </MDBMedia>
                         </MDBCol>

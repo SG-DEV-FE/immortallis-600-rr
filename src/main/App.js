@@ -6,12 +6,6 @@ import Gallery from '../pages/gallery/gallery';
 import Contact from '../pages/contact/contact';
 
 class App extends Component {
-  componentDidMount() {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = '/constants/cookieBanner.js';
-    document.head.appendChild(script);
-  }
   render() {
     return (
       <>

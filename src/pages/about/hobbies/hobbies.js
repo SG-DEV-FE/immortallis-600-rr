@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdbreact';
+import { MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdb-react-ui-kit';
 import Gaming from './gaming/gaming';
 import Miniatures from './minis/miniatures';
 import PC from './pc/pc';
@@ -11,7 +11,7 @@ const Hobbies = () => {
         <MDBContainer>
           <MDBRow className='mb-3'>
             <MDBCol sm={12}>
-            <blockquote className='blockquote bq-primary'>
+              <blockquote className='blockquote bq-primary'>
                 <MDBIcon icon='umbrella-beach' className='funky-font mr-2' />
                 Downtime / Hobbies - or how I cling to my sanity
               </blockquote>

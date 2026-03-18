@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import { testimonialData } from '../../constants/index';
 import axiosConfig from '../../axiosConfig';
 
@@ -24,9 +24,7 @@ const Testimonial = () => {
               Testimonial - hereby I bequeath myself to the flatteration of
               thine peers, to whit one Matthew Wilson
             </blockquote>
-            <h5 className='font-weight-bold my-3'>
-              
-            </h5>
+            <h5 className='font-weight-bold my-3'></h5>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

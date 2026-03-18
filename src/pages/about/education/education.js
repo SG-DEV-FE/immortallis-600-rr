@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBMedia, MDBIcon } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import {
   MTASF,
   MTABadge,

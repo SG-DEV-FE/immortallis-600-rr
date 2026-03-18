@@ -4,10 +4,9 @@ import {
   MDBRow,
   MDBListGroup,
   MDBListGroupItem,
-  MDBMedia,
   MDBIcon,
   MDBContainer,
-} from 'mdbreact';
+} from 'mdb-react-ui-kit';
 import axiosConfig from '../../../../axiosConfig';
 import { gamingData } from '../../../../constants/index';
 

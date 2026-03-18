@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MDBCol, MDBRow, MDBIcon, MDBMedia, MDBContainer } from 'mdbreact';
+import { MDBCol, MDBRow, MDBIcon, MDBContainer } from 'mdb-react-ui-kit';
 import {
   GWplc,
   copyrightGW,
@@ -73,12 +73,14 @@ const Miniatures = () => {
                     <MDBMedia body>
                       <MDBMedia heading>{model.miniUniverse}</MDBMedia>
                       <p>{model.miniDescription}</p>
-                      {model.miniNotables.map((miniature, M)  => {
+                      {model.miniNotables.map((miniature, M) => {
                         return (
                           <>
-                          <p className="mt-2" key={M}>{miniature.name}</p>
+                            <p className='mt-2' key={M}>
+                              {miniature.name}
+                            </p>
                           </>
-                        )
+                        );
                       })}
                     </MDBMedia>
                   </MDBMedia>
