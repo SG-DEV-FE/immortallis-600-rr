@@ -57,14 +57,12 @@ class Nav extends Component {
           fixed='top'
           className={navbarClasses}>
           <MDBContainer>
-            <MDBNavbarBrand>
-              <Link to='/'>
-                <img
-                  className='rounded-circle z-depth-0'
-                  src='https://res.cloudinary.com/stegault/image/upload/c_scale,h_30,w_30/v1561378466/brandicon_xzpby6.png'
-                  alt='Brandicon'
-                />
-              </Link>
+            <MDBNavbarBrand tag={Link} to='/'>
+              <img
+                className='rounded-circle z-depth-0'
+                src='https://res.cloudinary.com/stegault/image/upload/c_scale,h_30,w_30/v1561378466/brandicon_xzpby6.png'
+                alt='Brandicon'
+              />
             </MDBNavbarBrand>
             <MDBNavbarToggler
               onClick={this.toggleCollapse}

@@ -40,32 +40,31 @@ const Education = () => {
           <MDBCol lg={7}>
             <MDBRow>
               <MDBCol size={12} md={12} xl={12}>
-                {data.Education.map((education) => {
-                  return (
-                    <MDBMedia key={education.id} list className='mt-3 pl-0'>
-                      <MDBMedia tag='li'>
-                        <MDBMedia left middle href='#'>
+                {data.Education &&
+                  data.Education.length > 0 &&
+                  data.Education.map((education) => {
+                    return (
+                      <div key={education.id} className='d-flex mt-3 pl-0'>
+                        <div className='me-4'>
                           {education.institutionLogo !== null ? (
-                            <MDBMedia
-                              object
+                            <img
                               src={education.institutionLogo}
                               alt={education.institutionName}
                               className='bg-w'
+                              style={{ width: '80px', height: '80px' }}
                             />
                           ) : (
-                            <MDBMedia className='bg-w'>
+                            <div className='bg-w p-2'>
                               <MDBIcon
                                 icon='school'
                                 size='4x'
                                 className='funky-font z-depth-1 px-2 py-3'
                               />
-                            </MDBMedia>
+                            </div>
                           )}
-                        </MDBMedia>
-                        <MDBMedia body>
-                          <MDBMedia heading>
-                            {education.institutionName}
-                          </MDBMedia>
+                        </div>
+                        <div className='flex-grow-1'>
+                          <h5>{education.institutionName}</h5>
                           <p className='mb-1'>
                             Course of study - {education.courseStudied}
                           </p>
@@ -75,11 +74,10 @@ const Education = () => {
                           <p className='mb-1'>
                             Year of completion - {education.yearCompleted}
                           </p>
-                        </MDBMedia>
-                      </MDBMedia>
-                    </MDBMedia>
-                  );
-                })}
+                        </div>
+                      </div>
+                    );
+                  })}
               </MDBCol>
             </MDBRow>
           </MDBCol>

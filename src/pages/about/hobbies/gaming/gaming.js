@@ -46,21 +46,22 @@ const Gaming = () => {
           </MDBRow>
 
           <MDBRow className='mb-5'>
-            {data.downtimeGaming.map((games) => {
-              return (
-                <>
+            {data.downtimeGaming &&
+              data.downtimeGaming.length > 0 &&
+              data.downtimeGaming.map((games) => {
+                return (
                   <MDBCol key={games.id} sm={12} md={6} className='pt-4 '>
-                    <MDBMedia className='mt-3 pl-0 pr-2'>
-                      <MDBMedia
+                    <div className='d-flex mt-3'>
+                      <img
                         className='rounded-circle mr-4'
-                        object
+                        style={{ width: '64px', height: '64px' }}
                         src={games.gamingAvatar}
                         alt={games.gamingTAG}
                       />
-                      <MDBMedia body>
-                        <MDBMedia heading>
+                      <div className='flex-grow-1'>
+                        <h5 className='mb-2'>
                           {games.gamingSource} - {games.gamingTAG}
-                        </MDBMedia>
+                        </h5>
                         <p>Most commonly played games</p>
                         <MDBListGroup>
                           {games.usualGames
@@ -73,12 +74,11 @@ const Gaming = () => {
                               );
                             })}
                         </MDBListGroup>
-                      </MDBMedia>
-                    </MDBMedia>
+                      </div>
+                    </div>
                   </MDBCol>
-                </>
-              );
-            })}
+                );
+              })}
           </MDBRow>
         </MDBContainer>
       </section>

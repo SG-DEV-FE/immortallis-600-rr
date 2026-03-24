@@ -12,6 +12,7 @@ import {
 } from 'mdb-react-ui-kit';
 import moment from 'moment';
 import Slider from 'react-slick';
+import Employment from '../../data/employment.json';
 
 class Career extends Component {
   state = { collapseID: '' };
@@ -23,7 +24,7 @@ class Career extends Component {
   };
 
   render() {
-    const career = Employment;
+    const career = Employment.Employment;
     const settings = {
       autoplay: true,
       centerMode: true,
@@ -51,18 +52,17 @@ class Career extends Component {
           <MDBRow className='text-center' center>
             {career.map((career, i) => {
               return (
-                <>
+                <React.Fragment key={i}>
                   {career.id !== 1 ? (
-                    <>
-                      <MDBCol key={i} lg={4} md={12} className='mb-4'>
-                        <MDBView className='overlay rounded z-depth-1'>
+                    <React.Fragment>
+                      <MDBCol lg={4} md={12} className='mb-4'>
+                        <div className='overlay rounded z-depth-1'>
                           <img
                             src={career.snapShot}
                             className='d-block w-100'
                             alt={career.employerName}
                           />
-                          <MDBMask overlay='black-light' />
-                        </MDBView>
+                        </div>
                         <MDBCard className='pb-0'>
                           <MDBCardTitle className='mt-3 mb-0'>
                             {career.employerName}
@@ -70,10 +70,8 @@ class Career extends Component {
                           <MDBCardBody>
                             {career.roles.map((roleDetail, k) => {
                               return (
-                                <>
-                                  <p className='mb-0' key={k}>
-                                    {roleDetail.title}
-                                  </p>
+                                <React.Fragment key={k}>
+                                  <p className='mb-0'>{roleDetail.title}</p>
                                   <MDBBtn
                                     onClick={this.toggleCollapse(career.id)}>
                                     Role Information{' '}
@@ -82,7 +80,7 @@ class Career extends Component {
                                   <MDBCollapse
                                     className='collapse'
                                     id={career.id}
-                                    isOpen={this.state.collapseID}>
+                                    open={this.state.collapseID === career.id}>
                                     <p>{roleDetail.description}</p>
                                     <p>
                                       {moment(roleDetail.startDate).format(
@@ -106,23 +104,22 @@ class Career extends Component {
                                     <MDBIcon icon='clone' /> View{' '}
                                     {career.employerName}
                                   </MDBBtn>
-                                </>
+                                </React.Fragment>
                               );
                             })}
                           </MDBCardBody>
                         </MDBCard>
                       </MDBCol>
-                    </>
+                    </React.Fragment>
                   ) : (
-                    <MDBCol key={i} lg={9} md={12} className='mb-4'>
-                      <MDBView className='overlay rounded z-depth-1'>
+                    <MDBCol lg={9} md={12} className='mb-4'>
+                      <div className='overlay rounded z-depth-1'>
                         <img
                           src={career.snapShot}
                           className='d-block w-100'
                           alt={career.employerName}
                         />
-                        <MDBMask overlay='black-light' />
-                      </MDBView>
+                      </div>
                       <MDBCard className='pb-0'>
                         <MDBCardTitle className='mt-3 mb-0'>
                           {career.employerName}
@@ -130,10 +127,8 @@ class Career extends Component {
                         <MDBCardBody>
                           {career.roles.map((roleDetail, l) => {
                             return (
-                              <>
-                                <p className='mb-0' key={l}>
-                                  {roleDetail.title}
-                                </p>
+                              <React.Fragment key={l}>
+                                <p className='mb-0'>{roleDetail.title}</p>
                                 <MDBBtn
                                   onClick={this.toggleCollapse(career.id)}>
                                   Role Information <MDBIcon icon='caret-down' />
@@ -141,7 +136,7 @@ class Career extends Component {
                                 <MDBCollapse
                                   className='collapse'
                                   id={career.id}
-                                  isOpen={this.state.collapseID}>
+                                  open={this.state.collapseID === career.id}>
                                   <p>{roleDetail.description}</p>
                                   <p>
                                     {moment(roleDetail.startDate).format(
@@ -165,14 +160,14 @@ class Career extends Component {
                                   <MDBIcon icon='clone' /> View{' '}
                                   {career.employerName}
                                 </MDBBtn>
-                              </>
+                              </React.Fragment>
                             );
                           })}
                         </MDBCardBody>
                       </MDBCard>
                     </MDBCol>
                   )}
-                </>
+                </React.Fragment>
               );
             })}
           </MDBRow>
@@ -181,21 +176,16 @@ class Career extends Component {
               <Slider {...settings}>
                 {career.map((career, h) => {
                   return (
-                    <>
+                    <React.Fragment key={h}>
                       {career.id !== 11 ? (
-                        <>
-                          <div key={h} itemID={career.id} className='px-2'>
-                            <img
-                              src={career.companyLogo}
-                              alt={career.employerName}
-                            />
-                            <MDBMask overlay='black-light' />
-                          </div>
-                        </>
-                      ) : (
-                        <></>
-                      )}
-                    </>
+                        <div itemID={career.id} className='px-2'>
+                          <img
+                            src={career.companyLogo}
+                            alt={career.employerName}
+                          />
+                        </div>
+                      ) : null}
+                    </React.Fragment>
                   );
                 })}
               </Slider>

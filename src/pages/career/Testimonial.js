@@ -32,46 +32,48 @@ const Testimonial = () => {
         <MDBRow>
           <MDBCol className='text-center'>
             <div className='testimonial '>
-              {data.Testimonials.map((testament) => {
-                return (
-                  <>
-                    <div
-                      key={testament.id}
-                      className='avatar text-center mx-auto mb-4'>
-                      <a
-                        href={testament.testimonialSource}
-                        target='_blank'
-                        rel='noopener noreferrer'>
-                        <img
-                          src={testament.testimonialAvatar}
-                          alt={testament.imageAlt}
-                          className='rounded-circle img-fluid z-depth-3'
-                        />
-                      </a>
-                    </div>
-                    <div className='pt-3'>
-                      <p className='text-justify'>
-                        <MDBIcon icon='quote-left' />
-                        {testament.testimonialContent}
-                        <MDBIcon icon='quote-right' />
-                      </p>
-                    </div>
-                    <h4
-                      className='font-weight-bold'
-                      href={testament.testimonialSource}>
-                      Matt Wilson
-                    </h4>
-                    <h6 className='font-weight-bold my-3'>
-                      Sales and Marketing Director at{' '}
-                      <a
-                        href={testament.companyURL}
-                        alt={testament.companyName}>
-                        D2i Systems Ltd
-                      </a>
-                    </h6>
-                  </>
-                );
-              })}
+              {data.Testimonials &&
+                data.Testimonials.length > 0 &&
+                data.Testimonials.map((testament) => {
+                  return (
+                    <>
+                      <div
+                        key={testament.id}
+                        className='avatar text-center mx-auto mb-4'>
+                        <a
+                          href={testament.testimonialSource}
+                          target='_blank'
+                          rel='noopener noreferrer'>
+                          <img
+                            src={testament.testimonialAvatar}
+                            alt={testament.imageAlt}
+                            className='rounded-circle img-fluid z-depth-3'
+                          />
+                        </a>
+                      </div>
+                      <div className='pt-3'>
+                        <p className='text-justify'>
+                          <MDBIcon icon='quote-left' />
+                          {testament.testimonialContent}
+                          <MDBIcon icon='quote-right' />
+                        </p>
+                      </div>
+                      <h4
+                        className='font-weight-bold'
+                        href={testament.testimonialSource}>
+                        Matt Wilson
+                      </h4>
+                      <h6 className='font-weight-bold my-3'>
+                        Sales and Marketing Director at{' '}
+                        <a
+                          href={testament.companyURL}
+                          alt={testament.companyName}>
+                          D2i Systems Ltd
+                        </a>
+                      </h6>
+                    </>
+                  );
+                })}
             </div>
             {Array.apply(null, { length: 5 }).map((e, index) => (
               <MDBIcon icon='star' className='amber-text' key={index} />

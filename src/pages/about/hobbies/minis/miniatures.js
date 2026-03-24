@@ -60,33 +60,33 @@ const Miniatures = () => {
                 your about to see. its only a snippet of my collection
               </p>
             </MDBCol>
-            {data.MINIS.map((model) => {
-              return (
-                <MDBCol key={model.id} sm={12} md={12}>
-                  <MDBMedia className='mt-3 pl-0 pr-2'>
-                    <MDBMedia
-                      className='rounded mr-4'
-                      object
-                      src={model.miniLogo}
-                      alt={model.logoCopyright ? model.logoCopyright : ''}
-                    />
-                    <MDBMedia body>
-                      <MDBMedia heading>{model.miniUniverse}</MDBMedia>
-                      <p>{model.miniDescription}</p>
-                      {model.miniNotables.map((miniature, M) => {
-                        return (
-                          <>
+            {data.MINIS &&
+              data.MINIS.length > 0 &&
+              data.MINIS.map((model) => {
+                return (
+                  <MDBCol key={model.id} sm={12} md={12}>
+                    <div className='d-flex mt-3'>
+                      <img
+                        className='rounded mr-4'
+                        style={{ width: '100px', height: '100px' }}
+                        src={model.miniLogo}
+                        alt={model.logoCopyright ? model.logoCopyright : ''}
+                      />
+                      <div className='flex-grow-1'>
+                        <h5>{model.miniUniverse}</h5>
+                        <p>{model.miniDescription}</p>
+                        {model.miniNotables.map((miniature, M) => {
+                          return (
                             <p className='mt-2' key={M}>
                               {miniature.name}
                             </p>
-                          </>
-                        );
-                      })}
-                    </MDBMedia>
-                  </MDBMedia>
-                </MDBCol>
-              );
-            })}
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </MDBCol>
+                );
+              })}
           </MDBRow>
         </MDBContainer>
       </section>
