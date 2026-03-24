@@ -13,7 +13,18 @@ const ContactForm = () => {
       <MDBContainer>
         <MDBRow className='mb-3'>
           <MDBCol sm='12'>
-            <form name='contact' method='POST'>
+            <form
+              name='contact'
+              method='POST'
+              netlify-honeypot='bot-field'
+              data-netlifyu-recaptcha='true'
+              data-netlify='true'>
+              <p className='hidden'>
+                <label>
+                  Don't fill this out if you're human:{' '}
+                  <input name='bot-field' type='text' />
+                </label>
+              </p>
               <input type='hidden' name='form-name' value='contact' />
               <p className='h4 text-center mb-4'>
                 Contact me using the form below
@@ -70,6 +81,7 @@ const ContactForm = () => {
                 className='form-control z-depth-1'
                 rows='3'
               />
+              <div data-netlify-recaptcha='true' className='my-4'></div>
               <div className='text-center mt-4'>
                 <MDBBtn color='secondary' outline type='submit'>
                   Send
