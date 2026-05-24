@@ -1,6 +1,11 @@
 import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import AnchorLinkModule from 'react-anchor-link-smooth-scroll';
+
+const AnchorLink =
+  typeof AnchorLinkModule === 'function'
+    ? AnchorLinkModule
+    : AnchorLinkModule.default;
 
 const Jumbotron = () => {
   return (

@@ -12,7 +12,7 @@ import {
   MDBDropdownToggle,
   MDBDropdownMenu,
 } from 'mdb-react-ui-kit';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import AnchorLinkModule from 'react-anchor-link-smooth-scroll';
 import { BrowserRouter } from 'react-router-dom';
 import {
   SGPSN,
@@ -20,6 +20,11 @@ import {
   SGLinkedIn,
   gitRepo,
 } from '../../../constants/index';
+
+const AnchorLink =
+  typeof AnchorLinkModule === 'function'
+    ? AnchorLinkModule
+    : AnchorLinkModule.default;
 
 class Nav extends Component {
   state = {
