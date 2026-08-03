@@ -5,7 +5,24 @@
 [build.environment]
   NODE_VERSION = "22.18.0"
 
+# Netlify Forms Configuration
+[functions]
+  directory = "netlify/functions"
+
+# Form handlers
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Spam filtering headers
+[headers]
+  [[headers.values]]
+    key = "X-Content-Type-Options"
+    value = "nosniff"
+  [[headers.values]]
+    key = "X-Frame-Options"
+    value = "DENY"
+  [[headers.values]]
+    key = "X-XSS-Protection"
+    value = "1; mode=block"
