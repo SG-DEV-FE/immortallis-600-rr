@@ -4,7 +4,6 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavbarToggler,
-  MDBCollapse,
   MDBNavbarItem,
   MDBIcon,
   MDBContainer,
@@ -35,11 +34,19 @@ class Nav extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('resize', this.handleResize);
   }
+
+  handleResize = () => {
+    if (window.innerWidth >= 992 && this.state.isOpen) {
+      this.setState({ isOpen: false });
+    }
+  };
 
   handleScroll = () => {
     const isScrolled = window.scrollY > 50;
@@ -62,12 +69,23 @@ class Nav extends Component {
     }
   };
 
-  toggleCollapse = () => {
+  toggleCollapse = (e) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     this.setState({ isOpen: !this.state.isOpen });
+  };
+
+  closeCollapse = () => {
+    if (this.state.isOpen) {
+      this.setState({ isOpen: false });
+    }
   };
 
   setActiveSection = (section) => {
     this.setState({ activeSection: section });
+    this.closeCollapse();
   };
 
   render() {
@@ -92,11 +110,11 @@ class Nav extends Component {
               <MDBNavbarToggler
                 onClick={this.toggleCollapse}
                 aria-controls='navbarNav'
-                aria-expanded='false'
+                aria-expanded={this.state.isOpen}
                 aria-label='Toggle navigation'>
                 <span className='navbar-toggler-icon'></span>
               </MDBNavbarToggler>
-              <MDBCollapse navbar open={this.state.isOpen}>
+              <div className={`navbar-collapse ${this.state.isOpen ? 'show' : ''}`}>
                 <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
                   <MDBNavbarItem>
                     <AnchorLink
@@ -179,7 +197,7 @@ class Nav extends Component {
                     </a>
                   </MDBNavbarItem>
                 </MDBNavbarNav>
-              </MDBCollapse>
+              </div>
             </MDBContainer>
           </MDBNavbar>
         </BrowserRouter>

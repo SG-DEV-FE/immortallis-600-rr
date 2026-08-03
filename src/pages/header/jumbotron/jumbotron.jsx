@@ -23,14 +23,14 @@ const Jumbotron = () => {
         }}>
         <MDBContainer className='px-md-3 px-sm-0'>
           <MDBRow>
-            <MDBCol md={12} className='mb-4 white-text text-center'>
-              <h3 className='display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5'>
+            <MDBCol md={12} className='mb-4 text-center white-text'>
+              <h3 className='pt-5 mb-0 display-3 font-weight-bold white-text pt-md-5'>
                 Stephen Gault
               </h3>
-              <hr className='hr-light my-4 w-75' />
-              <h4 className='subtext-header mt-2 mb-4'>UI / UX Developer</h4>
+              <hr className='my-4 hr-light w-75' />
+              <h4 className='mt-2 mb-4 subtext-header'>UI / UX Developer</h4>
 
-              <div className='mt-4 mx-auto text-center'>
+              <div className='mx-auto mt-4 text-center'>
                 <AnchorLink href='#personality' offset='40'>
                   <MDBIcon
                     icon='chevron-circle-down'

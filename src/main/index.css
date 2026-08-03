@@ -42,12 +42,17 @@ body {
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--bg-white);
 }
 
 html,
 body,
 header {
   height: auto;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #instaAccount {
@@ -287,7 +292,6 @@ header {
   background: transparent !important;
   transition: all 0.5s ease-in-out;
   z-index: 1030 !important;
-  position: relative;
 }
 
 .navbar-transparent::before {
@@ -310,11 +314,17 @@ header {
 
 .navbar .navbar-collapse,
 .navbar .collapse-content {
-  display: flex !important;
   flex-basis: auto;
   flex-grow: 1;
   align-items: center;
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-collapse,
+  .navbar .collapse-content {
+    display: flex !important;
+  }
 }
 
 .navbar .navbar-nav:last-child {
@@ -325,8 +335,53 @@ header {
   background: transparent !important;
 }
 
+.navbar-toggler {
+  border: none !important;
+  padding: 0.5rem !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  pointer-events: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+
+  .navbar-collapse {
+    position: relative !important;
+    top: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    width: auto !important;
+    background: transparent !important;
+  }
 }
 
 .navbar .nav-link {
@@ -398,6 +453,8 @@ header {
     rgba(35, 7, 77, 0.6)
   );
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .slider--height {
@@ -415,6 +472,9 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .social__icons--row {
@@ -443,6 +503,41 @@ header {
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
     background: var(--theme-1) !important;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--theme-1) !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar-collapse.show {
+    max-height: 600px;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+
+  .navbar .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 0.75rem 1rem !important;
   }
 
   .navbar-collapse .social__icons--row {
