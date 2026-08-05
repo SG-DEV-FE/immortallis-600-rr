@@ -1,48 +1,35 @@
 {
   "name": "immortalis-600-rr",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "type": "module",
   "engines": {
-    "node": ">=22.0.0",
-    "npm": ">=10.5.0"
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
-    "axios": "^1.15.0",
-    "bootstrap": "^5.3.8",
-    "mdb-react-ui-kit": "^10.0.0",
-    "moment": "^2.30.1",
-    "react": "^19.2.6",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^19.2.6",
-    "react-ga4": "^3.0.1",
-    "react-router-dom": "^7.14.1",
-    "react-slick": "^0.31.0",
-    "slick-carousel": "^1.8.1"
+    "next": "^14.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-ga4": "^3.0.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.5.4",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.3",
+    "postcss": "^8.4.32",
     "tailwindcss": "^4.3.3",
-    "vite": "^8.0.8"
-  },
-  "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "typescript": "^5.3.3"
   }
 }
