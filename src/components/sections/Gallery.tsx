@@ -10,7 +10,7 @@ export default function Gallery() {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Gallery
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-teal-700 to-emerald-500 rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full"></div>
         </div>
 
         <div className="animate-fade-in">

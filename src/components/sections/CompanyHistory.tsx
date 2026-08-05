@@ -105,7 +105,7 @@ export default function CompanyHistory() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <div className="inline-block mb-4">
-            <span className="text-blue-600 text-lg font-bold uppercase tracking-widest">
+            <span className="text-orange-500 text-lg font-bold uppercase tracking-widest">
               <i className="fas fa-building mr-2"></i>Professional Timeline
             </span>
           </div>
@@ -129,7 +129,7 @@ export default function CompanyHistory() {
                 onMouseEnter={() => setHoveredId(company.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
-                <div className="relative h-full rounded-xl overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 hover:border-blue-400 transition-all duration-300 group-hover:shadow-lg cursor-pointer">
+                <div className="relative h-full rounded-xl overflow-hidden bg-white border border-slate-200 hover:border-orange-400 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1 cursor-pointer">
                   {/* Company Logo/Image Background */}
                   <div className="absolute top-4 right-4 w-16 h-16 rounded-lg overflow-hidden bg-white shadow-md p-2">
                     <img
@@ -180,7 +180,7 @@ export default function CompanyHistory() {
                         href={company.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 group-hover:gap-2 text-sm"
+                        className="inline-flex items-center gap-1 text-orange-600 font-semibold hover:text-orange-700 transition-colors duration-300 group-hover:gap-2 text-sm"
                       >
                         View
                         <span className="text-sm">→</span>
@@ -189,7 +189,7 @@ export default function CompanyHistory() {
                   </div>
 
                   {/* Accent Line */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </div>
               </div>
             ))}

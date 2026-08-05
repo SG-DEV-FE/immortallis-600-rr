@@ -17,7 +17,7 @@ export default function Personality() {
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tight">
               About Me
             </h2>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"></div>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full"></div>
           </div>
 
           {/* Profile Card */}
@@ -31,7 +31,7 @@ export default function Personality() {
                 className="group relative"
               >
                 {/* Glow effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl opacity-20 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl opacity-20 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
                 
                 {/* Image */}
                 <img
