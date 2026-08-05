@@ -23,31 +23,85 @@ const companies: Company[] = [
     roles: ['Founder', 'UI/UX Developer', 'Full Stack Engineer', 'Tech Lead'],
   },
   {
-    id: 'freelance',
-    name: 'Freelance Creative Developer',
-    logo: 'https://res.cloudinary.com/stegault/image/upload/c_scale,h_80,w_80,f_auto,q_auto:eco/v1561378466/brandicon_xzpby6.png',
-    website: 'https://www.linkedin.com/in/stephen-gault-688b9312a/',
-    period: '2018 - 2020',
-    description: 'Delivered pixel-perfect solutions across diverse industries. Gaming, e-commerce, and creative projects with advanced CSS animations and interactions.',
-    roles: ['UI/UX Engineer', 'React Developer', 'Vue.js Developer', 'Web Designer'],
+    id: 'sailgp',
+    name: 'SailGP',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1785937978/company-site/SailGP.png',
+    website: 'https://www.sailgp.com/',
+    period: '2023 - 2024',
+    description: 'High-performance competitive sailing championship. Contributed to digital experiences for one of the world\'s fastest growing sports.',
+    roles: ['Frontend Developer', 'Web Developer', 'UI Engineer'],
+  },
+  {
+    id: 'evoke',
+    name: 'Evoke Creative',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1785937978/company-site/Evoke_Creative.png',
+    website: 'https://www.evokecreative.co.uk/',
+    period: '2021 - 2023',
+    description: 'Creative digital agency delivering innovative solutions. Specialized in React development and modern web technologies for enterprise clients.',
+    roles: ['Frontend Developer', 'React Engineer', 'Web Developer'],
+  },
+  {
+    id: 'trelleborg',
+    name: 'Trelleborg',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1573213740/company-site/trelleborg-site.png',
+    website: 'https://www.trelleborg.com/',
+    period: '2019 - 2021',
+    description: 'Global engineering company specializing in polymer technology. Built internal and customer-facing digital solutions.',
+    roles: ['Frontend Developer', 'Full Stack Developer', 'Web Developer'],
+  },
+  {
+    id: 'sofology',
+    name: 'Sofology',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1573212293/company-site/sofology-site.png',
+    website: 'https://www.sofology.co.uk/',
+    period: '2018 - 2019',
+    description: 'Premium furniture retailer. Developed responsive e-commerce and customer-facing digital experiences.',
+    roles: ['Frontend Developer', 'Web Developer', 'UI Engineer'],
+  },
+  {
+    id: 'fleetsolve',
+    name: 'FleetSolve',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1573208357/company-site/fleetsolve-site.png',
+    website: 'https://www.fleetsolve.co.uk/',
+    period: '2017 - 2018',
+    description: 'Fleet management software company. Built dashboard and reporting interfaces for logistics management.',
+    roles: ['Frontend Developer', 'Full Stack Developer', 'JavaScript Engineer'],
+  },
+  {
+    id: 'nviron',
+    name: 'N-Viron Solutions',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1573204863/company-site/nviron-site.png',
+    website: 'https://www.nviron.co.uk/',
+    period: '2016 - 2017',
+    description: 'Environmental compliance software. Developed user interfaces for complex regulatory and compliance systems.',
+    roles: ['Frontend Developer', 'Web Developer', 'UI Developer'],
+  },
+  {
+    id: 'charles-stanley',
+    name: 'Charles Stanley Financial Solutions',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1573136052/company-site/broadtstone-site.png',
+    website: 'https://www.charles-stanley.co.uk/',
+    period: '2015 - 2016',
+    description: 'Financial services company. Built responsive interfaces for investment platforms and client portals.',
+    roles: ['Frontend Developer', 'Web Developer', 'JavaScript Engineer'],
   },
   {
     id: 'tearaway',
     name: 'Media Molecule / PlayStation Studios',
-    logo: 'https://res.cloudinary.com/stegault/image/upload/c_scale,h_80,w_80,f_auto,q_auto:eco/v1234567890/ps-vita-logo.png',
-    website: 'https://www.mediamolecule.com/',
-    period: '2013',
-    description: 'QA testing on award-winning game. Contributed to BAFTA Award-winning Tearaway for PlayStation Vita with rigorous quality assurance.',
-    roles: ['QA Tester', 'Game Tester', 'Bug Hunter'],
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1785938275/company-site/Sony_Playstation.png',
+    website: 'https://tearaway.me/',
+    period: '2013 - 2014',
+    description: 'QA testing on award-winning game. Contributed to BAFTA Award-winning Tearaway for PlayStation Vita with rigorous quality assurance and game testing.',
+    roles: ['QA Tester', 'Game Tester', 'Quality Assurance'],
   },
   {
-    id: 'tech-companies',
+    id: 'various-tech',
     name: 'Various Tech Companies',
-    logo: 'https://res.cloudinary.com/stegault/image/upload/c_scale,h_80,w_80,f_auto,q_auto:eco/v1561378466/brandicon_xzpby6.png',
+    logo: 'https://res.cloudinary.com/stegault/image/upload/v1560094278/company-site/d2-site_dyzutn.png',
     website: 'https://www.linkedin.com/in/stephen-gault-688b9312a/',
-    period: '2015 - 2018',
-    description: 'Fast-paced tech environments building scalable user-facing features. Experience with modern frameworks, component design systems, and cross-browser compatibility.',
-    roles: ['Front-end Developer', 'UI Developer', 'JavaScript Engineer', 'Web Developer'],
+    period: '2012 - 2015',
+    description: 'Early career at multiple tech startups and agencies. Built foundational skills in web development, HTML/CSS, JavaScript, and modern frameworks.',
+    roles: ['Junior Frontend Developer', 'Web Developer', 'HTML/CSS Developer'],
   },
 ];
 
@@ -74,18 +128,19 @@ export default function CompanyHistory() {
         </div>
 
         {/* Companies Grid */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {companies.map((company) => (
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6">
+            {companies.map((company, idx) => (
               <div
                 key={company.id}
                 className="group animate-slide-up"
+                style={{ animationDelay: `${idx * 50}ms` }}
                 onMouseEnter={() => setHoveredId(company.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
-                <div className="relative h-full rounded-2xl overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 hover:border-blue-400 transition-all duration-300 group-hover:shadow-lg cursor-pointer">
+                <div className="relative h-full rounded-xl overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 hover:border-blue-400 transition-all duration-300 group-hover:shadow-lg cursor-pointer">
                   {/* Company Logo/Image Background */}
-                  <div className="absolute top-6 right-6 w-24 h-24 rounded-lg overflow-hidden bg-white shadow-md p-2">
+                  <div className="absolute top-4 right-4 w-16 h-16 rounded-lg overflow-hidden bg-white shadow-md p-2">
                     <img
                       src={company.logo}
                       alt={company.name}
@@ -94,34 +149,34 @@ export default function CompanyHistory() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-8 pb-8 h-full flex flex-col">
+                  <div className="p-6 pb-6 h-full flex flex-col">
                     {/* Period Badge */}
-                    <div className="inline-block mb-4 w-fit">
-                      <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">
+                    <div className="inline-block mb-3 w-fit">
+                      <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full">
                         {company.period}
                       </span>
                     </div>
 
                     {/* Company Name */}
-                    <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3 leading-tight max-w-xs">
+                    <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2 leading-tight max-w-xs">
                       {company.name}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-base text-slate-700 leading-relaxed mb-6 flex-grow">
+                    <p className="text-sm text-slate-700 leading-relaxed mb-4 flex-grow line-clamp-3">
                       {company.description}
                     </p>
 
                     {/* Roles */}
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-1 mb-4">
                       {company.roles.slice(0, 2).map((role) => (
-                        <span key={role} className="text-xs px-3 py-1 bg-slate-200 text-slate-700 rounded-full font-medium">
+                        <span key={role} className="text-xs px-2 py-1 bg-slate-200 text-slate-700 rounded-full font-medium">
                           {role}
                         </span>
                       ))}
                       {company.roles.length > 2 && (
-                        <span className="text-xs px-3 py-1 bg-slate-200 text-slate-600 rounded-full font-medium">
-                          +{company.roles.length - 2} more
+                        <span className="text-xs px-2 py-1 bg-slate-200 text-slate-600 rounded-full font-medium">
+                          +{company.roles.length - 2}
                         </span>
                       )}
                     </div>
@@ -134,10 +189,10 @@ export default function CompanyHistory() {
                         href={company.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 group-hover:gap-3"
+                        className="inline-flex items-center gap-1 text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 group-hover:gap-2 text-sm"
                       >
-                        Learn More
-                        <span className="text-lg">→</span>
+                        View
+                        <span className="text-sm">→</span>
                       </a>
                     </div>
                   </div>
