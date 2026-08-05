@@ -27,11 +27,8 @@
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
-  [headers.values]
     X-Frame-Options = "DENY"
-  [headers.values]
     X-XSS-Protection = "1; mode=block"
-  [headers.values]
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 # SPA fallback
