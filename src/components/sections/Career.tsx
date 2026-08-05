@@ -92,7 +92,7 @@ const experiences: Experience[] = [
     description:
       'Financial services company. Built responsive, secure interfaces for investment platforms and client portals. Early career experience with modern web development practices.',
     skills: ['JavaScript', 'HTML/CSS', 'Responsive Design', 'Frontend', 'Web Development'],
-    companyUrl: 'https://www.charles-stanley.co.uk/',
+    companyUrl: 'https://broadstone.co.uk/',
   },
   {
     id: 9,

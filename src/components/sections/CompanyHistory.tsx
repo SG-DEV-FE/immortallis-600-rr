@@ -80,7 +80,7 @@ const companies: Company[] = [
     id: 'charles-stanley',
     name: 'Charles Stanley Financial Solutions',
     logo: 'https://res.cloudinary.com/stegault/image/upload/v1573136052/company-site/broadtstone-site.png',
-    website: 'https://www.charles-stanley.co.uk/',
+    website: 'https://broadstone.co.uk/',
     period: '2015 - 2016',
     description: 'Financial services company. Built responsive interfaces for investment platforms and client portals.',
     roles: ['Frontend Developer', 'Web Developer', 'JavaScript Engineer'],
