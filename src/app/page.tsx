@@ -1,5 +1,8 @@
 import Header from '@/components/sections/Header';
-import About from '@/components/sections/About';
+import Personality from '@/components/sections/Personality';
+import Skills from '@/components/sections/Skills';
+import Career from '@/components/sections/Career';
+import Testimonials from '@/components/sections/Testimonials';
 import Gallery from '@/components/sections/Gallery';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
@@ -9,7 +12,10 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <About />
+        <Personality />
+        <Skills />
+        <Career />
+        <Testimonials />
         <Gallery />
         <Contact />
       </main>

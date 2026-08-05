@@ -33,7 +33,7 @@ export default function Gallery() {
               src={`https://snapwidget.com/embed/886590`}
               className="w-full border-0"
               style={{ height: '1400px' }}
-              allowtransparency={true}
+              allowTransparency={true}
               title="Instagram Feed"
             ></iframe>
           </div>
