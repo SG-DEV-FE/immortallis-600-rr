@@ -1,9 +1,10 @@
 import Header from '@/components/sections/Header';
 import Personality from '@/components/sections/Personality';
 import Skills from '@/components/sections/Skills';
+import Projects from '@/components/sections/Projects';
+import CompanyHistory from '@/components/sections/CompanyHistory';
 import Career from '@/components/sections/Career';
 import Testimonials from '@/components/sections/Testimonials';
-import Projects from '@/components/sections/Projects';
 import Gallery from '@/components/sections/Gallery';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
@@ -16,6 +17,7 @@ export default function Home() {
         <Projects />
         <Personality />
         <Skills />
+        <CompanyHistory />
         <Career />
         <Testimonials />
         <Gallery />
