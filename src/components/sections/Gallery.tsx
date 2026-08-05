@@ -33,8 +33,8 @@ export default function Gallery() {
               src={`https://snapwidget.com/embed/886590`}
               className="w-full border-0"
               style={{ height: '1400px' }}
-              allowTransparency="true"
               title="Instagram Feed"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
           </div>
         </div>
