@@ -31,6 +31,7 @@ const projects: Project[] = [
     category: 'Performance',
     tags: ['Next.js', 'Performance', 'Optimization'],
     image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/project-1.jpg',
+    link: '#case-study-performance',
     color: 'from-blue-500 to-cyan-500',
   },
   {
@@ -40,6 +41,7 @@ const projects: Project[] = [
     category: 'Design',
     tags: ['Design System', 'Tailwind', 'Components'],
     image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/project-2.jpg',
+    link: '#case-study-design',
     color: 'from-emerald-500 to-teal-500',
   },
   {
@@ -49,6 +51,7 @@ const projects: Project[] = [
     category: 'E-Commerce',
     tags: ['UX/UI', 'E-Commerce', 'React'],
     image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/project-3.jpg',
+    link: '#case-study-ecommerce',
     color: 'from-green-500 to-emerald-500',
   },
 ];
@@ -129,9 +132,9 @@ export default function Projects() {
                       <a 
                         href={project.link || '#'}
                         className="inline-flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all duration-300"
-                        {...(project.link ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                        {...(project.link?.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                       >
-                        {project.link ? 'Visit Project' : 'View Case Study'}
+                        {project.link?.startsWith('http') ? 'Visit Project' : 'View Case Study'}
                         <span className="text-xl">→</span>
                       </a>
                     </div>
