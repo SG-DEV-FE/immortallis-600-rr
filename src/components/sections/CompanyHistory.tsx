@@ -94,15 +94,6 @@ const companies: Company[] = [
     description: 'QA testing on award-winning game. Contributed to BAFTA Award-winning Tearaway for PlayStation Vita with rigorous quality assurance and game testing.',
     roles: ['QA Tester', 'Game Tester', 'Quality Assurance'],
   },
-  {
-    id: 'various-tech',
-    name: 'Various Tech Companies',
-    logo: 'https://res.cloudinary.com/stegault/image/upload/v1560094278/company-site/d2-site_dyzutn.png',
-    website: 'https://www.linkedin.com/in/stephen-gault-688b9312a/',
-    period: '2012 - 2015',
-    description: 'Early career at multiple tech startups and agencies. Built foundational skills in web development, HTML/CSS, JavaScript, and modern frameworks.',
-    roles: ['Junior Frontend Developer', 'Web Developer', 'HTML/CSS Developer'],
-  },
 ];
 
 export default function CompanyHistory() {
@@ -214,13 +205,13 @@ export default function CompanyHistory() {
                 <span className="font-semibold text-slate-900">2013:</span> Started professional career in QA testing at Media Molecule, contributing to the BAFTA Award-winning Tearaway for PlayStation Vita.
               </p>
               <p>
-                <span className="font-semibold text-slate-900">2015-2018:</span> Built front-end expertise at various tech companies, working with modern frameworks, component design systems, and delivering scalable user-facing features.
+                <span className="font-semibold text-slate-900">2015-2018:</span> Built front-end expertise at multiple tech companies including Charles Stanley, N-Viron, FleetSolve, and others, working with modern frameworks and component design systems.
               </p>
               <p>
-                <span className="font-semibold text-slate-900">2018-2020:</span> Transitioned to freelance, specializing in pixel-perfect UI/UX implementations with advanced CSS animations and interactions for diverse clients.
+                <span className="font-semibold text-slate-900">2018-2020:</span> Transitioned to freelance, specializing in pixel-perfect UI/UX implementations with advanced CSS animations and interactions for diverse clients including Sofology and Trelleborg.
               </p>
               <p>
-                <span className="font-semibold text-slate-900">2020-Present:</span> Founded Sg Dev FE to focus on innovation with modern web technologies, leading full-stack development and building next-generation web applications.
+                <span className="font-semibold text-slate-900">2020-Present:</span> Founded Sg Dev FE to focus on innovation with modern web technologies. Recently worked with Evoke Creative and SailGP, leading full-stack development and building next-generation web applications.
               </p>
             </div>
           </div>
