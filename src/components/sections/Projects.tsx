@@ -6,53 +6,63 @@ interface Project {
   id: string;
   title: string;
   description: string;
+  longDescription: string;
   category: string;
   tags: string[];
   image: string;
   link?: string;
   color: string;
+  year: string;
 }
 
 const projects: Project[] = [
   {
     id: '1',
     title: 'My Gaming Library',
-    description: 'A personal project to catalog and manage my gaming collection. Built with modern web technologies to track games across platforms, wishlist items, and share my collection with friends.',
-    category: 'Personal',
-    tags: ['React', 'Database', 'Gaming'],
+    description: 'Personal gaming collection management and social sharing platform',
+    longDescription: 'A full-stack web application built to catalog and manage gaming collections across multiple platforms. Features include wishlist tracking, collection organization, social sharing capabilities, and friends integration. Built with modern React and database architecture.',
+    category: 'Personal Project',
+    tags: ['React', 'Full Stack', 'Database', 'Social'],
     image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/gaming-library.jpg',
     link: 'https://mygaminglibrary.com/',
     color: 'from-purple-500 to-pink-500',
+    year: '2023 - Present',
   },
   {
     id: '2',
-    title: 'Web Performance Optimization',
-    description: 'Improved site speed by 45% through code splitting, lazy loading, and image optimization. Implemented modern web vitals monitoring.',
-    category: 'Performance',
-    tags: ['Next.js', 'Performance', 'Optimization'],
-    image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/project-1.jpg',
-    link: '#case-study-performance',
+    title: 'BAFTA-Winning Game UI',
+    description: 'UI/UX design credited on Tearaway for PlayStation Vita',
+    longDescription: 'Contributed to the user interface design for Tearaway, a critically-acclaimed PlayStation Vita game that won BAFTA Awards. Worked on game menus, HUD design, and interactive UI elements with a focus on accessibility and user experience.',
+    category: 'Gaming',
+    tags: ['Game UI', 'UX Design', 'PlayStation', 'Award-Winning'],
+    image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/tearaway-ui.jpg',
+    link: '#case-study-tearaway',
     color: 'from-blue-500 to-cyan-500',
+    year: '2013',
   },
   {
     id: '3',
-    title: 'Design System Architecture',
-    description: 'Built a comprehensive design system with 80+ components, color tokens, and typography scales. Reduced design-to-dev handoff time by 60%.',
-    category: 'Design',
-    tags: ['Design System', 'Tailwind', 'Components'],
-    image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/project-2.jpg',
-    link: '#case-study-design',
+    title: 'Freelance Creative Development',
+    description: 'Custom web solutions for gaming, e-commerce, and creative clients',
+    longDescription: 'Extensive freelance work delivering pixel-perfect designs with smooth animations and advanced CSS interactions. Specialized in React and Vue.js implementations for diverse client needs, from small startups to established brands. Known for attention to detail and performance optimization.',
+    category: 'Freelance',
+    tags: ['React', 'Vue.js', 'CSS', 'Web Design', 'Animation'],
+    image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/freelance-work.jpg',
+    link: '#case-study-freelance',
     color: 'from-emerald-500 to-teal-500',
+    year: '2018 - 2020',
   },
   {
     id: '4',
-    title: 'E-Commerce Platform Redesign',
-    description: 'Complete UX/UI overhaul increasing conversion rates by 35%. Implemented accessibility standards and mobile-first design.',
-    category: 'E-Commerce',
-    tags: ['UX/UI', 'E-Commerce', 'React'],
-    image: 'https://res.cloudinary.com/stegault/image/upload/f_auto,q_auto:eco/v1234567890/project-3.jpg',
-    link: '#case-study-ecommerce',
+    title: 'Sg Dev FE - Founder & UI/UX Developer',
+    description: 'Building innovative digital experiences and creative solutions',
+    longDescription: 'Founded and lead Sg Dev FE, specializing in modern web technologies and user-centric development. Focus areas include Next.js applications, TypeScript architecture, Tailwind CSS design systems, and full-stack web development. Combining design thinking with technical expertise.',
+    category: 'Founder',
+    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Full Stack', 'Leadership'],
+    image: 'https://res.cloudinary.com/stegault/image/upload/c_scale,h_400,w_400,f_auto,q_auto:eco/v1561378466/brandicon_xzpby6.png',
+    link: 'https://github.com/sg-dev-fe',
     color: 'from-green-500 to-emerald-500',
+    year: '2020 - Present',
   },
 ];
 
@@ -111,8 +121,14 @@ export default function Projects() {
                     <p className={`text-base text-white/90 leading-relaxed transition-all duration-500 transform ${
                       hoveredId === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                     }`}>
-                      {project.description}
+                      {project.longDescription}
                     </p>
+                    
+                    <div className={`text-sm text-white/70 font-medium transition-all duration-500 transform ${
+                      hoveredId === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
+                    }`}>
+                      {project.year}
+                    </div>
                     
                     {/* Tags */}
                     <div className={`flex flex-wrap gap-2 transition-all duration-500 transform ${
