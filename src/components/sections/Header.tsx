@@ -17,6 +17,20 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Handle smooth scroll navigation without hash
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const sectionId = href.replace('#', '');
+    const element = document.getElementById(sectionId);
+    
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      // Clean URL without hash
+      window.history.replaceState(null, '', '/');
+      setIsOpen(false);
+    }
+  };
+
   return (
     <>
       {/* Navigation - Hidden until after hero */}
@@ -28,7 +42,11 @@ export default function Header() {
         }`}>
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex-shrink-0 group">
+          <a 
+            href="/" 
+            onClick={(e) => handleNavClick(e, '#home')}
+            className="flex-shrink-0 group"
+          >
             <img
               src="https://res.cloudinary.com/stegault/image/upload/c_scale,h_40,w_40,f_auto,q_auto:eco/v1561378466/brandicon_xzpby6.png"
               alt="Immortallis"
@@ -44,6 +62,7 @@ export default function Header() {
               <a
                 key={link.id}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="font-semibold text-sm transition-all duration-300 relative group text-slate-900 hover:text-orange-500"
               >
                 {link.label}
@@ -86,7 +105,7 @@ export default function Header() {
                   key={link.id}
                   href={link.href}
                   className="text-white hover:text-orange-400 transition-colors font-medium"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.href)}
                 >
                   {link.label}
                 </a>
@@ -155,14 +174,16 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
-              href="#projects"
+              href="/"
+              onClick={(e) => handleNavClick(e, '#projects')}
               className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-300 animate-scale-in shadow-xl"
             >
               View My Work
               <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
             </a>
             <a
-              href="#contact"
+              href="/"
+              onClick={(e) => handleNavClick(e, '#contact')}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md text-white font-bold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 animate-scale-in"
               style={{ animationDelay: '100ms' }}
             >
@@ -174,7 +195,8 @@ export default function Header() {
           {/* Scroll Indicator */}
           <div className="mt-20 flex justify-center animate-bounce-slow">
             <a
-              href="#projects"
+              href="/"
+              onClick={(e) => handleNavClick(e, '#projects')}
               className="text-slate-500 hover:text-slate-900 transition-colors"
             >
               <i className="fas fa-chevron-down text-4xl"></i>
