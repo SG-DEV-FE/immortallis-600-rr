@@ -15,7 +15,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 1,
+    id: '1',
     title: 'My Gaming Library',
     description: 'A personal project to catalog and manage my gaming collection. Built with modern web technologies to track games across platforms, wishlist items, and share my collection with friends.',
     category: 'Personal',
@@ -25,7 +25,7 @@ const projects: Project[] = [
     color: 'from-purple-500 to-pink-500',
   },
   {
-    id: 2,
+    id: '2',
     title: 'Web Performance Optimization',
     description: 'Improved site speed by 45% through code splitting, lazy loading, and image optimization. Implemented modern web vitals monitoring.',
     category: 'Performance',
@@ -34,7 +34,7 @@ const projects: Project[] = [
     color: 'from-blue-500 to-cyan-500',
   },
   {
-    id: 3,
+    id: '3',
     title: 'Design System Architecture',
     description: 'Built a comprehensive design system with 80+ components, color tokens, and typography scales. Reduced design-to-dev handoff time by 60%.',
     category: 'Design',
@@ -43,7 +43,7 @@ const projects: Project[] = [
     color: 'from-emerald-500 to-teal-500',
   },
   {
-    id: 4,
+    id: '4',
     title: 'E-Commerce Platform Redesign',
     description: 'Complete UX/UI overhaul increasing conversion rates by 35%. Implemented accessibility standards and mobile-first design.',
     category: 'E-Commerce',
