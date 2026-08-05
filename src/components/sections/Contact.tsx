@@ -153,7 +153,7 @@ export default function Contact() {
             )}
 
             {/* @ts-ignore */}
-            <form onSubmit={handleSubmit} name="contact" netlify>
+            <form onSubmit={handleSubmit} name="contact" netlify="true">
               <div className="form-group animate-fade-in">
                 <label htmlFor="name" className="form-label">
                   Name <span className="required">*</span>

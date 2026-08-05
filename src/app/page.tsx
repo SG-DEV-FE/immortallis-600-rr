@@ -3,6 +3,7 @@ import Personality from '@/components/sections/Personality';
 import Skills from '@/components/sections/Skills';
 import Career from '@/components/sections/Career';
 import Testimonials from '@/components/sections/Testimonials';
+import Projects from '@/components/sections/Projects';
 import Gallery from '@/components/sections/Gallery';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Header />
       <main>
+        <Projects />
         <Personality />
         <Skills />
         <Career />

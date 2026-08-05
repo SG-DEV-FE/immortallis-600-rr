@@ -2,138 +2,246 @@
 
 export default function Personality() {
   return (
-    <section id="personality" className="py-20 bg-gradient-to-b from-slate-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="personality" className="py-32 bg-white relative overflow-hidden">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-20"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         {/* Welcome Section */}
-        <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
-          <div className="mb-8">
-            <a 
-              href="https://www.linkedin.com/in/stephen-gault-688b9312a/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block hover:scale-110 transition-transform"
-            >
-              <img
-                src="https://res.cloudinary.com/stegault/image/upload/c_fill,h_240,w_240,g_face,f_auto,q_auto:eco/v1573569843/ste_crop_w5sjtm.webp"
-                alt="Stephen Gault"
-                className="rounded-full w-56 h-56 mx-auto shadow-2xl border-4 border-orange-400 hover:shadow-orange-400/50 object-cover"
-              />
-            </a>
-          </div>
-          
-          <h2 className="text-5xl md:text-6xl font-black text-slate-900 mb-6 leading-tight">
-            Welcome Ladies & Gents<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-pink-500 to-rose-500">
-              Orruks & Duardin
-            </span>
-            <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500">
-              Cats & Dogs
-            </span>
-          </h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-6">
-            You get the picture. This is me <span className="text-orange-500 font-bold">(song's in your head now)</span>.
-          </p>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-4">
-            I built this little old site to showcase my skills and generally show off some of my personality, 
-            that as you have no doubt already surmised is on the <span className="font-bold text-teal-600">dry wit side</span>...
-          </p>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed italic mb-8">
-            Also it's a work in progress so it's rough around the edges, like all good personal projects are... ahem 😅
-          </p>
-        </div>
-
-        {/* Call to scroll */}
-        <div className="text-center mb-16 animate-slide-up">
-          <p className="text-xl text-slate-700 font-semibold mb-4">
-            Call it an informal CV if you want.
-          </p>
-          <p className="text-lg text-slate-600">
-            Now what... um... let's see... er... oh I know.<br/>
-            <span className="font-bold text-orange-500">Scroll down a bit more →</span>
-          </p>
-        </div>
-
-        {/* Personality Block */}
-        <div className="bg-gradient-to-r from-orange-100 to-yellow-100 border-l-4 border-orange-500 rounded-lg p-8 mb-16 shadow-lg hover:shadow-xl transition-shadow animate-scale-in">
-          <p className="text-xl text-slate-800 font-bold mb-2">
-            <i className="fas fa-user text-orange-500 mr-3"></i>Personality (or lack of)
-          </p>
-          <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-pink-500"></div>
-        </div>
-
-        {/* Main Content Grid */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16 items-center">
-          {/* Warhammer Image */}
-          <div className="flex justify-center md:order-2 animate-fade-in delay-1">
-            <img
-              src="https://res.cloudinary.com/stegault/image/upload/f_auto,h_400,w_400,c_fill,q_auto:eco/v1591012741/ntsh_frmtxf.png"
-              alt="Dark Angels Space Marine"
-              className="rounded-xl shadow-2xl hover:shadow-orange-400/50 transition-shadow max-w-sm"
-            />
+        <div className="max-w-5xl mx-auto mb-24 animate-fade-in">
+          {/* Header */}
+          <div className="mb-16">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tight">
+              About Me
+            </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"></div>
           </div>
 
-          {/* Text Content */}
-          <div className="space-y-6 animate-slide-up delay-2 md:order-1">
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3 text-orange-600">
-                <i className="fas fa-ring mr-2"></i>Warhammer 40K Addiction
-              </h3>
-              <p className="text-slate-700 leading-relaxed">
-                Now those of you viewing this on a mobile phone before using a tablet or PC... nice phone. 
-                If you're viewing this on a PC/desktop/laptop then you can probably see the mahoosive <span className="italic font-semibold">(yes, it's a word)</span> Space Marine. 
-                I believe it's what's referred to as declaring if you have any addictions... Yes I do. It's called <span className="font-bold text-emerald-600">Warhammer 40K</span>.
-              </p>
+          {/* Profile Card */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="flex justify-center md:justify-start animate-slide-up">
+              <a 
+                href="https://www.linkedin.com/in/stephen-gault-688b9312a/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative"
+              >
+                {/* Glow effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl opacity-20 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+                
+                {/* Image */}
+                <img
+                  src="https://res.cloudinary.com/stegault/image/upload/c_fill,h_240,w_240,g_face,f_auto,q_auto:eco/v1573569843/ste_crop_w5sjtm.webp"
+                  alt="Stephen Gault"
+                  className="relative rounded-2xl w-64 h-64 shadow-2xl object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </a>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3 text-sky-600">
-                <i className="fas fa-gamepad mr-2"></i>Gaming & Consoles
-              </h3>
-              <p className="text-slate-700 leading-relaxed">
-                Seriously, it's my main hobby apart from Gaming <i className="fab fa-playstation text-ps-blue"></i> and <i className="fas fa-desktop text-sky-600"></i> 
-                {' '}<span className="text-sm">(look at those pretty icons)</span>. 
-                Gaming is a big part of who I am. I've been gaming since the Atari 2600 days (Centipede was my go-to game). 
-                Now it's mostly PlayStation 4 or my PC. 
-              </p>
-              <p className="text-slate-700 leading-relaxed mt-3 font-semibold text-emerald-600">
-                Awesome gaming fact: I've been credited on the BAFTA-winning game <span className="underline">Tearaway</span> for PlayStation Vita!
-              </p>
-            </div>
+            {/* Text Content */}
+            <div className="space-y-6 animate-slide-up" style={{ animationDelay: '150ms' }}>
+              <div>
+                <h3 className="text-3xl font-bold text-slate-900 mb-3">Welcome!</h3>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  I'm a passionate UI/UX Developer and Creative Technologist who loves building beautiful, 
+                  functional digital experiences.
+                </p>
+              </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3 text-red-600">
-                <i className="fas fa-motorcycle mr-2"></i>Motorcycling
-              </h3>
-              <p className="text-slate-700 leading-relaxed">
-                Motorcycling is a big part of my life. I used to commute all year round on a Honda CBR 600 RR (Repsol paint). 
-                All weather—yes, even snow <span className="font-bold">(which even I admit can be pushing my luck)</span>. 
-                I love the TT in the Isle of Man and wish I could go there more often as it feels like home away from home. 
-                Hoping to eventually own a BMW S1000RR.
-              </p>
-            </div>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="w-1 bg-gradient-to-b from-blue-600 to-cyan-500 rounded-full flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">Warhammer 40K Enthusiast</h4>
+                    <p className="text-slate-600">Spending countless hours painting Orks and Duardin. The lore, the models, the community—it's all incredible.</p>
+                  </div>
+                </div>
 
-            <div className="bg-blue-50 border-l-4 border-sky-500 p-4 rounded">
-              <p className="text-slate-700 italic">
-                I was going to mention my family of 3 boys and the wife, but not fair to place them here, so we'll skip that for now. 😊
+                <div className="flex gap-4">
+                  <div className="w-1 bg-gradient-to-b from-blue-600 to-cyan-500 rounded-full flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">Gamer at Heart</h4>
+                    <p className="text-slate-600">PlayStation aficionado with a BAFTA credit. Gaming shaped how I think about user experience and interactivity.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-1 bg-gradient-to-b from-blue-600 to-cyan-500 rounded-full flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">Motorcycle Enthusiast</h4>
+                    <p className="text-slate-600">Two-wheel adventures and road trips. There's something about the open road that clears the mind.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-1 bg-gradient-to-b from-blue-600 to-cyan-500 rounded-full flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">Photography Junkie</h4>
+                    <p className="text-slate-600">Capturing moments through a lens, from miniatures to motorcycles. Check my Instagram for the latest shots.</p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-base text-slate-600 italic mt-8 pt-8 border-t border-slate-200">
+                Dry wit, questionable dad jokes, and a genuine passion for creating digital experiences 
+                that are both beautiful and intuitive.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="bg-gradient-to-r from-teal-600 to-emerald-600 rounded-lg p-8 text-center text-white shadow-2xl animate-scale-in">
-          <h3 className="text-3xl font-bold mb-4">
-            Want to Get in Touch?
-          </h3>
-          <p className="text-lg mb-6 opacity-95">
-            Got a project in mind or just want to chat? I'm always up for a conversation about tech, gaming, or motorcycles!
+        {/* Warhammer Section */}
+        <div className="mt-32 animate-fade-in">
+          <div className="mb-12">
+            <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              Deep Dives
+            </h3>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"></div>
+          </div>
+
+          {/* Warhammer Card */}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-20 animate-slide-up">
+            <div className="flex justify-center order-2 md:order-1">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-br from-orange-400 via-pink-400 to-red-400 rounded-xl opacity-20 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+                <img
+                  src="https://res.cloudinary.com/stegault/image/upload/f_auto,h_400,w_400,c_fill,q_auto:eco/v1591012741/ntsh_frmtxf.png"
+                  alt="Warhammer 40K Space Marine"
+                  className="relative rounded-xl shadow-2xl max-w-sm object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-6 order-1 md:order-2">
+              <div>
+                <h4 className="text-3xl font-bold text-slate-900 mb-3">Warhammer 40K Addiction</h4>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  A genuine passion for the Warhammer 40K universe. I spend countless hours painting intricate Ork and Duardin models, 
+                  diving deep into the lore, and engaging with the amazing community. It's not just a hobby—it's a lifestyle.
+                </p>
+              </div>
+              
+              <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                <span className="text-2xl">🎨</span>
+                <div>
+                  <p className="font-bold text-slate-900">Modeling & Painting</p>
+                  <p className="text-slate-600 text-sm">Detailed brush work and army building</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Gaming Card */}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-20 animate-slide-up" style={{ animationDelay: '150ms' }}>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-3xl font-bold text-slate-900 mb-3">Gaming & Consoles</h4>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  Gaming has shaped my entire career. From the Atari 2600 to PlayStation, I've been passionate about interactive experiences. 
+                  I'm proud to have been credited on the BAFTA-winning game <span className="font-bold text-emerald-600">Tearaway</span> for PlayStation Vita.
+                </p>
+              </div>
+              
+              <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                <span className="text-2xl">🎮</span>
+                <div>
+                  <p className="font-bold text-slate-900">BAFTA Credit</p>
+                  <p className="text-slate-600 text-sm">Tearaway - PlayStation Vita</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-br from-blue-400 via-sky-400 to-cyan-400 rounded-xl opacity-20 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+                <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8 text-white shadow-2xl group-hover:shadow-cyan-500/50 transition-all duration-500">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm opacity-75">Platforms</p>
+                      <p className="font-bold text-lg">PlayStation | PC</p>
+                    </div>
+                    <div>
+                      <p className="text-sm opacity-75">Main Interest</p>
+                      <p className="font-bold text-lg">Story-Driven Games</p>
+                    </div>
+                    <div>
+                      <p className="text-sm opacity-75">Favorites</p>
+                      <p className="font-bold text-lg">Final Fantasy | God of War | Elden Ring</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Motorcycling Card */}
+          <div className="grid md:grid-cols-2 gap-12 items-center animate-slide-up" style={{ animationDelay: '300ms' }}>
+            <div className="flex justify-center order-2 md:order-1">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-br from-red-400 via-orange-400 to-yellow-400 rounded-xl opacity-20 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+                <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8 text-white shadow-2xl group-hover:shadow-orange-500/50 transition-all duration-500">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm opacity-75">Current Bike</p>
+                      <p className="font-bold text-lg">Honda CBR 600 RR</p>
+                    </div>
+                    <div>
+                      <p className="text-sm opacity-75">Dream Bike</p>
+                      <p className="font-bold text-lg">BMW S1000RR</p>
+                    </div>
+                    <div>
+                      <p className="text-sm opacity-75">Favorite Ride</p>
+                      <p className="font-bold text-lg">Isle of Man TT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6 order-1 md:order-2">
+              <div>
+                <h4 className="text-3xl font-bold text-slate-900 mb-3">Motorcycling Passion</h4>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  Motorcycling is embedded in my DNA. Year-round commuting in all weather, including snow. 
+                  The Isle of Man TT is my spiritual home, and I dream of owning a BMW S1000RR someday.
+                </p>
+              </div>
+              
+              <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
+                <span className="text-2xl">🏍️</span>
+                <div>
+                  <p className="font-bold text-slate-900">Adventure Seeker</p>
+                  <p className="text-slate-600 text-sm">Road trips and track days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Family Note */}
+        <div className="mt-24 p-8 bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-600 rounded-lg animate-fade-in">
+          <p className="text-lg text-slate-700 italic">
+            <span className="font-bold">Family First:</span> I'm also a proud husband and father of 3 amazing boys. 
+            They're my biggest inspiration and the reason I strive to create experiences that matter.
+          </p>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-24 text-center animate-slide-up" style={{ animationDelay: '450ms' }}>
+          <h3 className="text-4xl font-bold text-slate-900 mb-6">Ready to Collaborate?</h3>
+          <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+            Whether you want to discuss tech, gaming, Warhammer, or motorcycles—let's chat!
           </p>
           <a
             href="#contact"
-            className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105 hover:shadow-lg"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
           >
-            Send me a Message →
+            Get In Touch
+            <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
           </a>
         </div>
       </div>

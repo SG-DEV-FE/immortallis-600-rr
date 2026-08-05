@@ -1,8 +1,9 @@
 export const NAV_LINKS = [
-  { id: 1, label: 'About', href: '#personality' },
-  { id: 2, label: 'Career', href: '#career' },
-  { id: 3, label: 'Gallery', href: '#gallery' },
-  { id: 4, label: 'Contact', href: '#contact' },
+  { id: 1, label: 'Work', href: '#projects' },
+  { id: 2, label: 'About', href: '#personality' },
+  { id: 3, label: 'Career', href: '#career' },
+  { id: 4, label: 'Gallery', href: '#gallery' },
+  { id: 5, label: 'Contact', href: '#contact' },
 ];
 
 export const SOCIAL_LINKS = [
