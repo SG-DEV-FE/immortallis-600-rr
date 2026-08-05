@@ -130,24 +130,24 @@ export default function Header() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-fade-in">
           <div className="mb-6 inline-block">
-            <span className="text-sm font-bold text-orange-600 tracking-widest uppercase">Welcome to my portfolio</span>
+            <span className="text-sm font-bold text-white tracking-widest uppercase drop-shadow-lg">Welcome to my portfolio</span>
           </div>
           
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-slate-900 mb-6 tracking-tight leading-none">
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-6 tracking-tight leading-none drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.4), 0 2px 10px rgba(0,0,0,0.3)' }}>
             Stephen
             <br />
-            <span className="bg-gradient-to-r from-orange-500 via-amber-400 to-orange-600 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500 text-transparent bg-clip-text drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(249,115,22,0.4)' }}>
               Gault
             </span>
           </h1>
 
-          <div className="w-32 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mb-10 rounded-full"></div>
+          <div className="w-32 h-1.5 bg-gradient-to-r from-orange-400 to-amber-400 mx-auto mb-10 rounded-full shadow-lg"></div>
 
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-700 mb-6 tracking-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-6 tracking-tight drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
             UI/UX Developer & Creative Technologist
           </h2>
 
-          <p className="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Crafting beautiful digital experiences where design meets code. 
             Specializing in modern web technologies and intuitive user interfaces.
           </p>
@@ -156,14 +156,14 @@ export default function Header() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
               href="#projects"
-              className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-300 animate-scale-in"
+              className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-300 animate-scale-in shadow-xl"
             >
               View My Work
               <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-slate-900 font-bold rounded-xl border-2 border-slate-900 hover:bg-slate-50 transition-all duration-300 animate-scale-in"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md text-white font-bold rounded-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 animate-scale-in"
               style={{ animationDelay: '100ms' }}
             >
               Get In Touch
