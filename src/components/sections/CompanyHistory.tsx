@@ -196,24 +196,14 @@ export default function CompanyHistory() {
           </div>
         </div>
 
-        {/* Timeline Info */}
+        {/* Footer Note */}
         <div className="mt-20 pt-12 border-t border-slate-200 animate-fade-in">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Career Progression</h3>
-            <div className="space-y-4 text-slate-700">
-              <p>
-                <span className="font-semibold text-slate-900">2013:</span> Started professional career in QA testing at Media Molecule, contributing to the BAFTA Award-winning Tearaway for PlayStation Vita.
-              </p>
-              <p>
-                <span className="font-semibold text-slate-900">2015-2018:</span> Built front-end expertise at multiple tech companies including Charles Stanley, N-Viron, FleetSolve, and others, working with modern frameworks and component design systems.
-              </p>
-              <p>
-                <span className="font-semibold text-slate-900">2018-2020:</span> Transitioned to freelance, specializing in pixel-perfect UI/UX implementations with advanced CSS animations and interactions for diverse clients including Sofology and Trelleborg.
-              </p>
-              <p>
-                <span className="font-semibold text-slate-900">2020-Present:</span> Founded Sg Dev FE to focus on innovation with modern web technologies. Recently worked with Evoke Creative and SailGP, leading full-stack development and building next-generation web applications.
-              </p>
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-slate-600 text-lg">
+              Each company represents a pivotal chapter in my development journey, from early career QA testing 
+              to founding my own innovation-focused ventures. 
+              <a href="#career" className="text-blue-600 hover:text-blue-700 font-semibold ml-1">View detailed career timeline →</a>
+            </p>
           </div>
         </div>
       </div>

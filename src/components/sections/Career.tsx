@@ -20,30 +20,89 @@ const experiences: Experience[] = [
     role: 'Founder & UI/UX Developer',
     period: '2020 - Present',
     description:
-      'Building innovative digital experiences and creative solutions. Specializing in modern web technologies, responsive design, and user-centric development.',
-    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'UI/UX Design', 'Full Stack'],
-    logo: 'https://res.cloudinary.com/stegault/image/upload/c_scale,h_60,w_60,f_auto,q_auto:eco/v1561378466/brandicon_xzpby6.png',
+      'Founded and leading digital innovation with focus on modern web technologies. Specializing in Next.js, TypeScript, Tailwind CSS, and full-stack development. Recently collaborated with Evoke Creative and SailGP on high-impact projects.',
+    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'UI/UX Design', 'Full Stack', 'Leadership'],
     companyUrl: 'https://github.com/sg-dev-fe',
   },
   {
     id: 2,
-    company: 'Freelance Creative Developer',
-    role: 'UI/UX Engineer & Designer',
-    period: '2018 - 2020',
+    company: 'SailGP',
+    role: 'Frontend Developer',
+    period: '2023 - 2024',
     description:
-      'Worked with diverse clients across gaming, e-commerce, and creative industries. Delivered pixel-perfect designs with smooth animations and interactions. BAFTA credit for Tearaway (PlayStation Vita).',
-    skills: ['React', 'Vue.js', 'CSS Animations', 'Web Design', 'Game UI', 'Prototyping'],
-    companyUrl: 'https://www.linkedin.com/in/stephen-gault-688b9312a/',
+      'Built digital experiences for high-performance competitive sailing championship. Contributed to web applications for one of the world\'s fastest growing sports.',
+    skills: ['React', 'Web Development', 'Performance', 'User Experience', 'JavaScript'],
+    companyUrl: 'https://www.sailgp.com/',
   },
   {
     id: 3,
-    company: 'Various Tech Companies',
-    role: 'Front-end Developer & Designer',
-    period: '2015 - 2018',
+    company: 'Evoke Creative',
+    role: 'Frontend Developer & React Engineer',
+    period: '2021 - 2023',
     description:
-      'Worked in fast-paced tech environments building user-facing features. Experience with MVC frameworks, component design systems, and cross-browser compatibility.',
-    skills: ['JavaScript', 'HTML/CSS', 'jQuery', 'Bootstrap', 'Git', 'Agile'],
-    companyUrl: 'https://www.linkedin.com/in/stephen-gault-688b9312a/',
+      'Delivered innovative solutions as part of a creative digital agency. Specialized in React development and modern web technologies for enterprise clients.',
+    skills: ['React', 'Frontend Development', 'Web Development', 'TypeScript', 'UI Implementation'],
+    companyUrl: 'https://www.evokecreative.co.uk/',
+  },
+  {
+    id: 4,
+    company: 'Trelleborg',
+    role: 'Frontend & Full Stack Developer',
+    period: '2019 - 2021',
+    description:
+      'Global engineering company specializing in polymer technology. Built internal systems and customer-facing digital solutions for one of Europe\'s largest engineering firms.',
+    skills: ['JavaScript', 'Full Stack', 'Web Applications', 'Frontend', 'Database Design'],
+    companyUrl: 'https://www.trelleborg.com/',
+  },
+  {
+    id: 5,
+    company: 'Sofology',
+    role: 'Frontend Developer & Web Developer',
+    period: '2018 - 2019',
+    description:
+      'Premium furniture retailer. Developed responsive e-commerce interfaces and customer-facing digital experiences during freelance engagement.',
+    skills: ['Frontend Development', 'E-commerce', 'Responsive Design', 'React', 'CSS'],
+    companyUrl: 'https://www.sofology.co.uk/',
+  },
+  {
+    id: 6,
+    company: 'FleetSolve',
+    role: 'Frontend & Full Stack Developer',
+    period: '2017 - 2018',
+    description:
+      'Fleet management software company. Built dashboard interfaces, reporting systems, and logistics management tools for enterprise customers.',
+    skills: ['JavaScript', 'Frontend', 'Full Stack', 'Dashboard Development', 'Data Visualization'],
+    companyUrl: 'https://www.fleetsolve.co.uk/',
+  },
+  {
+    id: 7,
+    company: 'N-Viron Solutions',
+    role: 'Frontend & UI Developer',
+    period: '2016 - 2017',
+    description:
+      'Environmental compliance software company. Developed user interfaces for complex regulatory and compliance systems serving enterprise clients.',
+    skills: ['JavaScript', 'HTML/CSS', 'UI Development', 'Responsive Design', 'Frontend'],
+    companyUrl: 'https://www.nviron.co.uk/',
+  },
+  {
+    id: 8,
+    company: 'Charles Stanley Financial Solutions',
+    role: 'Frontend Developer & Web Developer',
+    period: '2015 - 2016',
+    description:
+      'Financial services company. Built responsive, secure interfaces for investment platforms and client portals. Early career experience with modern web development practices.',
+    skills: ['JavaScript', 'HTML/CSS', 'Responsive Design', 'Frontend', 'Web Development'],
+    companyUrl: 'https://www.charles-stanley.co.uk/',
+  },
+  {
+    id: 9,
+    company: 'Media Molecule / PlayStation Studios',
+    role: 'QA Tester & Game Tester',
+    period: '2013 - 2014',
+    description:
+      'Started professional career in QA testing at award-winning game studio. Contributed to BAFTA Award-winning Tearaway for PlayStation Vita with rigorous quality assurance, bug identification, and gameplay validation.',
+    skills: ['QA Testing', 'Game Testing', 'Bug Tracking', 'Quality Assurance', 'Attention to Detail'],
+    companyUrl: 'https://tearaway.me/',
   },
 ];
 
@@ -61,15 +120,16 @@ export default function Career() {
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <div className="inline-block mb-4">
             <span className="text-orange-500 text-lg font-bold uppercase tracking-widest">
-              <i className="fas fa-briefcase mr-2"></i>Experience
+              <i className="fas fa-briefcase mr-2"></i>Professional Timeline
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
             Professional Journey
           </h2>
           <p className="text-xl text-slate-600">
-            A blend of creative design thinking, technical expertise, and passion for building 
-            experiences that matter. Each role shaped my approach to solving complex problems with elegance and humor.
+            From QA testing at award-winning game studios to building enterprise solutions and founding my own venture. 
+            A 12-year career spanning gaming, fintech, enterprise software, and modern web innovation. 
+            Each role brought new perspectives on solving complex problems with elegance and user-centric design.
           </p>
         </div>
 
@@ -168,13 +228,14 @@ export default function Career() {
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-scale-in">
           <p className="text-slate-600 mb-6">
-            Want to know more about my experience or discuss a project?
+            12 years of experience across gaming, fintech, enterprise, and modern web technologies.
+            Passionate about creating elegant solutions that solve real problems.
           </p>
           <a
             href="#contact"
             className="inline-block bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105 hover:shadow-lg"
           >
-            Get in Touch →
+            Let's Collaborate →
           </a>
         </div>
       </div>
