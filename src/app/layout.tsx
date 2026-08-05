@@ -32,6 +32,9 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         
+        {/* AIFX Runtime - for bokeh dust drift effect */}
+        <Script src="https://cdn.aidesigner.ai/effects/runtime/v1.js" strategy="afterInteractive" />
+        
         {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
