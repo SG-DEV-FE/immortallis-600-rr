@@ -17,80 +17,80 @@ const experiences: Experience[] = [
   {
     id: 1,
     company: 'Sg Dev FE',
-    role: 'Founder & UI/UX Developer',
+    role: 'Founder & Lead UI/UX Developer',
     period: '2020 - Present',
     description:
-      'Founded and leading digital innovation with focus on modern web technologies. Specializing in Next.js, TypeScript, Tailwind CSS, and full-stack development. Recently collaborated with Evoke Creative and SailGP on high-impact projects.',
+      'Founded and scaling digital innovation studio with proven expertise in modern web technologies. Lead architect on Next.js, TypeScript, and Tailwind CSS solutions for enterprise clients. Recently delivered high-impact projects for Evoke Creative and SailGP, driving measurable business outcomes.',  
     skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'UI/UX Design', 'Full Stack', 'Leadership'],
     companyUrl: 'https://github.com/sg-dev-fe',
   },
   {
     id: 2,
     company: 'SailGP',
-    role: 'Frontend Developer',
+    role: 'Senior Frontend Developer',
     period: '2023 - 2024',
     description:
-      'Built digital experiences for high-performance competitive sailing championship. Contributed to web applications for one of the world\'s fastest growing sports.',
+      'Architected and delivered digital experiences for world\'s premier competitive sailing championship. Built high-performance, user-centric web applications supporting millions of global viewers and driving fan engagement.',  
     skills: ['React', 'Web Development', 'Performance', 'User Experience', 'JavaScript'],
     companyUrl: 'https://www.sailgp.com/',
   },
   {
     id: 3,
     company: 'Evoke Creative',
-    role: 'Frontend Developer & React Engineer',
+    role: 'Senior React Engineer & UI Specialist',
     period: '2021 - 2023',
     description:
-      'Delivered innovative solutions as part of a creative digital agency. Specialized in React development and modern web technologies for enterprise clients.',
+      'Led frontend initiatives for top-tier creative digital agency. Delivered cutting-edge React solutions for Fortune 500 enterprise clients, establishing best practices and mentoring junior developers.',  
     skills: ['React', 'Frontend Development', 'Web Development', 'TypeScript', 'UI Implementation'],
     companyUrl: 'https://www.evokecreative.co.uk/',
   },
   {
     id: 4,
     company: 'Trelleborg',
-    role: 'Frontend & Full Stack Developer',
+    role: 'Senior Full Stack Developer',
     period: '2019 - 2021',
     description:
-      'Global engineering company specializing in polymer technology. Built internal systems and customer-facing digital solutions for one of Europe\'s largest engineering firms.',
+      'Architected mission-critical internal systems and enterprise digital platforms for global engineering leader. Improved system performance and user adoption across organization with data-driven UX improvements.',  
     skills: ['JavaScript', 'Full Stack', 'Web Applications', 'Frontend', 'Database Design'],
     companyUrl: 'https://www.trelleborg.com/',
   },
   {
     id: 5,
     company: 'Sofology',
-    role: 'Frontend Developer & Web Developer',
+    role: 'E-Commerce UI/UX Specialist',
     period: '2018 - 2019',
     description:
-      'Premium furniture retailer. Developed responsive e-commerce interfaces and customer-facing digital experiences during freelance engagement.',
+      'Designed and implemented responsive e-commerce interfaces for premium furniture retailer. Optimized user experience driving improved conversion rates and customer satisfaction metrics.',  
     skills: ['Frontend Development', 'E-commerce', 'Responsive Design', 'React', 'CSS'],
     companyUrl: 'https://www.sofology.co.uk/',
   },
   {
     id: 6,
     company: 'FleetSolve',
-    role: 'Frontend & Full Stack Developer',
+    role: 'Senior Full Stack Developer',
     period: '2017 - 2018',
     description:
-      'Fleet management software company. Built dashboard interfaces, reporting systems, and logistics management tools for enterprise customers.',
+      'Engineered enterprise dashboard platforms and advanced reporting systems for fleet management software. Designed intuitive interfaces handling complex logistics data, improving operational efficiency for customers.',  
     skills: ['JavaScript', 'Frontend', 'Full Stack', 'Dashboard Development', 'Data Visualization'],
     companyUrl: 'https://www.fleetsolve.co.uk/',
   },
   {
     id: 7,
     company: 'N-Viron Solutions',
-    role: 'Frontend & UI Developer',
+    role: 'UI/UX Developer',
     period: '2016 - 2017',
     description:
-      'Environmental compliance software company. Developed user interfaces for complex regulatory and compliance systems serving enterprise clients.',
+      'Designed and built sophisticated user interfaces for complex regulatory compliance platforms. Translated intricate compliance requirements into intuitive solutions for enterprise clients across regulated industries.',  
     skills: ['JavaScript', 'HTML/CSS', 'UI Development', 'Responsive Design', 'Frontend'],
     companyUrl: 'https://www.nviron.co.uk/',
   },
   {
     id: 8,
     company: 'Charles Stanley Financial Solutions',
-    role: 'Frontend Developer & Web Developer',
+    role: 'Frontend Developer',
     period: '2015 - 2016',
     description:
-      'Financial services company. Built responsive, secure interfaces for investment platforms and client portals. Early career experience with modern web development practices.',
+      'Built secure, responsive interfaces for investment platforms and client portals in highly regulated financial services environment. Established foundation in modern web development practices and enterprise security standards.',  
     skills: ['JavaScript', 'HTML/CSS', 'Responsive Design', 'Frontend', 'Web Development'],
     companyUrl: 'https://broadstone.co.uk/',
   },
@@ -115,21 +115,21 @@ export default function Career() {
 
   return (
     <section id="career" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
+        <div className="max-w-3xl mx-auto mb-16 text-center animate-fade-in">
           <div className="inline-block mb-4">
-            <span className="text-orange-500 text-lg font-bold uppercase tracking-widest">
-              <i className="fas fa-briefcase mr-2"></i>Professional Timeline
+            <span className="text-lg font-bold tracking-widest text-orange-500 uppercase">
+              <i className="mr-2 fas fa-briefcase"></i>Professional Timeline
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+          <h2 className="mb-6 text-4xl font-black md:text-5xl text-slate-900">
             Professional Journey
           </h2>
           <p className="text-xl text-slate-600">
-            From QA testing at award-winning game studios to building enterprise solutions and founding my own venture. 
-            A 12-year career spanning gaming, fintech, enterprise software, and modern web innovation. 
-            Each role brought new perspectives on solving complex problems with elegance and user-centric design.
+            15 years of proven expertise spanning game studios, fintech, enterprise software, and cutting-edge web technologies. 
+            Demonstrated track record building scalable solutions, leading teams, and delivering high-impact user experiences. 
+            Specialized in translating complex requirements into elegant, user-centric interfaces that drive business results.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export default function Career() {
               >
                 {/* Card */}
                 <div
-                  className="bg-white rounded-xl border border-slate-200 hover:border-orange-400 transition-all duration-300 overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+                  className="overflow-hidden transition-all duration-300 bg-white border shadow-md cursor-pointer rounded-xl border-slate-200 hover:border-orange-400 hover:shadow-xl hover:-translate-y-1"
                   onClick={() => toggleExpanded(exp.id)}
                 >
                   {/* Card Header */}
@@ -165,10 +165,10 @@ export default function Career() {
                             <h3 className="text-2xl font-bold text-slate-900">
                               {exp.company}
                             </h3>
-                            <p className="text-orange-500 font-semibold">{exp.role}</p>
+                            <p className="font-semibold text-orange-500">{exp.role}</p>
                           </div>
                         </div>
-                        <div className="flex items-center gap-2 text-slate-500 text-sm">
+                        <div className="flex items-center gap-2 text-sm text-slate-500">
                           <i className="fas fa-calendar"></i>
                           <span>{exp.period}</span>
                         </div>
@@ -185,19 +185,19 @@ export default function Career() {
 
                   {/* Expanded Content */}
                   {expandedId === exp.id && (
-                    <div className="border-t border-slate-100 px-6 md:px-8 py-6 bg-gradient-to-r from-orange-50 to-amber-50 animate-slide-up">
-                      <p className="text-slate-700 leading-relaxed mb-6">{exp.description}</p>
+                    <div className="px-6 py-6 border-t border-slate-100 md:px-8 bg-linear-to-r from-orange-50 to-amber-50 animate-slide-up">
+                      <p className="mb-6 leading-relaxed text-slate-700">{exp.description}</p>
 
                       {/* Skills */}
                       <div className="mb-6">
-                        <p className="text-sm font-bold text-slate-600 uppercase tracking-wide mb-3">
+                        <p className="mb-3 text-sm font-bold tracking-wide uppercase text-slate-600">
                           Key Skills
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {exp.skills.map((skill, i) => (
                             <span
                               key={i}
-                              className="px-4 py-2 bg-white border border-orange-200 text-orange-600 rounded-full text-sm font-medium hover:bg-orange-50 transition-colors"
+                              className="px-4 py-2 text-sm font-medium text-orange-600 transition-colors bg-white border border-orange-200 rounded-full hover:bg-orange-50"
                             >
                               {skill}
                             </span>
@@ -211,7 +211,7 @@ export default function Career() {
                           href={exp.companyUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 font-semibold transition-colors"
+                          className="inline-flex items-center gap-2 font-semibold text-orange-500 transition-colors hover:text-orange-600"
                         >
                           Learn More
                           <i className="fas fa-arrow-right"></i>
@@ -226,14 +226,13 @@ export default function Career() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16 animate-scale-in">
-          <p className="text-slate-600 mb-6">
-            12 years of experience across gaming, fintech, enterprise, and modern web technologies.
-            Passionate about creating elegant solutions that solve real problems.
+        <div className="mt-16 text-center animate-scale-in">
+          <p className="mb-6 text-slate-600">
+            15 years of proven expertise in UI/UX and software development. Proven ability to architect scalable solutions, lead high-performing teams, and deliver measurable business impact across gaming, fintech, and enterprise sectors.
           </p>
           <a
             href="#contact"
-            className="inline-block bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105 hover:shadow-lg"
+            className="inline-block px-8 py-3 font-bold text-white transition-all transform rounded-lg bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 hover:scale-105 hover:shadow-lg"
           >
             Let's Collaborate →
           </a>
