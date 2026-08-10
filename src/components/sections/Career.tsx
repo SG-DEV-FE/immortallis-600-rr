@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import careerData from '@/lib/careerData.json';
 
 interface Experience {
   id: number;
@@ -13,98 +14,7 @@ interface Experience {
   companyUrl?: string;
 }
 
-const experiences: Experience[] = [
-  {
-    id: 1,
-    company: 'Sg Dev FE',
-    role: 'Founder & Lead UI/UX Developer',
-    period: '2020 - Present',
-    description:
-      'Founded and scaling digital innovation studio with proven expertise in modern web technologies. Lead architect on Next.js, TypeScript, and Tailwind CSS solutions for enterprise clients. Recently delivered high-impact projects for Evoke Creative and SailGP, driving measurable business outcomes.',  
-    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'UI/UX Design', 'Full Stack', 'Leadership'],
-    companyUrl: 'https://github.com/sg-dev-fe',
-  },
-  {
-    id: 2,
-    company: 'SailGP',
-    role: 'Senior Frontend Developer',
-    period: '2023 - 2024',
-    description:
-      'Architected and delivered digital experiences for world\'s premier competitive sailing championship. Built high-performance, user-centric web applications supporting millions of global viewers and driving fan engagement.',  
-    skills: ['React', 'Web Development', 'Performance', 'User Experience', 'JavaScript'],
-    companyUrl: 'https://www.sailgp.com/',
-  },
-  {
-    id: 3,
-    company: 'Evoke Creative',
-    role: 'Senior React Engineer & UI Specialist',
-    period: '2021 - 2023',
-    description:
-      'Led frontend initiatives for top-tier creative digital agency. Delivered cutting-edge React solutions for Fortune 500 enterprise clients, establishing best practices and mentoring junior developers.',  
-    skills: ['React', 'Frontend Development', 'Web Development', 'TypeScript', 'UI Implementation'],
-    companyUrl: 'https://www.evokecreative.co.uk/',
-  },
-  {
-    id: 4,
-    company: 'Trelleborg',
-    role: 'Senior Full Stack Developer',
-    period: '2019 - 2021',
-    description:
-      'Architected mission-critical internal systems and enterprise digital platforms for global engineering leader. Improved system performance and user adoption across organization with data-driven UX improvements.',  
-    skills: ['JavaScript', 'Full Stack', 'Web Applications', 'Frontend', 'Database Design'],
-    companyUrl: 'https://www.trelleborg.com/',
-  },
-  {
-    id: 5,
-    company: 'Sofology',
-    role: 'E-Commerce UI/UX Specialist',
-    period: '2018 - 2019',
-    description:
-      'Designed and implemented responsive e-commerce interfaces for premium furniture retailer. Optimized user experience driving improved conversion rates and customer satisfaction metrics.',  
-    skills: ['Frontend Development', 'E-commerce', 'Responsive Design', 'React', 'CSS'],
-    companyUrl: 'https://www.sofology.co.uk/',
-  },
-  {
-    id: 6,
-    company: 'FleetSolve',
-    role: 'Senior Full Stack Developer',
-    period: '2017 - 2018',
-    description:
-      'Engineered enterprise dashboard platforms and advanced reporting systems for fleet management software. Designed intuitive interfaces handling complex logistics data, improving operational efficiency for customers.',  
-    skills: ['JavaScript', 'Frontend', 'Full Stack', 'Dashboard Development', 'Data Visualization'],
-    companyUrl: 'https://www.fleetsolve.co.uk/',
-  },
-  {
-    id: 7,
-    company: 'N-Viron Solutions',
-    role: 'UI/UX Developer',
-    period: '2016 - 2017',
-    description:
-      'Designed and built sophisticated user interfaces for complex regulatory compliance platforms. Translated intricate compliance requirements into intuitive solutions for enterprise clients across regulated industries.',  
-    skills: ['JavaScript', 'HTML/CSS', 'UI Development', 'Responsive Design', 'Frontend'],
-    companyUrl: 'https://www.nviron.co.uk/',
-  },
-  {
-    id: 8,
-    company: 'Charles Stanley Financial Solutions',
-    role: 'Frontend Developer',
-    period: '2015 - 2016',
-    description:
-      'Built secure, responsive interfaces for investment platforms and client portals in highly regulated financial services environment. Established foundation in modern web development practices and enterprise security standards.',  
-    skills: ['JavaScript', 'HTML/CSS', 'Responsive Design', 'Frontend', 'Web Development'],
-    companyUrl: 'https://broadstone.co.uk/',
-  },
-  {
-    id: 9,
-    company: 'Media Molecule / PlayStation Studios',
-    role: 'QA Tester & Game Tester',
-    period: '2013 - 2014',
-    description:
-      'Started professional career in QA testing at award-winning game studio. Contributed to BAFTA Award-winning Tearaway for PlayStation Vita with rigorous quality assurance, bug identification, and gameplay validation.',
-    skills: ['QA Testing', 'Game Testing', 'Bug Tracking', 'Quality Assurance', 'Attention to Detail'],
-    companyUrl: 'https://tearaway.me/',
-  },
-];
+const experiences: Experience[] = careerData as Experience[];
 
 export default function Career() {
   const [expandedId, setExpandedId] = useState<number | null>(null);

@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "company": "Sg Dev FE",
+    "role": "Founder & Lead UI/UX Developer",
+    "period": "2020 - Present",
+    "description": "Founded and scaling digital innovation studio with proven expertise in modern web technologies. Lead architect on Next.js, TypeScript, and Tailwind CSS solutions for enterprise clients. Recently delivered high-impact projects for Evoke Creative and SailGP, driving measurable business outcomes.",
+    "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "UI/UX Design", "Full Stack", "Leadership"],
+    "companyUrl": "https://github.com/sg-dev-fe"
+  },
+  {
+    "id": 2,
+    "company": "Evoke Creative",
+    "role": "Senior React Engineer & UI Specialist",
+    "period": "2025 - ongoing",
+    "description": "Led frontend initiatives for top-tier creative digital agency. Delivered cutting-edge React solutions for Fortune 500 enterprise clients, establishing best practices and mentoring junior developers.",
+    "skills": ["React", "Frontend Development", "Web Development", "TypeScript", "UI Implementation"],
+    "companyUrl": "https://www.evokecreative.co.uk/"
+  },
+  {
+    "id": 3,
+    "company": "SailGP",
+    "role": "Senior Frontend Developer",
+    "period": "2023 - 2025",
+    "description": "Architected and delivered digital experiences for world's premier competitive sailing championship. Built high-performance, user-centric web applications supporting millions of global viewers and driving fan engagement.",
+    "skills": ["React", "Web Development", "Performance", "User Experience", "JavaScript"],
+    "companyUrl": "https://www.sailgp.com/"
+  },
+  {
+    "id": 4,
+    "company": "Age Partnership",
+    "role": "Senior Frontend Developer",
+    "period": "2022 - 2023",
+    "description": "Contributed to main site rebuild using modern web technologies and NodeJS backend services. Designed and implemented performance-optimized components following SOLID principles. Conducted comprehensive web performance analysis using industry-standard tools. Developed strategic recommendations for JAMstack and cloud-optimized approaches. Collaborated with cross-functional teams to deliver high-quality web solutions.",
+    "skills": ["PHP Twig", "SCSS", "JavaScript", "NodeJS", "SQL", "API integrations", "AWS"],
+    "companyUrl": "https://www.agepartnership.co.uk/"
+  },
+  {
+    "id": 5,
+    "company": "Appreciate Group",
+    "role": "Senior Frontend Developer",
+    "period": "2020 - 2022",
+    "description": "Executed complete UI overhaul of Park Christmas Savings, upgrading from Bootstrap 2.3 to 4.6. Enhanced UI for iOS and Android applications using hybrid technologies. Led web vitals optimization for multiple high-traffic e-commerce platforms. Implemented microservices architecture for improved application performance. Conducted code reviews and provided technical guidance on modern UI approaches.",
+    "skills": ["Java", "JavaScript", "jQuery", "CSS", "SCSS", "Bootstrap", "C#", "MySQL", "WordPress"],
+    "companyUrl": "https://www.appreciategroup.com/"
+  },
+  {
+    "id": 6,
+    "company": "Trelleborg",
+    "role": "Senior Full Stack Developer",
+    "period": "2019 - 2020",
+    "description": "Refactored application architecture using C# .NET and MVC patterns. Integrated external APIs for graphing, weather information, and visualization components. Developed React components within .NET framework for improved user experience. Implemented continuous integration and deployment pipelines using Jenkins. Collaborated with DevOps team on containerized deployment solutions.",
+    "skills": ["C# .NET", "MVC", "React", "HTML5", "CSS", "JavaScript", "Bootstrap 4", "Git", "Jenkins", "SQL Server"],
+    "companyUrl": "https://www.trelleborg.com/"
+  },
+  {
+    "id": 7,
+    "company": "D2I Systems",
+    "role": "Software Developer",
+    "period": "2017 - 2020",
+    "description": "Developed enterprise-grade applications using VB.NET and ASP.NET. Created data-driven solutions with SQL Server databases. Modified custom .NET client applications for international clients. Implemented secure authentication systems and user management. Provided technical support and documentation for client applications.",
+    "skills": ["VB.NET", "ASP.NET", "HTML5", "CSS", "JavaScript", "SQL", "Git", "TFS", "Adobe Creative Suite"],
+    "companyUrl": "https://www.d2isystems.com/"
+  },
+  {
+    "id": 8,
+    "company": "Holidaygems / Destionation2",
+    "role": "Software Developer",
+    "period": "2017 - 2017",
+    "description": "Rebuilt front-end components and navigation within .NET framework. Developed SQL scripts and stored procedures for data retrieval and management. Created custom API integrations for mapping and reservation systems. Implemented architecture improvements following industry best practices.",
+    "skills": ["Umbraco", "C# .NET", "HTML5", "CSS", "JavaScript", "MVC", "Git", "TFS", "SQL Server"],
+    "companyUrl": "https://www.holidaygems.com/"
+  },
+  {
+    "id": 9,
+    "company": "Sofology",
+    "role": "E-Commerce UI/UX Specialist",
+    "period": "2016 - 2017",
+    "description": "Designed and implemented responsive e-commerce interfaces for premium furniture retailer. Optimized user experience driving improved conversion rates and customer satisfaction metrics.",
+    "skills": ["Frontend Development", "E-commerce", "Responsive Design", "React", "CSS"],
+    "companyUrl": "https://www.sofology.co.uk/"
+  },
+  {
+    "id": 10,
+    "company": "FleetSolve",
+    "role": "Senior Full Stack Developer",
+    "period": "2016 - 2016",
+    "description": "Engineered enterprise dashboard platforms and advanced reporting systems for fleet management software. Designed intuitive interfaces handling complex logistics data, improving operational efficiency for customers.",
+    "skills": ["JavaScript", "Frontend", "Full Stack", "Dashboard Development", "Data Visualization"],
+    "companyUrl": "https://www.fleetsolve.co.uk/"
+  },
+  {
+    "id": 11,
+    "company": "N-Viron Solutions",
+    "role": "UI/UX Developer",
+    "period": "2015 - 2016",
+    "description": "Designed and built sophisticated user interfaces for complex regulatory compliance platforms. Translated intricate compliance requirements into intuitive solutions for enterprise clients across regulated industries.",
+    "skills": ["JavaScript", "HTML/CSS", "UI Development", "Responsive Design", "Frontend"],
+    "companyUrl": "https://www.nviron.co.uk/"
+  },
+  {
+    "id": 12,
+    "company": "Charles Stanley Financial Solutions",
+    "role": "Frontend Developer",
+    "period": "2014 - 2015",
+    "description": "Built secure, responsive interfaces for investment platforms and client portals in highly regulated financial services environment. Established foundation in modern web development practices and enterprise security standards.",
+    "skills": ["JavaScript", "HTML/CSS", "Responsive Design", "Frontend", "Web Development"],
+    "companyUrl": "https://broadstone.co.uk/"
+  },
+  {
+    "id": 13,
+    "company": "PlayStation Studios",
+    "role": "QA Tester & Localisation Tester",
+    "period": "2013 - 2014",
+    "description": "Started professional career in QA testing at award-winning game studio. Contributed to BAFTA Award-winning Tearaway for PlayStation Vita with rigorous quality assurance, bug identification, and gameplay validation. Including localisation testing for English language and other languages. Developed strong attention to detail and understanding of game development lifecycle.",
+    "skills": ["QA Testing", "Game Testing", "Bug Tracking", "Quality Assurance", "Attention to Detail"],
+    "companyUrl": "https://tearaway.me/"
+  }
+]
