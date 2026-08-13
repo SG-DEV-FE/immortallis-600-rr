@@ -95,9 +95,10 @@ export default function Projects() {
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Card Container */}
-              <div className="relative h-96 rounded-2xl overflow-hidden bg-slate-100 cursor-pointer transition-all duration-500">
+              <div className="relative h-96 rounded-2xl overflow-hidden bg-slate-100 cursor-pointer transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
+                
                 {/* Image Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 opacity-40 group-hover:opacity-30 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 opacity-40 group-hover:opacity-20 transition-opacity duration-500" />
                 
                 {/* Gradient Overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />

@@ -45,7 +45,7 @@ export default function Career() {
 
         {/* Timeline */}
         <div className="max-w-4xl mx-auto">
-          <div className="space-y-8">
+          <div className="space-y-8 relative">
             {experiences.map((exp, index) => (
               <div
                 key={exp.id}
@@ -68,7 +68,7 @@ export default function Career() {
                             <img
                               src={exp.logo}
                               alt={exp.company}
-                              className="w-12 h-12 rounded-lg"
+                              className="w-14 h-14 rounded-lg object-cover shadow-md"
                             />
                           )}
                           <div>
@@ -79,7 +79,7 @@ export default function Career() {
                           </div>
                         </div>
                         <div className="flex items-center gap-2 text-sm text-slate-500">
-                          <i className="fas fa-calendar"></i>
+                          <i className="fas fa-calendar text-orange-400"></i>
                           <span>{exp.period}</span>
                         </div>
                       </div>

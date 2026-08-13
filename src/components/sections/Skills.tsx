@@ -6,25 +6,45 @@ export default function Skills() {
       category: 'Frontend Development',
       icon: 'fa-code',
       color: 'from-blue-500 to-cyan-500',
-      skills: ['React & Next.js', 'Vue3', 'Tailwind CSS', 'Web Performance'],
+      skills: [
+        { name: 'React & Next.js', icon: 'fa-react' },
+        { name: 'Vue3', icon: 'fa-vuejs' },
+        { name: 'Tailwind CSS', icon: 'fa-palette' },
+        { name: 'Web Performance', icon: 'fa-bolt' },
+      ],
     },
     {
       category: 'UI/UX Design',
       icon: 'fa-palette',
       color: 'from-purple-500 to-pink-500',
-      skills: ['Figma', 'Responsive Design', 'Animations', 'Accessibility'],
+      skills: [
+        { name: 'Figma', icon: 'fa-figma' },
+        { name: 'Responsive Design', icon: 'fa-mobile' },
+        { name: 'Animations', icon: 'fa-wand-magic-sparkles' },
+        { name: 'Accessibility', icon: 'fa-universal-access' },
+      ],
     },
     {
       category: 'Creative Development',
-      icon: 'fa-sparkles',
+      icon: 'fa-wand-magic',
       color: 'from-orange-500 to-red-500',
-      skills: ['Creative Coding', 'Micro-interactions', 'Gamified UI', 'Storytelling'],
+      skills: [
+        { name: 'Creative Coding', icon: 'fa-paintbrush' },
+        { name: 'Micro-interactions', icon: 'fa-computer-mouse' },
+        { name: 'Gamified UI', icon: 'fa-joystick' },
+        { name: 'Storytelling', icon: 'fa-feather' },
+      ],
     },
     {
       category: 'Tools & Workflow',
       icon: 'fa-wrench',
       color: 'from-green-500 to-emerald-500',
-      skills: ['Git & GitHub', 'Azure', 'Netlify', 'Web Standards'],
+      skills: [
+        { name: 'Git & GitHub', icon: 'fa-github' },
+        { name: 'Azure', icon: 'fa-cloud' },
+        { name: 'Netlify', icon: 'fa-rocket' },
+        { name: 'Web Standards', icon: 'fa-certificate' },
+      ],
     },
   ];
 
@@ -55,7 +75,7 @@ export default function Skills() {
             >
               {/* Icon */}
               <div
-                className={`w-16 h-16 rounded-lg bg-linear-to-r ${cat.color} flex items-center justify-center mb-4 text-white text-2xl transform group-hover:scale-110 transition-transform`}
+                className={`w-16 h-16 rounded-lg bg-gradient-to-r ${cat.color} flex items-center justify-center mb-4 text-white text-2xl transform group-hover:scale-110 transition-transform`}
               >
                 <i className={`fas ${cat.icon}`}></i>
               </div>
@@ -66,9 +86,11 @@ export default function Skills() {
               {/* Skills */}
               <ul className="space-y-3">
                 {cat.skills.map((skill, j) => (
-                  <li key={j} className="flex items-center text-slate-600">
-                    <span className="w-2 h-2 mr-3 bg-orange-400 rounded-full"></span>
-                    {skill}
+                  <li key={j} className="flex items-center gap-2 text-slate-600 transition-all hover:translate-x-1 hover:text-orange-500">
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-orange-400 to-amber-400 flex items-center justify-center text-white text-xs">
+                      <i className={`fas ${skill.icon} fa-xs`}></i>
+                    </div>
+                    <span className="font-medium">{skill.name}</span>
                   </li>
                 ))}
               </ul>

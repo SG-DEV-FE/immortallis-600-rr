@@ -51,8 +51,8 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {/* Netlify Forms honeypot */}
-        {/* @ts-ignore */}
-        <form name="contact" netlify hidden>
+        {/* @ts-expect-error - netlify is a valid form attribute for Netlify Forms */}
+        <form name="contact" netlify="true" hidden>
           <input type="text" name="name" />
           <input type="email" name="email" />
           <input type="text" name="subject" />

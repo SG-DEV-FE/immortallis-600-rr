@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { SOCIAL_LINKS, NAV_LINKS } from '@/lib/constants';
+import WeatherWidget from './WeatherWidget';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,20 +72,23 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Social Links */}
-          <div className="hidden md:flex items-center gap-4">
-            {SOCIAL_LINKS.map((social) => (
-              <a
-                key={social.id}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-900 hover:text-orange-500 transition-colors hover:scale-110 transform"
-                title={social.label}
-              >
-                <i className={`fab fa-${social.icon}`}></i>
-              </a>
-            ))}
+          {/* Weather Widget & Social Links */}
+          <div className="hidden md:flex items-center gap-6">
+            <WeatherWidget />
+            <div className="flex items-center gap-4">
+              {SOCIAL_LINKS.map((social) => (
+                <a
+                  key={social.id}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-900 hover:text-orange-500 transition-colors hover:scale-110 transform"
+                  title={social.label}
+                >
+                  <i className={`fab fa-${social.icon}`}></i>
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -110,19 +114,24 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              <div className="flex gap-4 pt-4 border-t border-slate-700">
-                {SOCIAL_LINKS.map((social) => (
-                  <a
-                    key={social.id}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-orange-400 transition-colors"
-                    title={social.label}
-                  >
-                    <i className={`fab fa-${social.icon}`}></i>
-                  </a>
-                ))}
+              <div className="flex items-center justify-between pt-4 border-t border-slate-700">
+                <div className="flex gap-4">
+                  {SOCIAL_LINKS.map((social) => (
+                    <a
+                      key={social.id}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-orange-400 transition-colors"
+                      title={social.label}
+                    >
+                      <i className={`fab fa-${social.icon}`}></i>
+                    </a>
+                  ))}
+                </div>
+                <div className="pl-4 border-l border-slate-700">
+                  <WeatherWidget />
+                </div>
               </div>
             </div>
           </div>

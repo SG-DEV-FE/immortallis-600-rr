@@ -1,6 +1,7 @@
 {
   "name": "immortalis-600-rr",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "engines": {
     "node": ">=18.17.0",
@@ -14,22 +15,22 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.2.0",
-    "next": "^14.2.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "react-ga4": "^3.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
-    "@types/node": "^20.10.6",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "autoprefixer": "^10.5.4",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.2.3",
-    "postcss": "^8.4.32",
+    "eslint": "^10.8.1",
+    "eslint-config-next": "^16.3.0",
+    "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5.3.3"
+    "typescript": "^7.0.2"
   }
 }

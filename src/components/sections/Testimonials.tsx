@@ -7,6 +7,8 @@ export default function Testimonials() {
     author: 'Matt Wilson',
     role: 'CRO at Sitka | Chair: AEV Cross-Association Technology & ESSA Sales Working Groups | Event Tech GTM Strategist',
     rating: 5,
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Matt',
+    company: 'D2i Systems',
   };
 
   return (
@@ -41,9 +43,27 @@ export default function Testimonials() {
             </p>
 
             {/* Author */}
-            <div className="border-t border-slate-300 pt-6">
-              <p className="font-bold text-slate-900 text-lg">{testimonial.author}</p>
-              <p className="text-sm text-slate-600 mt-1">{testimonial.role}</p>
+            <div className="border-t border-slate-300 pt-6 flex items-center gap-4">
+              {/* Avatar */}
+              <div className="flex-shrink-0">
+                <img 
+                  src={testimonial.avatar}
+                  alt={testimonial.author}
+                  className="w-16 h-16 rounded-full border-2 border-orange-400 shadow-md"
+                />
+              </div>
+              
+              {/* Author Info */}
+              <div>
+                <div className="flex items-center gap-2">
+                  <p className="font-bold text-slate-900 text-lg">{testimonial.author}</p>
+                  <span className="text-orange-500">
+                    <i className="fas fa-badge-check"></i>
+                  </span>
+                </div>
+                <p className="text-sm text-slate-600 mt-1">{testimonial.role}</p>
+                <p className="text-xs text-orange-500 font-semibold mt-2">{testimonial.company}</p>
+              </div>
             </div>
           </div>
         </div>
