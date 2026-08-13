@@ -91,13 +91,16 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-slate-900"
-          >
-            <i className="fas fa-bars text-2xl"></i>
-          </button>
+          {/* Mobile Weather & Menu Button */}
+          <div className="md:hidden flex items-center gap-4">
+            <WeatherWidget />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-slate-900"
+            >
+              <i className="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -114,24 +117,19 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              <div className="flex items-center justify-between pt-4 border-t border-slate-700">
-                <div className="flex gap-4">
-                  {SOCIAL_LINKS.map((social) => (
-                    <a
-                      key={social.id}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-orange-400 transition-colors"
-                      title={social.label}
-                    >
-                      <i className={`fab fa-${social.icon}`}></i>
-                    </a>
-                  ))}
-                </div>
-                <div className="pl-4 border-l border-slate-700">
-                  <WeatherWidget />
-                </div>
+              <div className="flex items-center gap-4">
+                {SOCIAL_LINKS.map((social) => (
+                  <a
+                    key={social.id}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-orange-400 transition-colors"
+                    title={social.label}
+                  >
+                    <i className={`fab fa-${social.icon}`}></i>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
