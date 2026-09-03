@@ -87,7 +87,7 @@ const companies: Company[] = [
   },
   {
     id: 'tearaway',
-    name: 'Media Molecule / PlayStation Studios',
+    name: 'Sony Computer Entertainment Europe',
     logo: 'https://res.cloudinary.com/stegault/image/upload/v1785938275/company-site/Sony_Playstation.png',
     website: 'https://tearaway.me/',
     period: '2013 - 2014',
