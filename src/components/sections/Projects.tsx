@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { animate, stagger } from 'animejs';
 
 interface Project {
   id: string;
@@ -13,6 +14,77 @@ interface Project {
   link?: string;
   color: string;
   year: string;
+}
+
+// Animated Gradient Background Component
+function AnimatedGradientBg({ color, isHovered }: { color: string; isHovered: boolean }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const animationRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const elements = containerRef.current.querySelectorAll('[data-gradient]');
+    
+    // Only create animation once, not on every hover change
+    if (animationRef.current) {
+      return; // Animation already running
+    }
+
+    // Create smooth liquid animation - runs continuously
+    animationRef.current = animate(elements, {
+      rotate: (el: Element) => {
+        const index = Array.from(elements).indexOf(el);
+        return index % 2 === 0 ? 180 : -180;
+      },
+      translateX: (_: Element, i: number) => {
+        return (Math.sin(i * 0.5) * 40);
+      },
+      translateY: (_: Element, i: number) => {
+        return (Math.cos(i * 0.5) * 40);
+      },
+      scale: (_: Element, i: number) => {
+        return i % 2 === 0 ? [0.8, 1.3, 0.9] : [1.2, 0.9, 1.1];
+      },
+      opacity: (_: Element, i: number) => {
+        // Keep opacity consistent on hover to maintain text readability
+        const opacities = [0.15, 0.12, 0.20];
+        return opacities[i % 3];
+      },
+      duration: 5000 + Math.random() * 3000,
+      easing: 'easeInOutSine',
+      loop: true,
+      delay: stagger(200),
+    } as any);
+
+    return () => {
+      if (animationRef.current) {
+        animationRef.current.pause();
+        animationRef.current = null;
+      }
+    };
+  }, []);
+
+  return (
+    <div ref={containerRef} className="absolute inset-0 overflow-hidden">
+      <div
+        data-gradient
+        className={`absolute inset-0 bg-linear-to-br ${color}`}
+        style={{ filter: 'blur(50px)', mixBlendMode: 'screen', opacity: 0.12 }}
+      />
+      <div
+        data-gradient
+        className={`absolute inset-0 bg-linear-to-tr ${color}`}
+        style={{ filter: 'blur(50px)', mixBlendMode: 'lighten', opacity: 0.10 }}
+      />
+      <div
+        data-gradient
+        className={`absolute inset-0 bg-linear-to-bl ${color}`}
+        style={{ filter: 'blur(50px)', mixBlendMode: 'soft-light', opacity: 0.18 }}
+      />
+    </div>
+  );
 }
 
 const projects: Project[] = [
@@ -81,7 +153,7 @@ export default function Projects() {
             A selection of projects where I've applied design thinking and development expertise 
             to solve real-world problems and create meaningful user experiences.
           </p>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full mt-8"></div>
+          <div className="w-24 h-1.5 bg-linear-to-r from-blue-600 to-cyan-500 rounded-full mt-8"></div>
         </div>
 
         {/* Projects Grid */}
@@ -95,24 +167,30 @@ export default function Projects() {
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Card Container */}
-              <div className="relative h-96 rounded-2xl overflow-hidden bg-slate-100 cursor-pointer transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
+              <div className="relative h-96 rounded-2xl overflow-hidden bg-slate-100 cursor-pointer transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 shadow-lg group-hover:scale-105">
                 
                 {/* Image Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 opacity-40 group-hover:opacity-20 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-br from-slate-900 to-slate-800 opacity-60 group-hover:opacity-45 transition-opacity duration-500" />
                 
-                {/* Gradient Overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+                {/* Animated Liquid Gradient */}
+                <AnimatedGradientBg color={project.color} isHovered={hoveredId === project.id} />
+                
+                {/* Subtle animated shine effect */}
+                <div className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{
+                  animation: 'shimmer 3s infinite',
+                  backgroundSize: '200% 100%'
+                }} />
 
                 {/* Content */}
                 <div className="absolute inset-0 p-8 flex flex-col justify-between transform transition-transform duration-500 group-hover:translate-y-0">
                   {/* Top Section */}
                   <div>
                     <div className="flex items-center gap-2 mb-4">
-                      <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm text-white text-sm font-semibold rounded-full">
+                      <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm font-semibold rounded-full border border-white/30 group-hover:bg-white/30 transition-all duration-300">
                         {project.category}
                       </span>
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-blue-200 group-hover:to-cyan-200 transition-all duration-300">
                       {project.title}
                     </h3>
                   </div>
@@ -125,21 +203,31 @@ export default function Projects() {
                       {project.longDescription}
                     </p>
                     
-                    <div className={`text-sm text-white/70 font-medium transition-all duration-500 transform ${
-                      hoveredId === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
+                    <div className={`text-sm text-white/90 font-medium flex items-center gap-2 transition-all duration-500 transform ${
+                      hoveredId === project.id ? 'opacity-100 translate-y-0' : 'opacity-60 translate-y-0'
                     }`}>
+                      <span className="text-blue-300 font-bold">📅</span>
                       {project.year}
                     </div>
                     
-                    {/* Tags */}
+                    {/* Tags - Always visible but enhanced on hover */}
                     <div className={`flex flex-wrap gap-2 transition-all duration-500 transform ${
-                      hoveredId === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
+                      hoveredId === project.id ? 'opacity-100 translate-y-0' : 'opacity-70 translate-y-0'
                     }`}>
-                      {project.tags.map((tag) => (
-                        <span key={tag} className="text-xs px-2 py-1 bg-white/20 text-white rounded-md font-medium">
+                      {project.tags.slice(0, hoveredId === project.id ? project.tags.length : 2).map((tag, tagIdx) => (
+                        <span 
+                          key={tag} 
+                          className="text-xs px-2.5 py-1 bg-linear-to-r from-white/20 to-white/10 text-white rounded-full font-medium border border-white/20 transition-all duration-300 hover:border-white/40 hover:bg-linear-to-r hover:from-white/30 hover:to-white/20"
+                          style={{ animation: `fadeInUp 0.5s ease-out ${tagIdx * 50}ms backwards` }}
+                        >
                           {tag}
                         </span>
                       ))}
+                      {hoveredId !== project.id && project.tags.length > 2 && (
+                        <span className="text-xs px-2.5 py-1 text-white/60 font-medium">
+                          +{project.tags.length - 2} more
+                        </span>
+                      )}
                     </div>
 
                     {/* CTA */}
@@ -159,13 +247,12 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Card Number (bottom right) */}
+              {/* Card Number (bottom right) - Enhanced styling */}
               <div className="mt-4 flex justify-between items-center">
-                <div className="text-6xl font-black text-slate-200 group-hover:text-blue-500 transition-colors duration-500">
-                  0{idx + 1}
-                </div>
-                <div className="text-right">
-                  <p className="text-xs text-slate-700 font-medium">Featured Project</p>
+                <div className="relative">
+                  <div className="relative text-6xl font-black text-slate-300 group-hover:text-blue-400 transition-all duration-500">
+                    0{idx + 1}
+                  </div>
                 </div>
               </div>
             </div>
