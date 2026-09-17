@@ -46,7 +46,7 @@ export default function Personality() {
             <div className="space-y-6 animate-slide-up" style={{ animationDelay: '150ms' }}>
               <div>
                 <h3 className="mb-3 text-3xl font-bold text-slate-900">Welcome!</h3>
-                <p className="text-lg leading-relaxed text-slate-600">
+                <p className="text-lg leading-relaxed text-slate-700">
                   I'm a passionate UI/UX Developer and Creative Technologist who loves building beautiful, 
                   functional digital experiences.
                 </p>
@@ -57,7 +57,7 @@ export default function Personality() {
                   <div className="w-1 rounded-full bg-linear-to-b from-blue-600 to-cyan-500 shrink-0"></div>
                   <div>
                     <h4 className="mb-2 font-bold text-slate-900">Warhammer Miniature builder and painter</h4>
-                    <p className="text-slate-600">My main is the Dark Angels, but I have a wide range of miniatures, including some Gundam and Airfix.</p>
+                    <p className="text-slate-700">My main is the Dark Angels, but I have a wide range of miniatures, including some Gundam and Airfix.</p>
                   </div>
                 </div>
 
@@ -65,7 +65,7 @@ export default function Personality() {
                   <div className="w-1 rounded-full bg-linear-to-b from-blue-600 to-cyan-500 shrink-0"></div>
                   <div>
                     <h4 className="mb-2 font-bold text-slate-900">Gamer at Heart</h4>
-                    <p className="text-slate-600">PlayStation aficionado with a BAFTA credit via Tearaway as QA. Gaming shaped how I think about user experience and interactivity.</p>
+                    <p className="text-slate-700">PlayStation aficionado with a BAFTA credit via Tearaway as QA. Gaming shaped how I think about user experience and interactivity.</p>
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ export default function Personality() {
                   <div className="w-1 rounded-full bg-linear-to-b from-blue-600 to-cyan-500 shrink-0"></div>
                   <div>
                     <h4 className="mb-2 font-bold text-slate-900">Motorcycle Enthusiast</h4>
-                    <p className="text-slate-600">Two-wheel adventures and road trips. There's something about the open road that clears the mind.</p>
+                    <p className="text-slate-700">Two-wheel adventures and road trips. There's something about the open road that clears the mind.</p>
                   </div>
                 </div>
 
@@ -81,12 +81,12 @@ export default function Personality() {
                   <div className="w-1 rounded-full bg-linear-to-b from-blue-600 to-cyan-500 shrink-0"></div>
                   <div>
                     <h4 className="mb-2 font-bold text-slate-900">Photography</h4>
-                    <p className="text-slate-600">Mostly from miniatures and just what I see on my wanderings. Check my Instagram for the latest shots.</p>
+                    <p className="text-slate-700">Mostly from miniatures and just what I see on my wanderings. Check my Instagram for the latest shots.</p>
                   </div>
                 </div>
               </div>
 
-              <p className="pt-8 mt-8 text-base italic border-t text-slate-600 border-slate-200">
+              <p className="pt-8 mt-8 text-base italic border-t text-slate-700 border-slate-200">
                 Dry wit, questionable dad jokes, and a ungodly level of sci fi knowledge.
                 that are both beautiful and intuitive.
               </p>
@@ -119,7 +119,7 @@ export default function Personality() {
             <div className="order-1 space-y-6 md:order-2">
               <div>
                 <h4 className="mb-3 text-3xl font-bold text-slate-900">Miniatures Collector</h4>
-                <p className="text-lg leading-relaxed text-slate-600">
+                <p className="text-lg leading-relaxed text-slate-700">
                   A hoarder of the grey tide.... i.e. my shameful grey pile oof unpaineted miniature over the last 30 years. I have cultivated a passion for converting and just buiuling warhammer minatures, gundam, airfix and soo resin miniatures.
                 </p>
               </div>
@@ -128,7 +128,7 @@ export default function Personality() {
                 <span className="text-2xl">🎨</span>
                 <div>
                   <p className="font-bold text-slate-900">Modeling & Painting</p>
-                  <p className="text-sm text-slate-600">Detailed brush work and army building</p>
+                  <p className="text-base text-slate-700">Detailed brush work and army building</p>
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function Personality() {
             <div className="space-y-6">
               <div>
                 <h4 className="mb-3 text-3xl font-bold text-slate-900">Gaming & Consoles</h4>
-                <p className="text-lg leading-relaxed text-slate-600">
+                <p className="text-lg leading-relaxed text-slate-700">
                   Gaming has driven my passion for UI and UX. From the Atari 2600 to PlayStation 5, I've been passionate about interactive experiences. 
                   I'm proud to have been credited on the BAFTA-winning game <span className="font-bold text-emerald-600">Tearaway</span> for PlayStation Vita. Also on the credits for Ratchet & Clank: Full Frontal Assault and Killzone HD
                 </p>
@@ -149,7 +149,7 @@ export default function Personality() {
                 <span className="text-2xl">🎮</span>
                 <div>
                   <p className="font-bold text-slate-900">BAFTA Credit</p>
-                  <p className="text-sm text-slate-600">Tearaway - PlayStation Vita</p>
+                  <p className="text-base text-slate-700">Tearaway - PlayStation Vita</p>
                 </div>
               </div>
             </div>

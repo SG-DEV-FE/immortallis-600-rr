@@ -105,14 +105,14 @@ export default function CompanyHistory() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <div className="inline-block mb-4">
-            <span className="text-orange-500 text-lg font-bold uppercase tracking-widest">
+            <span className="text-orange-500 text-sm font-bold uppercase tracking-widest">
               <i className="fas fa-building mr-2"></i>Professional Timeline
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
             Development Career
           </h2>
-          <p className="text-xl text-slate-600">
+          <p className="text-lg text-slate-700">
             A journey through innovative companies and creative projects, from early career experiences 
             to founding my own venture in modern web development.
           </p>
@@ -166,7 +166,7 @@ export default function CompanyHistory() {
                         </span>
                       ))}
                       {company.roles.length > 2 && (
-                        <span className="text-xs px-2 py-1 bg-slate-200 text-slate-600 rounded-full font-medium">
+                        <span className="text-xs px-2 py-1 bg-slate-200 text-slate-700 rounded-full font-medium">
                           +{company.roles.length - 2}
                         </span>
                       )}

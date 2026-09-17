@@ -30,14 +30,14 @@ export default function Career() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto mb-16 text-center animate-fade-in">
           <div className="inline-block mb-4">
-            <span className="text-lg font-bold tracking-widest text-orange-500 uppercase">
+            <span className="text-sm font-bold tracking-widest text-orange-500 uppercase">
               <Briefcase size={20} className="mr-2 inline-block" />Professional Timeline
             </span>
           </div>
           <h2 className="mb-6 text-4xl font-black md:text-5xl text-slate-900">
             Professional Journey
           </h2>
-          <p className="text-xl text-slate-600">
+          <p className="text-lg text-slate-700">
             15 years of proven expertise spanning game studios, fintech, enterprise software, and cutting-edge web technologies. 
             Demonstrated track record building scalable solutions, leading teams, and delivering high-impact user experiences. 
             Specialized in translating complex requirements into elegant, user-centric interfaces that drive business results.
@@ -79,7 +79,7 @@ export default function Career() {
                             <p className="font-semibold text-orange-500">{exp.role}</p>
                           </div>
                         </div>
-                        <div className="flex items-center gap-2 text-sm text-slate-500">
+                        <div className="flex items-center gap-2 text-sm text-slate-700">
                           <Calendar size={16} className="text-orange-400" />
                           <span>{exp.period}</span>
                         </div>
@@ -101,7 +101,7 @@ export default function Career() {
 
                       {/* Skills */}
                       <div className="mb-6">
-                        <p className="mb-3 text-sm font-bold tracking-wide uppercase text-slate-600">
+                        <p className="mb-3 text-sm font-bold tracking-wide uppercase text-slate-700">
                           Key Skills
                         </p>
                         <div className="flex flex-wrap gap-2">
@@ -138,7 +138,7 @@ export default function Career() {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center animate-scale-in">
-          <p className="mb-6 text-slate-600">
+          <p className="mb-6 text-slate-700">
             15 years of proven expertise in UI/UX and software development. Proven ability to architect scalable solutions, lead high-performing teams, and deliver measurable business impact across gaming, fintech, and enterprise sectors.
           </p>
           <a

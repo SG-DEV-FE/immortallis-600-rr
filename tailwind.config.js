@@ -93,6 +93,44 @@ export default {
         'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
         'glass-hover': '0 8px 32px 0 rgba(31, 38, 135, 0.52)',
       },
+      fontSize: {
+        // 8px-aligned accessible typography scale (base: 16px = 1rem)
+        'xs': ['14px', { lineHeight: '20px', letterSpacing: '-0.3px' }],        // 14px / 20px (min readable)
+        'sm': ['16px', { lineHeight: '24px', letterSpacing: '-0.4px' }],        // 16px / 24px (body text)
+        'base': ['18px', { lineHeight: '28px', letterSpacing: '-0.4px' }],      // 18px / 28px (body emphasis)
+        'lg': ['20px', { lineHeight: '28px', letterSpacing: '-0.4px' }],        // 20px / 28px (subtitle)
+        'xl': ['24px', { lineHeight: '32px', letterSpacing: '-0.5px' }],        // 24px / 32px (section label)
+        '2xl': ['28px', { lineHeight: '36px', letterSpacing: '-0.5px' }],       // 28px / 36px (card title)
+        '3xl': ['32px', { lineHeight: '40px', letterSpacing: '-0.6px' }],       // 32px / 40px (subheading)
+        '4xl': ['40px', { lineHeight: '48px', letterSpacing: '-0.6px' }],       // 40px / 48px (heading)
+        '5xl': ['48px', { lineHeight: '56px', letterSpacing: '-0.7px' }],       // 48px / 56px (large heading)
+        '6xl': ['56px', { lineHeight: '64px', letterSpacing: '-0.8px' }],       // 56px / 64px (hero heading)
+        '7xl': ['64px', { lineHeight: '72px', letterSpacing: '-0.9px' }],       // 64px / 72px (display)
+      },
+      spacing: {
+        // 8px grid-aligned spacing scale
+        '0.5': '4px',
+        '1': '8px',
+        '1.5': '12px',
+        '2': '16px',
+        '2.5': '20px',
+        '3': '24px',
+        '3.5': '28px',
+        '4': '32px',
+        '5': '40px',
+        '6': '48px',
+        '7': '56px',
+        '8': '64px',
+        '9': '72px',
+        '10': '80px',
+        '12': '96px',
+        '14': '112px',
+        '16': '128px',
+        '20': '160px',
+        '24': '192px',
+        '28': '224px',
+        '32': '256px',
+      },
     },
   },
   plugins: [],

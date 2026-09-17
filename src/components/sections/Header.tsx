@@ -74,7 +74,7 @@ export default function Header() {
                 key={link.id}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="font-semibold text-sm transition-all duration-300 relative group text-slate-900 hover:text-orange-500"
+                className="font-semibold text-base transition-all duration-300 relative group text-slate-900 hover:text-orange-500"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-amber-500 group-hover:w-full transition-all duration-300" />

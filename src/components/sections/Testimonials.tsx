@@ -18,13 +18,13 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <span className="text-orange-500 text-lg font-bold uppercase tracking-widest mb-4 inline-block">
+          <span className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-4 inline-block">
             <Quote size={20} className="mr-2 inline-block" />Testimonial
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
             What Others Say
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
             Real feedback from industry leaders who've experienced the work firsthand.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function Testimonials() {
                     <BadgeCheck size={20} className="fill-orange-500" />
                   </span>
                 </div>
-                <p className="text-sm text-slate-600 mt-1">{testimonial.role}</p>
+                <p className="text-sm text-slate-700 mt-1">{testimonial.role}</p>
                 <p className="text-xs text-orange-500 font-semibold mt-2">{testimonial.company}</p>
               </div>
             </div>

@@ -14,7 +14,7 @@ export default function Gallery() {
         </div>
 
         <div className="animate-fade-in">
-          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+          <p className="text-lg text-slate-700 mb-8 leading-relaxed">
             Here is a gallery of my recent Instagram posts, featuring mainly photography and 
             miniatures with the occasional motorcycle photography. You can find me on Instagram 
             as <a 

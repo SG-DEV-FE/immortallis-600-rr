@@ -77,7 +77,7 @@ export default function Projects() {
           <h2 className="text-6xl md:text-7xl font-bold tracking-tight mb-6">
             Featured Work
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
+          <p className="text-lg text-slate-700 max-w-2xl leading-relaxed">
             A selection of projects where I've applied design thinking and development expertise 
             to solve real-world problems and create meaningful user experiences.
           </p>
@@ -119,7 +119,7 @@ export default function Projects() {
 
                   {/* Bottom Section - Description (animated in on hover) */}
                   <div className="space-y-4">
-                    <p className={`text-base text-white/90 leading-relaxed transition-all duration-500 transform ${
+                    <p className={`text-sm text-white/90 leading-relaxed transition-all duration-500 transform ${
                       hoveredId === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                     }`}>
                       {project.longDescription}
@@ -165,7 +165,7 @@ export default function Projects() {
                   0{idx + 1}
                 </div>
                 <div className="text-right">
-                  <p className="text-sm text-slate-600 font-medium">Featured Project</p>
+                  <p className="text-xs text-slate-700 font-medium">Featured Project</p>
                 </div>
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function Projects() {
 
         {/* CTA Section */}
         <div className="mt-24 pt-16 border-t border-slate-200 animate-slide-up" style={{ animationDelay: '450ms' }}>
-          <p className="text-slate-600 text-lg mb-6">
+          <p className="text-slate-700 text-lg mb-6">
             Interested in working together or seeing more of my work?
           </p>
           <a 

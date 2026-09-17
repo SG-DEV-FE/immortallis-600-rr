@@ -154,7 +154,7 @@ export default function WeatherWidget() {
         ></i>
         
         {/* Temperature */}
-        <span className="text-sm font-semibold relative z-10">{weather.temp}°</span>
+        <span className="text-base font-semibold relative z-10">{weather.temp}°</span>
       </button>
 
       {/* Enhanced Tooltip - Appears on hover */}

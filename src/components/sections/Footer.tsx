@@ -27,7 +27,7 @@ export default function Footer() {
           {/* About */}
           <div className="animate-fade-in">
             <h3 className="mb-4 text-2xl font-bold">SG-DEV</h3>
-            <p className="text-sm leading-relaxed text-white/80">
+            <p className="text-base leading-relaxed text-white/90">
               15 years of proven UI/UX and software expertise. Specializing in enterprise solutions, digital architecture, and innovative web technologies.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="text-sm text-white/70">
+          <p className="text-base text-white/80">
             © {currentYear} SG-DEV. All rights reserved.
           </p>
 
