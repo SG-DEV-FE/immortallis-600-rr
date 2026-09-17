@@ -75,7 +75,7 @@ export default function Skills() {
             >
               {/* Icon */}
               <div
-                className={`w-16 h-16 rounded-lg bg-gradient-to-r ${cat.color} flex items-center justify-center mb-4 text-white text-2xl transform group-hover:scale-110 transition-transform`}
+                className={`w-16 h-16 rounded-lg bg-linear-to-r ${cat.color} flex items-center justify-center mb-4 text-white text-2xl transform group-hover:scale-110 transition-transform`}
               >
                 <i className={`fas ${cat.icon}`}></i>
               </div>
@@ -87,7 +87,7 @@ export default function Skills() {
               <ul className="space-y-3">
                 {cat.skills.map((skill, j) => (
                   <li key={j} className="flex items-center gap-2 text-slate-600 transition-all hover:translate-x-1 hover:text-orange-500">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-orange-400 to-amber-400 flex items-center justify-center text-white text-xs">
+                    <div className="w-6 h-6 rounded-full bg-linear-to-r from-orange-400 to-amber-400 flex items-center justify-center text-white text-xs">
                       <i className={`fas ${skill.icon} fa-xs`}></i>
                     </div>
                     <span className="font-medium">{skill.name}</span>

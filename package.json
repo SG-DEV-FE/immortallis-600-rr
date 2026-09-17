@@ -15,11 +15,9 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.3.1",
     "next": "^16.3.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-ga4": "^3.0.1"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
@@ -31,6 +29,6 @@
     "eslint-config-next": "^16.3.0",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
-    "typescript": "^7.0.2"
+    "typescript": "^5.4.0"
   }
 }

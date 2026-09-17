@@ -154,7 +154,7 @@ export default function CompanyHistory() {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-sm text-slate-700 leading-relaxed mb-4 flex-grow line-clamp-3">
+                    <p className="text-sm text-slate-700 leading-relaxed mb-4 grow line-clamp-3">
                       {company.description}
                     </p>
 
@@ -189,7 +189,7 @@ export default function CompanyHistory() {
                   </div>
 
                   {/* Accent Line */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-orange-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </div>
               </div>
             ))}
