@@ -29,13 +29,13 @@ export default function NotFound() {
           </h1>
         </div>
 
-        <div className="w-32 h-1.5 bg-linear-to-r from-orange-400 to-amber-400 mx-auto mb-10 rounded-full shadow-lg"></div>
+        <div className="w-32 h-1.5 bg-gradient-to-r from-orange-400 to-amber-400 mx-auto mb-10 rounded-full shadow-lg"></div>
 
         {/* Main Message */}
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.4), 0 2px 10px rgba(0,0,0,0.3)' }}>
           This is not the page
           <br />
-          <span className="bg-linear-to-r from-orange-400 via-amber-300 to-orange-500 text-transparent bg-clip-text drop-shadow-2xl">
+          <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500 text-transparent bg-clip-text drop-shadow-2xl">
             you are looking for
           </span>
         </h2>
@@ -48,7 +48,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"
-            className="px-8 py-4 bg-linear-to-r from-orange-500 to-amber-500 text-white font-bold rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform text-lg"
+            className="px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform text-lg"
           >
             Back to Home
           </Link>
