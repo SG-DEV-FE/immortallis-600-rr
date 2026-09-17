@@ -7,6 +7,10 @@
   NEXT_PUBLIC_GA_ID = ""
   NPM_FLAGS = "--legacy-peer-deps"
 
+# Next.js Plugin for Build Caching
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 # Netlify Forms Configuration
 [functions]
   directory = "netlify/functions"
