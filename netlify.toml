@@ -11,9 +11,13 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Netlify Forms Configuration
+# Netlify Forms Configuration with Spam Filtering
 [functions]
   directory = "netlify/functions"
+
+# Enable Netlify's spam filtering
+[[context.production.env]]
+  NETLIFY_FORMS_SPAM_FILTER = "true"
 
 # Security headers
 [[headers]]
@@ -23,3 +27,4 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; frame-src https://www.google.com/recaptcha/; connect-src 'self' https://www.google.com/recaptcha/api/siteverify"

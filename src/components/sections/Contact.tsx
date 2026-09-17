@@ -8,6 +8,7 @@ interface FormData {
   email: string;
   subject: string;
   message: string;
+  'bot-field'?: string; // honeypot field - must be empty for legitimate submissions
 }
 
 interface FormErrors {
@@ -23,6 +24,7 @@ export default function Contact() {
     email: '',
     subject: '',
     message: '',
+    'bot-field': '',
   });
 
   const [status, setStatus] = useState({
@@ -80,7 +82,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus({ submitted: false, submitting: true, info: { error: false, msg: '' } });
 
-    // Validate
+    // Validate form fields
     const formErrors = validateForm();
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
@@ -93,7 +95,8 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch('/', {
+      // Submit to serverless function for validation and processing
+      const response = await fetch('/.netlify/functions/contact-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({
@@ -102,18 +105,23 @@ export default function Contact() {
         }).toString(),
       });
 
+      const responseData = await response.json();
+
       if (response.ok) {
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setFormData({ name: '', email: '', subject: '', message: '', 'bot-field': '' });
         setStatus({
           submitted: true,
           submitting: false,
-          info: { error: false, msg: 'Message sent successfully!' },
+          info: { error: false, msg: 'Message sent successfully! We\'ll get back to you soon.' },
         });
       } else {
         setStatus({
           submitted: false,
           submitting: false,
-          info: { error: true, msg: 'An error occurred. Please try again.' },
+          info: {
+            error: true,
+            msg: responseData.error || 'An error occurred. Please try again.',
+          },
         });
       }
     } catch (error) {
@@ -153,7 +161,26 @@ export default function Contact() {
             )}
 
             {/* @ts-ignore */}
-            <form onSubmit={handleSubmit} name="contact" netlify="true">
+            <form
+              onSubmit={handleSubmit}
+              name="contact"
+              netlify-honeypot="bot-field"
+            >
+              {/* Honeypot field - hidden from users but catches bots */}
+              {/* Bots will fill this field, legitimate users won't see it */}
+              <div style={{ display: 'none' }} aria-hidden="true">
+                <label htmlFor="bot-field">Don't fill this out if you're human</label>
+                <input
+                  type="text"
+                  id="bot-field"
+                  name="bot-field"
+                  value={formData['bot-field']}
+                  onChange={handleChange}
+                  autoComplete="off"
+                  tabIndex={-1}
+                />
+              </div>
+
               <div className="form-group animate-fade-in">
                 <label htmlFor="name" className="form-label">
                   Name <span className="required">*</span>

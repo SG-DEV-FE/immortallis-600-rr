@@ -3,6 +3,15 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 
+declare global {
+  interface Window {
+    grecaptcha?: {
+      ready: (callback: () => void) => void;
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+    };
+  }
+}
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -43,13 +52,14 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={inter.className}>
-        {/* Netlify Forms honeypot */}
+        {/* Netlify Forms hidden form for form detection */}
         {/* @ts-expect-error - netlify is a valid form attribute for Netlify Forms */}
-        <form name="contact" netlify="true" hidden>
+        <form name="contact" netlify="true" netlify-honeypot="website" hidden>
           <input type="text" name="name" />
           <input type="email" name="email" />
           <input type="text" name="subject" />
           <textarea name="message"></textarea>
+          <input type="text" name="website" />
         </form>
         
         {children}
