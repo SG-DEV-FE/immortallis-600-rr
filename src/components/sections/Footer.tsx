@@ -1,6 +1,16 @@
 'use client';
 
+import { ArrowUp } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn, faInstagram, faPlaystation } from '@fortawesome/free-brands-svg-icons';
 import { SOCIAL_LINKS } from '@/lib/constants';
+
+const socialIconMap: { [key: string]: typeof faGithub } = {
+  'github': faGithub,
+  'linkedin-in': faLinkedinIn,
+  'instagram': faInstagram,
+  'playstation': faPlaystation,
+};
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -48,18 +58,21 @@ export default function Footer() {
           <div className="animate-fade-in delay-2">
             <h4 className="mb-4 text-lg font-semibold">Connect</h4>
             <div className="flex gap-4">
-              {SOCIAL_LINKS.map((social) => (
-                <a
-                  key={social.id}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 transition-smooth hover-scale"
-                  title={social.label}
-                >
-                  <i className={`fab fa-${social.icon} text-lg`}></i>
-                </a>
-              ))}
+              {SOCIAL_LINKS.map((social) => {
+                const icon = socialIconMap[social.icon];
+                return (
+                  <a
+                    key={social.id}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 transition-smooth hover-scale"
+                    title={social.label}
+                  >
+                    {icon && <FontAwesomeIcon icon={icon} size="lg" />}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -80,7 +93,7 @@ export default function Footer() {
             aria-label="Back to top"
           >
             <span>Back to Top</span>
-            <i className="fas fa-arrow-up"></i>
+            <ArrowUp size={18} />
           </button>
         </div>
       </div>

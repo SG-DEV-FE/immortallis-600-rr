@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { AlertCircle, CheckCircle } from 'lucide-react';
+
 interface FormData {
   name: string;
   email: string;
@@ -141,11 +143,11 @@ export default function Contact() {
                   status.info.error ? 'alert-error' : 'alert-success'
                 }`}
               >
-                <i
-                  className={`fas fa-${
-                    status.info.error ? 'exclamation-circle' : 'check-circle'
-                  } alert-icon`}
-                ></i>
+                {status.info.error ? (
+                  <AlertCircle size={20} className="alert-icon" />
+                ) : (
+                  <CheckCircle size={20} className="alert-icon" />
+                )}
                 {status.info.msg}
               </div>
             )}
@@ -168,7 +170,7 @@ export default function Contact() {
                 />
                 {errors.name && (
                   <div className="error-message">
-                    <i className="fas fa-exclamation-circle"></i>
+                    <AlertCircle size={16} />
                     {errors.name}
                   </div>
                 )}
@@ -190,7 +192,7 @@ export default function Contact() {
                 />
                 {errors.email && (
                   <div className="error-message">
-                    <i className="fas fa-exclamation-circle"></i>
+                    <AlertCircle size={16} />
                     {errors.email}
                   </div>
                 )}
@@ -212,7 +214,7 @@ export default function Contact() {
                 />
                 {errors.subject && (
                   <div className="error-message">
-                    <i className="fas fa-exclamation-circle"></i>
+                    <AlertCircle size={16} />
                     {errors.subject}
                   </div>
                 )}
@@ -233,7 +235,7 @@ export default function Contact() {
                 ></textarea>
                 {errors.message && (
                   <div className="error-message">
-                    <i className="fas fa-exclamation-circle"></i>
+                    <AlertCircle size={16} />
                     {errors.message}
                   </div>
                 )}

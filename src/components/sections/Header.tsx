@@ -1,8 +1,18 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Menu } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn, faInstagram, faPlaystation } from '@fortawesome/free-brands-svg-icons';
 import { SOCIAL_LINKS, NAV_LINKS } from '@/lib/constants';
 import WeatherWidget from './WeatherWidget';
+
+const socialIconMap: { [key: string]: typeof faGithub } = {
+  'github': faGithub,
+  'linkedin-in': faLinkedinIn,
+  'instagram': faInstagram,
+  'playstation': faPlaystation,
+};
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,18 +86,21 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-6">
             <WeatherWidget />
             <div className="flex items-center gap-4">
-              {SOCIAL_LINKS.map((social) => (
-                <a
-                  key={social.id}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-900 hover:text-orange-500 transition-colors hover:scale-110 transform"
-                  title={social.label}
-                >
-                  <i className={`fab fa-${social.icon}`}></i>
-                </a>
-              ))}
+              {SOCIAL_LINKS.map((social) => {
+                const icon = socialIconMap[social.icon];
+                return (
+                  <a
+                    key={social.id}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-900 hover:text-orange-500 transition-colors hover:scale-110 transform"
+                    title={social.label}
+                  >
+                    {icon && <FontAwesomeIcon icon={icon} />}
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -97,8 +110,9 @@ export default function Header() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-900"
+              aria-label="Toggle menu"
             >
-              <i className="fas fa-bars text-2xl"></i>
+              <Menu size={24} />
             </button>
           </div>
         </div>
@@ -118,18 +132,21 @@ export default function Header() {
                 </a>
               ))}
               <div className="flex items-center gap-4">
-                {SOCIAL_LINKS.map((social) => (
-                  <a
-                    key={social.id}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-orange-400 transition-colors"
-                    title={social.label}
-                  >
-                    <i className={`fab fa-${social.icon}`}></i>
-                  </a>
-                ))}
+                {SOCIAL_LINKS.map((social) => {
+                  const icon = socialIconMap[social.icon];
+                  return (
+                    <a
+                      key={social.id}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-orange-400 transition-colors"
+                      title={social.label}
+                    >
+                      {icon && <FontAwesomeIcon icon={icon} />}
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>

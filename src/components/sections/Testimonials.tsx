@@ -1,5 +1,7 @@
 'use client';
 
+import { Quote, Star, BadgeCheck } from 'lucide-react';
+
 export default function Testimonials() {
   const testimonial = {
     id: 1,
@@ -17,7 +19,7 @@ export default function Testimonials() {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-orange-500 text-lg font-bold uppercase tracking-widest mb-4 inline-block">
-            <i className="fas fa-quote-left mr-2"></i>Testimonial
+            <Quote size={20} className="mr-2 inline-block" />Testimonial
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
             What Others Say
@@ -33,7 +35,7 @@ export default function Testimonials() {
             {/* Stars */}
             <div className="flex gap-1 mb-6">
               {Array.from({ length: testimonial.rating }).map((_, j) => (
-                <i key={j} className="fas fa-star text-amber-400"></i>
+                <Star key={j} size={20} className="text-amber-400 fill-amber-400" />
               ))}
             </div>
 
@@ -58,7 +60,7 @@ export default function Testimonials() {
                 <div className="flex items-center gap-2">
                   <p className="font-bold text-slate-900 text-lg">{testimonial.author}</p>
                   <span className="text-orange-500">
-                    <i className="fas fa-badge-check"></i>
+                    <BadgeCheck size={20} className="fill-orange-500" />
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 mt-1">{testimonial.role}</p>

@@ -1,49 +1,114 @@
 'use client';
 
+import {
+  Code2,
+  Palette,
+  Zap,
+  Wand2,
+  Wrench,
+  Star,
+  Smartphone,
+  Sparkles,
+  Users,
+  Brush,
+  Mouse,
+  Gamepad2,
+  Feather,
+  Cloud,
+  Rocket,
+  Award,
+  GitBranch,
+  Layers,
+  Cpu,
+} from 'lucide-react';
+
+interface IconMapType {
+  [key: string]: React.ComponentType<{ size?: number; className?: string }>;
+}
+
+const iconMap: IconMapType = {
+  'code': Code2,
+  'palette': Palette,
+  'bolt': Zap,
+  'wand-magic': Wand2,
+  'wrench': Wrench,
+  'star': Star,
+  'figma': Layers,
+  'mobile': Smartphone,
+  'wand-magic-sparkles': Sparkles,
+  'universal-access': Users,
+  'paintbrush': Brush,
+  'computer-mouse': Mouse,
+  'joystick': Gamepad2,
+  'feather': Feather,
+  'github': GitBranch,
+  'cloud': Cloud,
+  'rocket': Rocket,
+  'certificate': Award,
+  'react': Cpu,
+};
+
+interface Skill {
+  name: string;
+  icon: string;
+}
+
+interface SkillCategory {
+  category: string;
+  icon: string;
+  color: string;
+  skills: Skill[];
+}
+
+const IconComponent = ({ iconKey, size = 24, className = '' }: { iconKey: string; size?: number; className?: string }) => {
+  const Icon = iconMap[iconKey];
+  return Icon ? <Icon size={size} className={className} /> : null;
+};
+
 export default function Skills() {
-  const skillCategories = [
+  const skillCategories: SkillCategory[] = [
     {
       category: 'Frontend Development',
-      icon: 'fa-code',
+      icon: 'code',
       color: 'from-blue-500 to-cyan-500',
       skills: [
-        { name: 'React & Next.js', icon: 'fa-react' },
-        { name: 'Vue3', icon: 'fa-vuejs' },
-        { name: 'Tailwind CSS', icon: 'fa-palette' },
-        { name: 'Web Performance', icon: 'fa-bolt' },
+        { name: 'React & Next.js', icon: 'react' },
+        { name: 'Vue3', icon: 'palette' },
+        { name: 'Tailwind CSS', icon: 'palette' },
+        { name: 'Web Performance', icon: 'bolt' },
       ],
     },
     {
       category: 'UI/UX Design',
-      icon: 'fa-palette',
+      icon: 'palette',
       color: 'from-purple-500 to-pink-500',
       skills: [
-        { name: 'Figma', icon: 'fa-figma' },
-        { name: 'Responsive Design', icon: 'fa-mobile' },
-        { name: 'Animations', icon: 'fa-wand-magic-sparkles' },
-        { name: 'Accessibility', icon: 'fa-universal-access' },
+        { name: 'Figma', icon: 'figma' },
+        { name: 'Responsive Design', icon: 'mobile' },
+        { name: 'Animations', icon: 'wand-magic-sparkles' },
+        { name: 'Accessibility', icon: 'universal-access' },
       ],
     },
     {
       category: 'Creative Development',
-      icon: 'fa-wand-magic',
+      icon: 'wand-magic',
       color: 'from-orange-500 to-red-500',
       skills: [
-        { name: 'Creative Coding', icon: 'fa-paintbrush' },
-        { name: 'Micro-interactions', icon: 'fa-computer-mouse' },
-        { name: 'Gamified UI', icon: 'fa-joystick' },
-        { name: 'Storytelling', icon: 'fa-feather' },
+        { name: 'Creative Coding', icon: 'paintbrush' },
+        { name: 'Micro-interactions', icon: 'computer-mouse' },
+        { name: 'Gamerfied UI', icon: 'joystick' },
+        { name: 'Storytelling', icon: 'feather' },
       ],
     },
     {
       category: 'Tools & Workflow',
-      icon: 'fa-wrench',
+      icon: 'wrench',
       color: 'from-green-500 to-emerald-500',
       skills: [
-        { name: 'Git & GitHub', icon: 'fa-github' },
-        { name: 'Azure', icon: 'fa-cloud' },
-        { name: 'Netlify', icon: 'fa-rocket' },
-        { name: 'Web Standards', icon: 'fa-certificate' },
+        { name: 'Git & GitHub', icon: 'github' },
+        { name: 'Azure', icon: 'cloud' },
+        { name: 'Netlify', icon: 'rocket' },
+        { name: 'Web Standards', icon: 'certificate' },
       ],
     },
   ];
@@ -54,7 +119,7 @@ export default function Skills() {
         {/* Header */}
         <div className="mb-16 text-center animate-fade-in">
           <span className="inline-block mb-4 text-lg font-bold tracking-widest text-orange-500 uppercase">
-            <i className="mr-2 fas fa-star"></i>Skills & Expertise
+            <Star size={20} className="mr-2 inline-block" />Skills & Expertise
           </span>
           <h2 className="mb-6 text-4xl font-black md:text-5xl text-slate-900">
             What I Do Best
@@ -77,7 +142,7 @@ export default function Skills() {
               <div
                 className={`w-16 h-16 rounded-lg bg-linear-to-r ${cat.color} flex items-center justify-center mb-4 text-white text-2xl transform group-hover:scale-110 transition-transform`}
               >
-                <i className={`fas ${cat.icon}`}></i>
+                <IconComponent iconKey={cat.icon} size={28} className="text-white" />
               </div>
 
               {/* Title */}
@@ -88,7 +153,7 @@ export default function Skills() {
                 {cat.skills.map((skill, j) => (
                   <li key={j} className="flex items-center gap-2 text-slate-600 transition-all hover:translate-x-1 hover:text-orange-500">
                     <div className="w-6 h-6 rounded-full bg-linear-to-r from-orange-400 to-amber-400 flex items-center justify-center text-white text-xs">
-                      <i className={`fas ${skill.icon} fa-xs`}></i>
+                      <IconComponent iconKey={skill.icon} size={14} className="text-white" />
                     </div>
                     <span className="font-medium">{skill.name}</span>
                   </li>

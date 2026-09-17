@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Briefcase, Calendar, ChevronDown, ArrowRight } from 'lucide-react';
 import careerData from '@/lib/careerData.json';
 
 interface Experience {
@@ -30,7 +31,7 @@ export default function Career() {
         <div className="max-w-3xl mx-auto mb-16 text-center animate-fade-in">
           <div className="inline-block mb-4">
             <span className="text-lg font-bold tracking-widest text-orange-500 uppercase">
-              <i className="mr-2 fas fa-briefcase"></i>Professional Timeline
+              <Briefcase size={20} className="mr-2 inline-block" />Professional Timeline
             </span>
           </div>
           <h2 className="mb-6 text-4xl font-black md:text-5xl text-slate-900">
@@ -79,16 +80,16 @@ export default function Career() {
                           </div>
                         </div>
                         <div className="flex items-center gap-2 text-sm text-slate-500">
-                          <i className="fas fa-calendar text-orange-400"></i>
+                          <Calendar size={16} className="text-orange-400" />
                           <span>{exp.period}</span>
                         </div>
                       </div>
                       <div
-                        className={`text-orange-500 text-2xl transition-transform duration-300 ${
+                        className={`text-orange-500 transition-transform duration-300 ${
                           expandedId === exp.id ? 'rotate-180' : ''
                         }`}
                       >
-                        <i className="fas fa-chevron-down"></i>
+                        <ChevronDown size={24} />
                       </div>
                     </div>
                   </div>
@@ -124,7 +125,7 @@ export default function Career() {
                           className="inline-flex items-center gap-2 font-semibold text-orange-500 transition-colors hover:text-orange-600"
                         >
                           Learn More
-                          <i className="fas fa-arrow-right"></i>
+                          <ArrowRight size={18} />
                         </a>
                       )}
                     </div>
