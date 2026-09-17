@@ -17,7 +17,7 @@ interface Project {
 }
 
 // Animated Gradient Background Component
-function AnimatedGradientBg({ color, isHovered }: { color: string; isHovered: boolean }) {
+function AnimatedGradientBg({ color }: { color: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const animationRef = useRef<any>(null);
@@ -173,7 +173,7 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-linear-to-br from-slate-900 to-slate-800 opacity-60 group-hover:opacity-45 transition-opacity duration-500" />
                 
                 {/* Animated Liquid Gradient */}
-                <AnimatedGradientBg color={project.color} isHovered={hoveredId === project.id} />
+                <AnimatedGradientBg color={project.color} />
                 
                 {/* Subtle animated shine effect */}
                 <div className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{
