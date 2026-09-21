@@ -20,6 +20,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env*.local
 
 # TypeScript build cache
 tsconfig.tsbuildinfo
@@ -37,3 +38,15 @@ yarn-error.log*
 
 # OS
 Thumbs.db
+
+.playwright-mcp/
+
+# Turbo
+.turbo/
+
+# Netlify
+.netlify/
+
+# Local overrides
+*.local.js
+*.local.ts
