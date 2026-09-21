@@ -1,68 +1,193 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+﻿# Immortallis Portfolio & CV
 
-## Available Scripts
+This is my personal portfolio/ CV built with **Next.js**, **TypeScript**, and **Tailwind CSS**. Features an integrated contact form with rate limiting, media gallery with Cloudinary integration, and analytics tracking.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- **Framework**: Next.js 14+ (React 19+)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS, PostCSS
+- **Backend**: Netlify Functions
+- **Media**: Cloudinary CDN
+- **Analytics**: Google Analytics
+- **Effects**: AIFX visual effects library
+- **Hosting**: Netlify
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Architecture
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```mermaid
+flowchart TD
 
-### `npm test`
+subgraph group_presentation["Page Presentation"]
+  node_root_layout["Root Layout<br/>[layout.tsx]"]
+  node_home_page["Home Page<br/>[page.tsx]"]
+  node_header["Site Header<br/>[Header.tsx]"]
+  node_footer["Site Footer<br/>[Footer.tsx]"]
+end
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+subgraph group_portfolio["Portfolio Content"]
+  node_projects["Project Showcase<br/>[Projects.tsx]"]
+  node_personality["Personal Profile<br/>[Personality.tsx]"]
+  node_skills["Skills Section<br/>[Skills.tsx]"]
+  node_company_history["Company Timeline<br/>[CompanyHistory.tsx]"]
+  node_career["Career Section<br/>[Career.tsx]"]
+  node_testimonials["Testimonials Section<br/>[Testimonials.tsx]"]
+  node_gallery["Gallery Section<br/>[Gallery.tsx]"]
+end
 
-### `npm run build`
+subgraph group_contact["Contact Workflow"]
+  node_contact_form["Contact Form<br/>[Contact.tsx]"]
+  node_contact_endpoint["Contact Endpoint<br/>[contact-form.ts]"]
+  node_form_validation["Form Validation<br/>[contact-form.ts]"]
+  node_rate_limiter["Submission Rate Limit<br/>[contact-form.ts]"]
+end
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+subgraph group_integrations["External Integrations"]
+  node_cloudinary["Cloudinary Media"]
+  node_analytics["Google Analytics"]
+  node_aifx["AIFX Effects"]
+end
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+node_visitor(("Portfolio Visitor"))
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+node_visitor -->|"opens site"| node_root_layout
+node_root_layout -->|"renders page"| node_home_page
+node_home_page -->|"renders header"| node_header
+node_home_page -->|"renders projects"| node_projects
+node_home_page -->|"renders profile"| node_personality
+node_home_page -->|"renders skills"| node_skills
+node_home_page -->|"renders timeline"| node_company_history
+node_home_page -->|"renders career"| node_career
+node_home_page -->|"renders testimonials"| node_testimonials
+node_home_page -->|"renders gallery"| node_gallery
+node_home_page -->|"renders form"| node_contact_form
+node_home_page -->|"renders footer"| node_footer
+node_contact_form -->|"submits form"| node_contact_endpoint
+node_contact_endpoint -->|"checks limit"| node_rate_limiter
+node_contact_endpoint -->|"validates fields"| node_form_validation
+node_contact_endpoint -->|"returns status"| node_contact_form
+node_projects -.->|"loads media"| node_cloudinary
+node_company_history -.->|"loads media"| node_cloudinary
+node_root_layout -.->|"loads tracking"| node_analytics
+node_root_layout -.->|"loads effects"| node_aifx
 
-### `npm run eject`
+classDef toneNeutral fill:#f8fafc,stroke:#334155,stroke-width:1.5px,color:#0f172a
+classDef toneBlue fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#172554
+classDef toneAmber fill:#fef3c7,stroke:#d97706,stroke-width:1.5px,color:#78350f
+classDef toneMint fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px,color:#14532d
+classDef toneRose fill:#ffe4e6,stroke:#e11d48,stroke-width:1.5px,color:#881337
+classDef toneIndigo fill:#e0e7ff,stroke:#4f46e5,stroke-width:1.5px,color:#312e81
+class node_root_layout,node_home_page,node_header,node_footer toneBlue
+class node_projects,node_personality,node_skills,node_company_history,node_career,node_testimonials,node_gallery toneAmber
+class node_contact_form,node_contact_endpoint,node_form_validation,node_rate_limiter toneMint
+class node_cloudinary,node_analytics,node_aifx toneRose
+class node_visitor toneIndigo
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Key Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Contact Form**: Server-side validation, rate limiting, and Netlify Function integration
+- **Performance**: Optimized images with Cloudinary CDN, analytics tracking
+- **Visual Effects**: AIFX effects library for enhanced interactivity
+- **Structured Content**: Dedicated sections for projects, skills, career timeline, and testimonials
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- Node.js 18+
+- npm or yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone the repository
+git clone <repo-url>
+cd immortallis-600-rr
 
-### Code Splitting
+# Install dependencies
+npm install
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Development
 
-### Analyzing the Bundle Size
+```bash
+# Start development server
+npm run dev
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+# Open browser
+# http://localhost:3000
+```
 
-### Making a Progressive Web App
+### Build & Deploy
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```bash
+# Build for production
+npm run build
 
-### Advanced Configuration
+# The build output is ready for Netlify deployment
+# Netlify automatically detects next.config.js and deploys with the correct settings
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Project Structure
 
-### Deployment
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with analytics & effects
+│   ├── page.tsx            # Home page (main portfolio view)
+│   ├── contact.css         # Contact form styling
+│   └── globals.css         # Global styles
+└── components/
+    └── sections/           # Reusable portfolio sections
+        ├── Header.tsx      # Navigation & hero
+        ├── Personality.tsx # Personal introduction
+        ├── Skills.tsx      # Technical skills
+        ├── Projects.tsx    # Project showcase
+        ├── CompanyHistory.tsx  # Work timeline
+        ├── Career.tsx      # Career overview
+        ├── Testimonials.tsx    # Social proof
+        ├── Gallery.tsx     # Media gallery
+        ├── Contact.tsx     # Contact form
+        └── Footer.tsx      # Footer with links
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+netlify/
+└── functions/
+    └── contact-form.ts     # Serverless contact endpoint
 
-### `npm run build` fails to minify
+lib/
+├── constants.ts            # App configuration
+└── careerData.json         # Career & experience data
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Configuration
+
+- **`tailwind.config.js`**: Tailwind CSS customization
+- **`next.config.js`**: Next.js build & optimization settings
+- **`netlify.toml`**: Netlify deployment configuration
+- **`tsconfig.json`**: TypeScript compiler options
+
+## Contact Form
+
+The contact form uses a Netlify Function with:
+- ✅ Email field validation
+- ✅ Rate limiting (prevents spam)
+- ✅ Server-side processing
+- ✅ Error handling & user feedback
+
+## Deployment
+
+This site is configured for **Netlify**:
+
+1. Push to your GitHub repository
+2. Connect the repository to Netlify
+3. Netlify automatically detects the Next.js setup
+4. Your site deploys on every push to `main`
+
+Environment variables needed:
+- Contact form backend configuration (set in Netlify dashboard)
+
+## License
+
+© Stephen Gault. All rights reserved.
